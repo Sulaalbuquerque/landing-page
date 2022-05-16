@@ -12,6 +12,11 @@ export const ContainerLogo = styled.div`
     
     .icon-hamburguer{
         margin-right: 2rem;
+        cursor: pointer;
+
+        :hover{
+            color: ${({ theme }) => theme.blue};
+        }
     }
 ` 
 

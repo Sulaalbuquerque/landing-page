@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
       font-family: 'Roboto', sans-serif;
 
       /* a cada 1rem será considera 10px */
-      font-size: 62.5%;
+      //font-size: 62.5%;
   }
 ` 
 /* @media (min-width: 550px) {}

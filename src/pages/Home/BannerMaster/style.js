@@ -7,6 +7,7 @@ export const ContainerBannerMaster = styled.div`
     background-repeat: no-repeat;
     height: 45rem; // 52.5rem
     width: 100vw;
+    margin-bottom: 18rem;
 
     color: ${({ theme }) => theme.text};
 ` 

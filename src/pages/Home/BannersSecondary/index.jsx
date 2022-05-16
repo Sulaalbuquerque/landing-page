@@ -1,7 +1,7 @@
 import { Banner } from "../../../components/Banner"
 import { ContainerBannersSecondary } from "./style"
 
-export const BannersSecondary = ({ img, altImg, description }) => {
+export const BannersSecondary = () => {
     
       return (
         <>

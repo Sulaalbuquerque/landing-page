@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const ContainerMenu = styled.div`
-    background-color: palegoldenrod;
+    //background-color: palegoldenrod;
+    padding: 2.75rem; //44px
 
     ul{
         display: flex;
-        //justify-content: space-between;
         gap: 2rem;
     }
     
@@ -15,9 +15,24 @@ export const ContainerMenu = styled.div`
 
     a{
         text-decoration: none;
+        border-right: solid 2px ${({ theme }) => theme.text};
+        padding-right: 2rem;
+        color: ${({ theme }) => theme.text};
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 
     .bag{
         display: flex;
+        border-right: none;
+        gap: .2rem;
+    }
+
+    .item-counter{
+        background-color: ${({ theme }) => theme.blue};
+        padding: .2rem .4rem;
+        border-radius: 50%;
     }
 ` 

@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 
 export const ContainerHeader = styled.div`
-    background-color: blue;
     display: flex;
-   
+    justify-content: space-around;
+    position: absolute;
+    width: 100vw;
 ` 
 
 export const ContainerLogo = styled.div`
-    background-color: orange;
-   
+    padding: 2.75rem; //44px
+    
+    .icon-hamburguer{
+        margin-right: 2rem;
+    }
 ` 
 

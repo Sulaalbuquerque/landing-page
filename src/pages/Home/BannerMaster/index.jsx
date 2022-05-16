@@ -1,3 +1,4 @@
+import { ContainerBannerMaster } from "./style"
 
 export const BannerMaster = () => {
     

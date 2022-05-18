@@ -4,6 +4,7 @@ import { GlobalStyle } from "./styles/global"
 
 import { ContainerApp } from "./styles/app"
 import { Home } from './pages/Home'
+import { Success } from "./pages/Success"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <GlobalStyle/>
 
         <ContainerApp>
+          <Success/>
           <Home/>
         </ContainerApp>
         

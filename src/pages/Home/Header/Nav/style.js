@@ -2,11 +2,10 @@ import styled from 'styled-components'
 
 export const ContainerNav = styled.div`
     color: ${({theme}) => theme.text};
-    display: flex;
+    //display: flex;
+    display: none;
     position: absolute;
-    top: 6.3rem;
-    //left: .1rem;
-    //right: 3rem;
+    top: 7rem;
     z-index: 1;
     border: solid .13rem ${({theme}) => theme.blue};
     border-radius: .3rem;

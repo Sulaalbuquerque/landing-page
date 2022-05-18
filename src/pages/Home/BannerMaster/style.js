@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerBannerMaster = styled.div`
+export const ContainerBannerMaster = styled.section`
     //background-color: ${({theme}) => theme.silver };
     background-image: url('assets/img/principal_banner_desktop.jpg');
     background-size: cover;

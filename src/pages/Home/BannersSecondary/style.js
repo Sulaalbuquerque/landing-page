@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerBannersSecondary = styled.div`
+export const ContainerBannersSecondary = styled.section`
     //background-color: ${({theme}) => theme.silver };
     display: flex;
     justify-content: center;

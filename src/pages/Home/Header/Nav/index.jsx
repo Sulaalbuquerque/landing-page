@@ -1,10 +1,10 @@
 import { ContainerNav } from "./style"
 
-export const Nav = () => {
+export const Nav = (/* { navIsVisible, setNavIsVisible } */) => {
     
       return (
         <>
-          <ContainerNav>
+          <ContainerNav /* isVisible={navIsVisible} */>
 
           <div className="arrow"></div>
           

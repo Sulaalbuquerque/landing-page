@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const ContainerNav = styled.div`
     color: ${({theme}) => theme.text};
-    //display: flex;
-    display: none;
+      display: flex;
+    //display: none;
     position: absolute;
     top: 7rem;
     z-index: 1;

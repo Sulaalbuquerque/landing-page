@@ -1,16 +1,23 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
-export const ContainerSuccess = styled.div`
+export const ContainerSuccess = styled.section`
     background-color: ${({ theme }) => theme.backgroundSuccess};
     position: absolute;
-    display: flex;
+    display: flex; //flex
+    //display: none;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
-    //overflow: hidden;
-    //pointer-events: none;
+    z-index: 2;
+    //overflow-y: hidden;
+   /*  top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none; */
 
     .popup{
         background-color: ${({ theme }) => theme.text};
@@ -37,4 +44,9 @@ export const ContainerSuccess = styled.div`
         font-weight: 300;
         font-size: 1.5rem;
     }
+
+    /* ${({ isVisible }) => isVisible && css`
+        opacity: 1;
+        pointer-events: auto;
+    `} */
 ` 

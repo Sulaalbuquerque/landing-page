@@ -5,17 +5,26 @@ import { Footer } from "./Footer"
 import { Header } from "./Header"
 import { ContainerHome } from "./style"
 
+import { useState } from "react"
+import { Success } from "../Success"
+
 export const Home = () => {
-    
-      return (
-        <>
-          <ContainerHome>
-              <Header/>
-              <BannerMaster/>
-              <BannersSecondary/>
-              <FeaturesProducts/>
-              <Footer/>
-          </ContainerHome>
-        </>
-      )
-  }
+
+  /* const [sucessIsVisible, setSuccessIsVisible] = useState(false)  *///estado para controlar se está aberto ou fechado
+
+  return (
+    <>
+      <Success
+       /*  sucessIsVisible={sucessIsVisible}
+        setSuccessIsVisible={setSuccessIsVisible} */
+      />
+      <ContainerHome>
+          <Header/>
+          <BannerMaster/>
+          <BannersSecondary/>
+          <FeaturesProducts/>
+          <Footer/>
+      </ContainerHome>
+    </>
+  )
+}

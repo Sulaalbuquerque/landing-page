@@ -1,13 +1,16 @@
 import { ContainerSuccess } from "./style"
 
-export const Success = () => {
+export const Success = (/* { successIsVisible, setSuccessIsVisible } */) => {
     
       return (
         <>
-          <ContainerSuccess>
+          <ContainerSuccess /* isVisible={successIsVisible} */>
             <div className="popup">
               <div className="close">
-                <img src="assets/svgs/close_btn.svg" />
+                <img 
+                  src="assets/svgs/close_btn.svg" 
+                  /* onClick={() => setSuccessIsVisible(false)} */
+                />
               </div>
               <div className="popup-content">
                 <div className="text">

@@ -1,6 +1,6 @@
 import { ContainerCard } from "./style"
 
-export const Card = ({ img, altImg, name, value }) => {
+export const Card = ({ img, altImg, name, value/* , setSuccessIsVisible */ }) => {
     
   return (
     <>
@@ -15,7 +15,11 @@ export const Card = ({ img, altImg, name, value }) => {
             <span className="value">{value}</span>
           </div>    
 
-          <button>COMPRAR</button>
+          <button
+            /* onClick={() => setSuccessIsVisible(true)} */
+          >
+            COMPRAR
+          </button>
         </div>
       </ContainerCard>
     </>

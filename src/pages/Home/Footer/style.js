@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerFooter = styled.div`
+export const ContainerFooter = styled.footer`
 background-color: green;
    display: flex;
     justify-content: space-between;

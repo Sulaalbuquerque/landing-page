@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerHeader = styled.div`
+export const ContainerHeader = styled.header`
     display: flex;
     justify-content: space-around;
     position: absolute;

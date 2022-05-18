@@ -13,7 +13,7 @@ function App() {
         <GlobalStyle/>
 
         <ContainerApp>
-          <Success/>
+          {/* <Success/> */}
           <Home/>
         </ContainerApp>
         

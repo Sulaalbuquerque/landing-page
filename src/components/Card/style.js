@@ -43,16 +43,43 @@ export const ContainerCard = styled.div`
         margin-right: auto;
         background-color: ${({ theme }) => theme.blue};
         border: none;
-        padding: 1rem 5rem;
+        //padding: 1rem 5rem;
+        padding: 1rem;
         border-radius: .3rem;
         font-size: 1.1rem;
         font-weight: 900;
         color: ${({ theme }) => theme.text};
         margin-top: 1rem;
         cursor: pointer;
+        //height: 2rem;
+        position: relative;
+        width: 16rem;
+
 
         :hover{
             background-color: ${({ theme }) => theme.darkBlue};
         }
+    }
+
+    .content{
+        //display: none;
+        display: block;
+    }
+
+    .success{
+        display: none;
+        //display: flex;
+        
+    }
+
+    .text{
+        display: flex;
+        align-items: center;
+    }
+
+    .img{
+        position: absolute;
+        bottom: -.3rem;
+        right: 1rem;
     }
 ` 

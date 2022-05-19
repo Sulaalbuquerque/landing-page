@@ -4,8 +4,8 @@ import { css } from 'styled-components'
 export const ContainerSuccess = styled.section`
     background-color: ${({ theme }) => theme.backgroundSuccess};
     position: absolute;
-    display: flex; //flex
-    //display: none;
+    //display: flex; //flex
+    display: none;
     align-items: center;
     justify-content: center;
     width: 100vw;

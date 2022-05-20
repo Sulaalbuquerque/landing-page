@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const ContainerHeader = styled.header`
     display: flex;
+    align-items: center;
     justify-content: space-around;
     position: absolute;
     width: 100vw;
@@ -13,10 +14,10 @@ export const ContainerLogo = styled.div`
     .icon-hamburguer{
         margin-right: 2rem;
         cursor: pointer;
+    }
 
-        :hover{
-            color: ${({ theme }) => theme.blue};
-        }
+    .contentLogo{
+        display: flex;
     }
 ` 
 

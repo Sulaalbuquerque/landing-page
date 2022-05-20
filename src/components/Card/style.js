@@ -6,7 +6,6 @@ export const ContainerCard = styled.div`
     width: 22rem;
     box-shadow: 0px 4px 20px 7px #00000012;
 
-
     .image{
         height: 28rem;
         display: flex;

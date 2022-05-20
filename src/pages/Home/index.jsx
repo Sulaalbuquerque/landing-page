@@ -6,7 +6,7 @@ import { Header } from "./Header"
 import { ContainerHome } from "./style"
 
 import { useState } from "react"
-import { Success } from "../Success"
+//import { Success } from "../Success"
 
 export const Home = () => {
 
@@ -21,7 +21,7 @@ export const Home = () => {
 
   return (
     <>
-      <Success/>
+      {/* <Success/> */}
       <ContainerHome 
         onClick={closeNav}
       >

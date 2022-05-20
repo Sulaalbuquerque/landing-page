@@ -1,12 +1,25 @@
 import { useState } from "react"
 import { ContainerCard } from "./style"
+import { Success } from "../../pages/Success"
 
 export const Card = ({ img, altImg, name, value }) => {
   
   const [clickedButton, setClickedButton] = useState(false)
 
+  const [successIsVisible, setSuccessIsVisible] = useState(false)
+
+  const changeStyleButton = () => {
+    setClickedButton(true)
+    setSuccessIsVisible(true)
+  }
+
   return (
     <>
+      <Success
+        successIsVisible={successIsVisible}
+        setSuccessIsVisible={setSuccessIsVisible}
+      />
+
       <ContainerCard isClickedButton={clickedButton}>
         <div className="image">
           <img src={img} alt={altImg} />
@@ -19,7 +32,7 @@ export const Card = ({ img, altImg, name, value }) => {
           </div>    
 
           <button
-            onClick={() => setClickedButton(true)}
+            onClick={changeStyleButton}
           >
             <div className="content">
               COMPRAR

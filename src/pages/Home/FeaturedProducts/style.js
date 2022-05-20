@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const ContainerFeaturesProducts = styled.section`
-    //background-color: blue;
-   
    padding: 3rem 12rem;
 
    .title{

@@ -10,16 +10,25 @@ import { Success } from "../Success"
 
 export const Home = () => {
 
-  /* const [sucessIsVisible, setSuccessIsVisible] = useState(false)  *///estado para controlar se está aberto ou fechado
+  const [navIsVisible, setNavIsVisible] = useState(false)
+
+  function closeNav () {
+
+    if(navIsVisible === true){
+      setNavIsVisible(false)
+    }
+  }  
 
   return (
     <>
-      <Success
-       /*  sucessIsVisible={sucessIsVisible}
-        setSuccessIsVisible={setSuccessIsVisible} */
-      />
-      <ContainerHome>
-          <Header/>
+      <Success/>
+      <ContainerHome 
+        onClick={closeNav}
+      >
+          <Header
+            navIsVisible={navIsVisible}
+            setNavIsVisible={setNavIsVisible}
+          />
           <BannerMaster/>
           <BannersSecondary/>
           <FeaturesProducts/>

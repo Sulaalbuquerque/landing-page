@@ -1,9 +1,9 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ContainerNav = styled.div`
     color: ${({theme}) => theme.text};
-      display: flex;
-    //display: none;
+    display: none;
     position: absolute;
     top: 7rem;
     z-index: 1;
@@ -30,11 +30,10 @@ export const ContainerNav = styled.div`
 
     .list{
         width: 10rem;
-       padding: 1rem;
+        padding: 1rem;
     }
 
     h4{
-        //background-color: orange;
         font-size: 1rem;
         font-weight: 700;
         padding: 0 1rem;
@@ -43,7 +42,6 @@ export const ContainerNav = styled.div`
     li{
         display: flex;
         margin: .3rem 0;
-        //background-color: green;
         list-style-type: none;
     }
 
@@ -60,4 +58,8 @@ export const ContainerNav = styled.div`
             background-color: ${({theme}) => theme.blue};
         }
     }
+
+    ${({ navIsVisible }) => navIsVisible && css`
+         display: flex;
+    `}
 ` 

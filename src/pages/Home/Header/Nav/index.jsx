@@ -1,58 +1,60 @@
 import { ContainerNav } from "./style"
 
-export const Nav = (/* { navIsVisible, setNavIsVisible } */) => {
-    
-      return (
-        <>
-          <ContainerNav /* isVisible={navIsVisible} */>
+export const Nav = ({ navIsVisible }) => {
 
-          <div className="arrow"></div>
-          
-            <div className="lists">
-              <div className="list">
-                <h4>Luta</h4>
-                  <li>
-                    <a href="#">Mortal Kombat</a>
-                  </li>
-                  <li>
-                    <a href="#">Smash Bros</a>
-                  </li>
-                  <li>
-                    <a href="#">Killer Instict</a>
-                  </li>
-                  <li>
-                    <a href="#">DBZ Kakarot</a>
-                  </li>
-              </div>
+  return (
+    <>
+      <ContainerNav 
+        navIsVisible={navIsVisible}
+      >
 
-              <div className="list">
-                <h4>Ação / Aventura</h4>
-                  <li>
-                    <a href="#">GTA V</a>
-                  </li>
-                  <li>
-                    <a href="#">Tomb Raider</a>
-                  </li>
-                  <li>
-                    <a href="#">HALO</a>
-                  </li>
-                  <li>
-                    <a href="#">Call of Duty</a>
-                  </li>
-              </div>
+      <div className="arrow"></div>
+      
+        <div className="lists">
+          <div className="list">
+            <h4>Luta</h4>
+              <li>
+                <a href="#">Mortal Kombat</a>
+              </li>
+              <li>
+                <a href="#">Smash Bros</a>
+              </li>
+              <li>
+                <a href="#">Killer Instict</a>
+              </li>
+              <li>
+                <a href="#">DBZ Kakarot</a>
+              </li>
+          </div>
 
-              <div className="list">
-                <h4>Corrida</h4>
-                  <li>
-                    <a href="#">NEED For SPEED</a>
-                  </li>
-                  <li>
-                    <a href="#">Forza Horizon</a>
-                  </li>
-              </div>
-            </div>
+          <div className="list">
+            <h4>Ação / Aventura</h4>
+              <li>
+                <a href="#">GTA V</a>
+              </li>
+              <li>
+                <a href="#">Tomb Raider</a>
+              </li>
+              <li>
+                <a href="#">HALO</a>
+              </li>
+              <li>
+                <a href="#">Call of Duty</a>
+              </li>
+          </div>
 
-          </ContainerNav>
-        </>
-      )
-  }
+          <div className="list">
+            <h4>Corrida</h4>
+              <li>
+                <a href="#">NEED For SPEED</a>
+              </li>
+              <li>
+                <a href="#">Forza Horizon</a>
+              </li>
+          </div>
+        </div>
+
+      </ContainerNav>
+    </>
+  )
+}

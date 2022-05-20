@@ -9,7 +9,6 @@ export const ContainerHeader = styled.header`
 
 export const ContainerLogo = styled.div`
     padding: 2.75rem; //44px
-    //background-color: green;
     
     .icon-hamburguer{
         margin-right: 2rem;

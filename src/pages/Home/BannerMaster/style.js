@@ -60,3 +60,8 @@ export const ContainerBannerMasterContent = styled.div`
         font-size: 1rem;
     }
 ` 
+
+export const ContainerSliderNavContent = styled.div`
+    //background-color: ${({theme}) => theme.silver };
+    
+` 

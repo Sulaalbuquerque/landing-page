@@ -1,10 +1,16 @@
-import { ContainerBannerMaster, ContainerBannerMasterContent } from "./style"
+import { SliderNav } from "../SliderNav"
+import { ContainerBannerMaster, 
+        ContainerBannerMasterContent, 
+        ContainerSliderNavContent } from "./style"
 
 export const BannerMaster = () => {
     
       return (
         <>
           <ContainerBannerMaster>
+            <ContainerSliderNavContent>
+              <SliderNav/>
+            </ContainerSliderNavContent>
             <ContainerBannerMasterContent>
               <h1>MORTAL KOMBAT</h1>
               <h2>

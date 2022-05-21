@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { ContainerCard } from "./style"
-import { Success } from "../../pages/Success"
+import { Success } from "../../pages/Home/Success"
 
 export const Card = ({ img, altImg, name, value }) => {
   

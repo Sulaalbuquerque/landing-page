@@ -9,6 +9,7 @@ export const ContainerSliderNav = styled.div`
     justify-content: space-between;
     transform: rotate(90deg);
     z-index: 1;
+    display: none;
 
     .title{
         background-color: ${({ theme }) => theme.blue};

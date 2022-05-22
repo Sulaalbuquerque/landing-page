@@ -20,7 +20,7 @@ export const Header = ({ navIsVisible, setNavIsVisible }) => {
               src="assets/svgs/icon_hamburguer.svg" 
               alt="Ícone de menu"
             />
-            <img src="assets/svgs/Logo_N1_Rush_fundo_escuro_bg_tranparente-1.svg" alt="Logomarca N1" />
+            <img className="logo" src="assets/svgs/Logo_N1_Rush_fundo_escuro_bg_tranparente-1.svg" alt="Logomarca N1" />
           </div>
         </ContainerLogo>
 

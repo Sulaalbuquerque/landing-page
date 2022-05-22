@@ -5,11 +5,27 @@ export const ContainerBannerMaster = styled.section`
     background-image: url('assets/img/principal_banner_desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 45rem; // 52.5rem
-    width: 100vw;
-    margin-bottom: 18rem;
-
+    height: 40rem;
+    //height: 45rem; // 52.5rem
+    //width: 100vw;
+    //margin-bottom: 18rem;
     color: ${({ theme }) => theme.text};
+    //max-width:100vw;
+    //object-fit: contain;
+
+    @media (max-width: 770px) {
+        //background-color: blue;
+        background-image: url('assets/img/principal_banner_mobile.jpg');
+
+    }
+
+    @media (min-width: 481px) and (max-width: 770px) {
+    //background-color: gray;
+    }
+
+    @media (min-width: 771px) {
+    //background-color: orange;
+    }
 ` 
 
 export const ContainerBannerMasterContent = styled.div`
@@ -59,9 +75,32 @@ export const ContainerBannerMasterContent = styled.div`
         font-weight: 400;
         font-size: 1rem;
     }
+
+    @media (max-width: 480px) {
+    //background-color: blue;
+    }
+
+    @media (min-width: 481px) and (max-width: 770px) {
+    //background-color: gray;
+    }
+
+    @media (min-width: 771px) {
+    //background-color: orange;
+    }
 ` 
 
 export const ContainerSliderNavContent = styled.div`
     //background-color: ${({theme}) => theme.silver };
     
+    @media (max-width: 480px) {
+    //background-color: blue;
+    }
+
+    @media (min-width: 481px) and (max-width: 770px) {
+    //background-color: gray;
+    }
+
+    @media (min-width: 771px) {
+    //background-color: orange;
+    }
 ` 

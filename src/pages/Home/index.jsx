@@ -30,9 +30,9 @@ export const Home = () => {
             setNavIsVisible={setNavIsVisible}
           />
           <BannerMaster/>
-          <BannersSecondary/>
+          {/* <BannersSecondary/>
           <FeaturesProducts/>
-          <Footer/>
+          <Footer/> */}
       </ContainerHome>
     </>
   )

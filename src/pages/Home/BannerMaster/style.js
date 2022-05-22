@@ -14,7 +14,7 @@ export const ContainerBannerMaster = styled.section`
 ` 
 
 export const ContainerBannerMasterContent = styled.div`
-    background-color: rgba(0, 0, 0, .65);
+    background-color: ${({ theme }) => theme.backgroundBannerMasterContent};
     display: flex;
     flex-direction: column;
     align-items: flex-end;

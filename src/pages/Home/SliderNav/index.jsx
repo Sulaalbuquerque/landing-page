@@ -8,7 +8,7 @@ export const SliderNav = () => {
         
         <div className="title">
           <h3>MORTAL KOMBAT</h3>
-          <hr />
+          <hr className="divider" />
         </div>
 
         <div className="marker">
@@ -16,11 +16,15 @@ export const SliderNav = () => {
             <p>1 / 2</p>
           </div>
           <div className="controllers">
-            <img src="assets/svgs/angle-left-solid.svg" alt="" />
-            <img src="assets/svgs/angle-right-solid.svg" alt="" />
+            <a href="#">
+              <img src="assets/svgs/angle-left-solid.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/svgs/angle-right-solid.svg" alt="" />
+            </a>
           </div>
-
         </div>
+        
       </ContainerSliderNav>
     </>
   )

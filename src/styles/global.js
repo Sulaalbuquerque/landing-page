@@ -1,12 +1,15 @@
 import { createGlobalStyle } from 'styled-components' ;   
  
 export const GlobalStyle = createGlobalStyle`
+  html,
   body{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
-      //overflow-x: hidden;
+
+      overflow-x: hidden;
+
 
       /* a cada 1rem será considera 10px */
       //font-size: 62.5%;

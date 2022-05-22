@@ -1,54 +1,35 @@
 import styled from 'styled-components'
 
 export const ContainerBannerMaster = styled.section`
-    //background-color: ${({theme}) => theme.silver };
     background-image: url('assets/img/principal_banner_desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 40rem;
-    //height: 45rem; // 52.5rem
-    //width: 100vw;
-    //margin-bottom: 18rem;
     color: ${({ theme }) => theme.text};
-    //max-width:100vw;
-    //object-fit: contain;
+    position: relative;
 
     @media (max-width: 770px) {
-        //background-color: blue;
         background-image: url('assets/img/principal_banner_mobile.jpg');
-
-    }
-
-    @media (min-width: 481px) and (max-width: 770px) {
-    //background-color: gray;
-    }
-
-    @media (min-width: 771px) {
-    //background-color: orange;
     }
 ` 
 
 export const ContainerBannerMasterContent = styled.div`
-    //background-color: ${({theme}) => theme.silver };
+    background-color: rgba(0, 0, 0, .65);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
     position: absolute;
-    margin-top: 1rem;
-    transform: translate(45rem, 10rem);
-
+    bottom: 0;
+    padding: 1rem 2rem;
+    
     h1{
-        //background-color: pink;
         font-size: 2.9rem;
         margin: 0;
     }
 
     h2{
         margin: 0;
-        //background-color: green;
         padding-right: 2.5rem;
-        margin: .2rem 0 2rem 0;
         position: relative;
         font-size: 4.3rem;
         color: ${({ theme }) => theme.blue};
@@ -57,7 +38,6 @@ export const ContainerBannerMasterContent = styled.div`
     .cents{
         position: absolute;
         top: .6rem;
-        //background-color: orange;
         font-size: 1.75rem;
     }
 
@@ -68,39 +48,50 @@ export const ContainerBannerMasterContent = styled.div`
 
     p{
         margin: 0;
-        //background-color: blue;
-        max-width: 30rem;
         text-align: end;
         line-height: 1.55rem;
         font-weight: 400;
         font-size: 1rem;
     }
 
-    @media (max-width: 480px) {
-    //background-color: blue;
-    }
+    @media (max-width: 770px) {
 
-    @media (min-width: 481px) and (max-width: 770px) {
-    //background-color: gray;
+        h1{
+            font-size: 1.6rem;
+        }
+
+        h2{
+            font-size: 3rem;
+            margin-top: .6rem;
+        }
+
+        .cents{
+            font-size: 1.75rem;
+            top: .4rem;
+        }
     }
 
     @media (min-width: 771px) {
-    //background-color: orange;
+        background: none;
+        bottom: 20%;
+        top: 25%;
+        right: 15%;
+
+        h2{
+            margin-bottom: 1.3rem;
+        }
+
+        p{
+            max-width: 50%;
+        }
     }
 ` 
 
 export const ContainerSliderNavContent = styled.div`
-    //background-color: ${({theme}) => theme.silver };
-    
-    @media (max-width: 480px) {
-    //background-color: blue;
-    }
-
-    @media (min-width: 481px) and (max-width: 770px) {
-    //background-color: gray;
-    }
 
     @media (min-width: 771px) {
-    //background-color: orange;
+        position: absolute;
+        right: -10.3rem;
+        top: 40%;
     }
 ` 

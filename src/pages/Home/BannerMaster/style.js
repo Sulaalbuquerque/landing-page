@@ -91,7 +91,7 @@ export const ContainerSliderNavContent = styled.div`
 
     @media (min-width: 771px) {
         position: absolute;
-        right: -10.3rem;
+        right: -10.55rem;
         top: 40%;
     }
 ` 

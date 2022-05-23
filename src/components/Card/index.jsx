@@ -31,12 +31,8 @@ export const Card = ({ img, altImg, name, value }) => {
             <span className="value">{value}</span>
           </div>    
 
-          <button
-            onClick={changeStyleButton}
-          >
-            <div className="content">
-              COMPRAR
-            </div>
+          <button onClick={changeStyleButton}>
+            <div className="content">COMPRAR</div>
             <div className="success">
               <div className="text">COMPRADO!</div>
               <div className="img">

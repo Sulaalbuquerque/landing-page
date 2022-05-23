@@ -4,9 +4,7 @@ export const Nav = ({ navIsVisible }) => {
 
   return (
     <>
-      <ContainerNav 
-        navIsVisible={navIsVisible}
-      >
+      <ContainerNav navIsVisible={navIsVisible}>
 
       <div className="arrow"></div>
       

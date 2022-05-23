@@ -6,7 +6,6 @@ import { Header } from "./Header"
 import { ContainerHome } from "./style"
 
 import { useState } from "react"
-//import { Success } from "../Success"
 
 export const Home = () => {
 
@@ -21,7 +20,6 @@ export const Home = () => {
 
   return (
     <>
-      {/* <Success/> */}
       <ContainerHome 
         onClick={closeNav}
       >
@@ -31,8 +29,8 @@ export const Home = () => {
           />
           <BannerMaster/>
           <BannersSecondary/>
-          {/* <FeaturesProducts/>
-          <Footer/> */}
+          {/* <FeaturesProducts/> */}
+          <Footer/>
       </ContainerHome>
     </>
   )

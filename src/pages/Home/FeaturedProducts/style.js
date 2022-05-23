@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerFeaturesProducts = styled.section`
-   padding: 3rem 12rem;
+   //padding: 3rem 12rem;
 
    .title{
        display: flex;

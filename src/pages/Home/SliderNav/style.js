@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ContainerSliderNav = styled.div`
     display: flex;
     color: ${({ theme }) => theme.text};
+    min-width: 375px;
 
     .title{
         background-color: ${({ theme }) => theme.blue};
@@ -19,8 +20,12 @@ export const ContainerSliderNav = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
+        gap: 1.5rem;
         width: 35%;
+    }
+
+    .title-marker{
+        font-size: .71rem;
     }
 
     .controllers{

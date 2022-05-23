@@ -1,32 +1,47 @@
 import styled from 'styled-components'
 
 export const ContainerBanner = styled.div`
-    //background-color: green;
+    margin: 1rem;
+
+    a{
+        text-decoration: none;
+        width: 100%;
+    }
 
    .description-banner{
         background-color: ${({ theme }) => theme.blue};
         display: flex;
-        padding: 1.3rem;
+        align-items: center;
+        height: 1.9rem;
         border-radius: 0 0 .3rem .3rem;
         border-left: solid .6rem ${({ theme }) => theme.darkBlue};
+        position: relative;
+        top: -.5rem;
+        padding-left: .6rem;
     }
 
     img{
-        object-fit: cover;
-        width: auto;
+        width: 100%;
     }
    
-   span{
+    span{
        font-weight: 700;
-       font-size: 1rem;
+       font-size: .75rem;
         color: ${({ theme }) => theme.darkBlue};
-   }
+    }
 
-   hr{
+    hr{
        height: .06rem;
-       width: 8rem;
+       width: 25%;
        border: none;
        background-color: ${({ theme }) => theme.darkBlue};
-   }
+    }
   
+    @media (min-width: 771px) {
+        width: 40%;
+
+        a{
+            text-decoration: none;
+        }        
+    }
 ` 

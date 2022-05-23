@@ -19,7 +19,7 @@ export const ContainerSliderNav = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
         width: 35%;
     }
 

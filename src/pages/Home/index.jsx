@@ -29,7 +29,7 @@ export const Home = () => {
           />
           <BannerMaster/>
           <BannersSecondary/>
-          {/* <FeaturesProducts/> */}
+          <FeaturesProducts/>
           <Footer/>
       </ContainerHome>
     </>

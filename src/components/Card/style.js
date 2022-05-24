@@ -3,17 +3,23 @@ import { css } from 'styled-components'
 
 export const ContainerCard = styled.div`
     background-color: ${({ theme }) => theme.text};
-    width: 22rem;
     box-shadow: 0px 4px 20px 7px #00000012;
+    border-radius: .6rem;
 
-    .image{
-        height: 28rem;
+    .container-image{
+        height: 25rem;
         display: flex;
         align-items: center;
         border-bottom: solid .20rem  ${({ theme }) => theme.blue};
     }
 
+    .image-card{
+        width: 100%;
+    }
+
     .description{
+        border-radius: 0 0 .6rem .6rem;
+        height: 9rem;
         padding: 1.6rem;
         background-color: ${({ theme }) => theme.silver};
     }
@@ -43,13 +49,13 @@ export const ContainerCard = styled.div`
         border: none;
         padding: 1rem;
         border-radius: .3rem;
-        font-size: 1.1rem;
+        font-size: .9rem;
         font-weight: 900;
         color: ${({ theme }) => theme.text};
         margin-top: 1rem;
         cursor: pointer;
         position: relative;
-        width: 16rem;
+        width: 13rem;
 
         :hover{
             background-color: ${({ theme }) => theme.darkBlue};
@@ -63,6 +69,12 @@ export const ContainerCard = styled.div`
     .success{
         display: none;
     }
+
+   @media (min-width: 771px) {
+       button{
+           width: 15rem;
+       }
+   }
 
     ${({ isClickedButton }) => isClickedButton && css`
         button{
@@ -84,7 +96,7 @@ export const ContainerCard = styled.div`
 
         .img{
             position: absolute;
-            bottom: -.3rem;
+            bottom: -.2rem;
             right: 1rem;
         }
     `}

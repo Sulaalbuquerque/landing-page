@@ -1,22 +1,58 @@
 import styled from 'styled-components'
 
 export const ContainerFeaturesProducts = styled.section`
-   //padding: 3rem 12rem;
+    margin-bottom: 4rem;
 
-   .title{
-       display: flex;
-       gap: 2rem;
-   }
+    .title{
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
 
-   h3{
-       font-size: 2.25rem;
-       font-weight: 300;
-       color:  ${({theme}) => theme.darkBlue};
-   }
+    .icon-title{
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    h3{
+        font-size: 1.1rem;
+        font-weight: 300;
+        color:  ${({theme}) => theme.darkBlue};
+    }
+
+    @media (min-width: 771px) {
+        margin-top: -9rem;
+
+        .icon-title{
+            width: 1.75rem;
+            height: 1.75rem;
+            margin-left: 2rem;
+        }
+
+        h3{
+            font-size: 2.25rem;
+        }
+    } 
 ` 
 
 export const ContainerFeaturesProductsCards = styled.div`
-    //background-color: orange;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
-    gap: 1rem;
+    
+    .control{
+        padding: .6rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    @media (min-width: 1093px) {
+        .control{
+            display: none;
+        }
+    } 
 ` 

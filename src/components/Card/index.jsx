@@ -21,8 +21,8 @@ export const Card = ({ img, altImg, name, value }) => {
       />
 
       <ContainerCard isClickedButton={clickedButton}>
-        <div className="image">
-          <img src={img} alt={altImg} />
+        <div className="container-image">
+          <img className="image-card" src={img} alt={altImg} />
         </div>    
 
         <div className="description">

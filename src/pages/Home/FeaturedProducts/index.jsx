@@ -4,14 +4,6 @@ import { ContainerFeaturesProducts,
 
 export const FeaturesProducts = () => {
 
-  /* const handleLeftClick = (e) => {
-    e.preventDefault()
-  }
-
-  const handleRightClick = (e) => {
-
-  } */
-
   return (
     <>
       <ContainerFeaturesProducts>
@@ -22,17 +14,7 @@ export const FeaturesProducts = () => {
         </div>
 
         <ContainerFeaturesProductsCards>
-
-          <div className="control">
-            <img /* onClick={handleLeftClick} */ src="assets/svgs/angle-left-solid-black.svg" alt="" />
-          </div>
-
           <Carousel/>
-
-          <div className="control">
-            <img /* onClick={handleRightClick} */ src="assets/svgs/angle-right-solid-black.svg" alt="" />
-          </div>
-
         </ContainerFeaturesProductsCards>
 
       </ContainerFeaturesProducts>

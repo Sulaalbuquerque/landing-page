@@ -1,16 +1,22 @@
 import styled from 'styled-components'
 
 export const ContainerCarousel = styled.div`
-    display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+
+    .cards{
+        display: flex;
+        gap: 3rem;
+        margin: .5rem;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    }
 ` 
 
-export const ContainerCarouselCards = styled.div`
-    display: flex;
-    gap: 3rem;
-    margin: .5rem;
-` 
 
 
 

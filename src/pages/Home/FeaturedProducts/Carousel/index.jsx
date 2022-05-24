@@ -1,11 +1,29 @@
-import { ContainerCarousel, ContainerCarouselCards} from "./style"
+import { ContainerCarousel } from "./style"
 import { Card } from "../../../../components/Card"
+import { useRef } from "react"
 
 export const Carousel = () => {
+
+  const carousel = useRef(null)
+
+  const handleLeftClick = (e) => {
+    e.preventDefault()
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  }
+
+  const handleRightClick = (e) => {
+    e.preventDefault()
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  }
+
   return (
     <>
+      <div className="control">
+          <img onClick={handleLeftClick} src="assets/svgs/angle-left-solid-black.svg" alt="" />
+      </div>
+
       <ContainerCarousel>
-        <ContainerCarouselCards>
+        <div ref={carousel} className="cards">
           <Card
             img='assets/img/products/product-outriders.svg'
             name='Outriders'            
@@ -23,8 +41,13 @@ export const Carousel = () => {
             name='Donkey Kong Country Tropical Freeze'            altImg='Imagem do produto Donkey Kong Country Tropical Freeze'
             value='R$ 200,00'
           />
-        </ContainerCarouselCards>
+        </div>
+
       </ContainerCarousel>
+      
+      <div className="control">
+          <img onClick={handleRightClick} src="assets/svgs/angle-right-solid-black.svg" alt="" />
+      </div>
     </>
   )
 }

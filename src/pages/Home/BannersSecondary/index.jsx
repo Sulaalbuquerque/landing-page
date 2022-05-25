@@ -6,13 +6,13 @@ export const BannersSecondary = () => {
     <>
       <ContainerBannersSecondary>
         <Banner
-          img={'../../../../assets/img/zelda_banner.jpg'}
+          img={'../../../../assets/img/secondary-banners/zelda_banner.webp'}
           altImg={'Banner The Legend of Zelda - Breath of th wild'}
           description={'The Legend of Zelda - Breath of th wild'}
         />
 
         <Banner
-          img={'../../../../assets/img/sekiro_banner.jpg'}
+          img={'../../../../assets/img/secondary-banners/sekiro_banner.webp'}
           altImg={'Banner SEKIRO - Shadows die twice'}
           description={'SEKIRO - Shadows die twice'}
         />

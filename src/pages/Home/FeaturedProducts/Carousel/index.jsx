@@ -25,19 +25,19 @@ export const Carousel = () => {
       <ContainerCarousel>
         <div ref={carousel} className="cards">
           <Card
-            img='assets/img/products/product-outriders.svg'
+            img='assets/img/products/product-outriders.webp'
             name='Outriders'            
             altImg='Imagem do produto Outriders'
             value='R$ 200,00'
           />
           <Card
-            img='assets/img/products/product-cyberpunk2077.svg'
+            img='assets/img/products/product-cyberpunk2077.webp'
             name='CYBERPUNK 2077'
             altImg='Imagem do produto CYBERPUNK 2077'
             value='R$ 200,00'
           />
           <Card
-            img='assets/img/products/product-donkey-kong-country-tropical-freeze.svg'
+            img='assets/img/products/product-donkey-kong-country-tropical-freeze.webp'
             name='Donkey Kong Country Tropical Freeze'            altImg='Imagem do produto Donkey Kong Country Tropical Freeze'
             value='R$ 200,00'
           />

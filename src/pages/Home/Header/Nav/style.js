@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 
 export const ContainerNav = styled.div`
     color: ${({theme}) => theme.text};
-    display: flex; //none
+    display: none; //none //flex
     position: absolute;
     top: 5rem;
     left: 0;

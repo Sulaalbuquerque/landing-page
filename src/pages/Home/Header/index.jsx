@@ -6,9 +6,9 @@ export const Header = ({ navIsVisible, setNavIsVisible }) => {
 
   return (
     <>
-      <ContainerHeader>
+      <ContainerHeader navIsVisible={navIsVisible}>
         
-        <ContainerLogo>
+        <ContainerLogo navIsVisible={navIsVisible}>
           <Nav
             navIsVisible={navIsVisible}
             setNavIsVisible={setNavIsVisible}

@@ -10,11 +10,14 @@ export const ContainerHeader = styled.header`
     padding: 1.7rem 0;
     min-width: 375px;
     z-index: 2;
-    background-color: ${({theme}) => theme.darkBlue};
 
     @media (min-width: 771px) {
         background: none;
     } 
+
+    ${({ navIsVisible }) => navIsVisible && css`
+        background-color: ${({theme}) => theme.darkBlue};
+    `}
 ` 
 
 export const ContainerLogo = styled.div`
@@ -27,14 +30,14 @@ export const ContainerLogo = styled.div`
         margin: 0 1rem;
         cursor: pointer;
         height: 1.7rem;
-        display: none;
+        display: block;
     }
 
     .icon-close-hamburguer{
         position: relative;
         margin-right: 1rem;
         cursor: pointer;
-        //display: none;
+        display: none;
     }
 
     .primary{
@@ -47,18 +50,24 @@ export const ContainerLogo = styled.div`
         height: 1.7rem;
     }
 
-    @media (min-width: 771px) {
+    ${({ navIsVisible }) => navIsVisible && css`
         .icon-close-hamburguer{
-            display: none;
+            display: block;
         }
 
         .icon-hamburguer{
-            display: block;
+            display: none;
         }
-    }
 
-    ${({ navIsVisible }) => navIsVisible && css`
-        
+        @media (min-width: 771px) {
+            .icon-close-hamburguer{
+                display: none;
+            }
+
+            .icon-hamburguer{
+                display: block;
+            }
+        }
     `}
 ` 
 

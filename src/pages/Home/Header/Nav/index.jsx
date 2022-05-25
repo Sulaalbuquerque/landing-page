@@ -6,9 +6,10 @@ export const Nav = ({ navIsVisible }) => {
     <>
       <ContainerNav navIsVisible={navIsVisible}>
 
-      <div className="arrow"></div>
-      
+        <div className="arrow"></div>
+        
         <div className="lists">
+
           <div className="list">
             <h4>Luta</h4>
               <li>
@@ -50,6 +51,7 @@ export const Nav = ({ navIsVisible }) => {
                 <a href="#">Forza Horizon</a>
               </li>
           </div>
+
         </div>
 
       </ContainerNav>

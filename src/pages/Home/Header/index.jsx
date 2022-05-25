@@ -13,7 +13,11 @@ export const Header = ({ navIsVisible, setNavIsVisible }) => {
             navIsVisible={navIsVisible}
             setNavIsVisible={setNavIsVisible}
           />
-          <div className="contentLogo">
+          <div className="content-logo">
+            <div className="icon-close-hamburguer">
+              <img className="primary" src="assets\svgs\icon_hamburguer-close-2.svg"/>
+              <img className="secondary" src="assets\svgs\icon_hamburguer-close.svg"/>
+            </div>
             <img 
               onClick={() => setNavIsVisible(true)}
               className="icon-hamburguer" 

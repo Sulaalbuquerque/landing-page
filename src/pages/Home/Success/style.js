@@ -17,8 +17,8 @@ export const ContainerSuccess = styled.section`
 
     .popup{
         background-color: ${({ theme }) => theme.text};
-        width: 20%;
-        
+        position: relative;
+        padding: .8rem .8rem 0 .8rem;
     }
 
     .close{
@@ -38,6 +38,22 @@ export const ContainerSuccess = styled.section`
         text-align: center;
         font-weight: 300;
         font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    hr{
+        transform: rotate(90deg);
+        position: absolute;
+        height: 1rem;
+    }
+
+    .left{
+        left: .5rem;
+    }
+
+    .right{
+        right: .5rem;
     }
 
     ${({ isVisibleSuccess }) => isVisibleSuccess && css`

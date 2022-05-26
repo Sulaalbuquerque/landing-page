@@ -1,17 +1,17 @@
-import { Banner } from "../../../components/Banner"
+import { BannerSecondaryComponent } from "../../../components/BannerSecondaryComponent"
 import { ContainerBannersSecondary } from "./style"
 
 export const BannersSecondary = () => {
   return (
     <>
       <ContainerBannersSecondary>
-        <Banner
+        <BannerSecondaryComponent
           img={'../../../../assets/img/secondary-banners/zelda_banner.webp'}
           altImg={'Banner The Legend of Zelda - Breath of th wild'}
           description={'The Legend of Zelda - Breath of th wild'}
         />
 
-        <Banner
+        <BannerSecondaryComponent
           img={'../../../../assets/img/secondary-banners/sekiro_banner.webp'}
           altImg={'Banner SEKIRO - Shadows die twice'}
           description={'SEKIRO - Shadows die twice'}

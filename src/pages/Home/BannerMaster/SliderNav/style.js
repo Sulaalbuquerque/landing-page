@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+ import styled from 'styled-components'
 
 export const ContainerSliderNav = styled.div`
     display: flex;
@@ -31,6 +31,10 @@ export const ContainerSliderNav = styled.div`
     .controllers{
         display: flex;
         gap: 1.5rem;
+    }
+
+    .controller{
+        cursor: pointer;
     }
 
     @media (max-width: 770px) {
@@ -71,7 +75,6 @@ export const ContainerSliderNav = styled.div`
             width: 30%;
             gap: 0;
             border-radius: 0 0 1rem 0;
-
         }
 
         .title-marker{

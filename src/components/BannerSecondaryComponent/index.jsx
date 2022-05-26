@@ -1,10 +1,10 @@
-import { ContainerBanner } from "./style"
+import { ContainerBannerSecondaryComponent } from "./style"
 
-export const Banner = ({ img, altImg, description }) => {
+export const BannerSecondaryComponent = ({ img, altImg, description }) => {
     
   return (
     <>
-      <ContainerBanner>
+      <ContainerBannerSecondaryComponent>
 
         <a href="#">
           <div className="banner">
@@ -17,7 +17,7 @@ export const Banner = ({ img, altImg, description }) => {
           </div>
         </a>
         
-      </ContainerBanner> 
+      </ContainerBannerSecondaryComponent> 
     </>
   )
 }

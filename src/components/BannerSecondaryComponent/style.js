@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerBanner = styled.div`
+export const ContainerBannerSecondaryComponent = styled.div`
     margin: 1rem;
 
     a{

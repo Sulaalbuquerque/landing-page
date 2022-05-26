@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerBannerMaster = styled.section`
-    background-image: url('assets/img/principal_banner_desktop.webp');
+    background-image: url('../../../../assets/img/principal_banner_desktop.webp');
     background-size: cover;
     background-repeat: no-repeat;
     height: 40rem;

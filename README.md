@@ -1,0 +1,1 @@
+Aplicação online: https://vaga-dev-jr.vercel.app/

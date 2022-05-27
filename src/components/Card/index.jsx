@@ -2,6 +2,8 @@ import { useState } from "react"
 import { ContainerCard } from "./style"
 import { Success } from "../../pages/Home/Success"
 
+import imgGameCharacter from '../../../assets/svgs/image_6-removebg-preview-1.svg'
+
 export const Card = ({ img, altImg, name, value }) => {
   
   const [clickedButton, setClickedButton] = useState(false)
@@ -22,7 +24,11 @@ export const Card = ({ img, altImg, name, value }) => {
 
       <ContainerCard isClickedButton={clickedButton}>
         <div className="container-image">
-          <img className="image-card" src={img} alt={altImg} />
+          <img 
+            className="image-card"
+            src={img} 
+            alt={altImg} 
+          />
         </div>    
 
         <div className="description">
@@ -36,7 +42,7 @@ export const Card = ({ img, altImg, name, value }) => {
             <div className="success">
               <div className="text">COMPRADO!</div>
               <div className="img">
-                <img src="assets/svgs/image_6-removebg-preview-1.svg" alt="" />
+                <img src={imgGameCharacter} />
               </div>
             </div>
           </button>

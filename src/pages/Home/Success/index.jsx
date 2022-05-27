@@ -1,5 +1,8 @@
 import { ContainerSuccess } from "./style"
 
+import imgGameCharacter from '../../../../assets/svgs/image6.svg'
+import iconClose from '../../../../assets/svgs/close_btn.svg'
+
 export const Success = ({ successIsVisible, setSuccessIsVisible }) => {
 
   return (
@@ -11,7 +14,7 @@ export const Success = ({ successIsVisible, setSuccessIsVisible }) => {
           <div className="close">
             <img 
               onClick={() => setSuccessIsVisible(false)}
-              src="assets/svgs/close_btn.svg" 
+              src={iconClose} 
             />
           </div>
 
@@ -27,7 +30,7 @@ export const Success = ({ successIsVisible, setSuccessIsVisible }) => {
               <hr className="right"/>
             </div>
 
-            <img src="assets/svgs/image6.svg" />
+            <img src={imgGameCharacter} />
             
           </div>
 

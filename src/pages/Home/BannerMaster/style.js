@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import imgBannerMaster from '../../../../assets/img/principal_banner_desktop.webp'
+import imgBannerMasterMobile from '../../../../assets/img/principal_banner_mobile.webp'
 
 export const ContainerBannerMaster = styled.section`
     background-image: url(${imgBannerMaster});
@@ -10,7 +11,7 @@ export const ContainerBannerMaster = styled.section`
     position: relative;
 
     @media (max-width: 770px) {
-        background-image: url('assets/img/principal_banner_mobile.webp');
+        background-image: url(${imgBannerMasterMobile});
     }
 ` 
 

@@ -1,4 +1,4 @@
-import { BannerSecondaryComponent } from "../../../components/BannerSecondaryComponent"
+import { BannerSecondaryComponent } from "./BannerSecondaryComponent"
 import { ContainerBannersSecondary } from "./style"
 
 import imgBannerZelda from '../../../../assets/img/secondary-banners/zelda_banner.webp'

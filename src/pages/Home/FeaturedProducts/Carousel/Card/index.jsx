@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { ContainerCard } from "./style"
-import { Success } from "../../pages/Home/Success"
+import { Success } from "../../../Success/index"
 
-import imgGameCharacter from '../../../assets/svgs/image_6-removebg-preview-1.svg'
+import imgGameCharacter from '../../../../../../assets/svgs/image_6-removebg-preview-1.svg'
 
 export const Card = ({ img, altImg, name, value }) => {
   

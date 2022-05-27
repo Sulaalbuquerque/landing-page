@@ -1,4 +1,4 @@
-import { BannerMasterComponent } from "../../../components/BannerMasterComponent"
+import { BannerMasterComponent } from "./BannerMasterComponent"
 import { SliderNav } from "./SliderNav"
 import { ContainerBannerMaster, 
         ContainerBannerMasterContent, 

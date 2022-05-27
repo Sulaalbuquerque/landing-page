@@ -1,5 +1,5 @@
 import { ContainerCarousel } from "./style"
-import { Card } from "../../../../components/Card"
+import { Card } from "./Card"
 import { useRef } from "react"
 
 import imgProductOutriders from '../../../../../assets/img/products/product-outriders.webp'

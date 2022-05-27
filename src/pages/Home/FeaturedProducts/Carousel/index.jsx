@@ -5,6 +5,8 @@ import { useRef } from "react"
 import imgProductOutriders from '../../../../../assets/img/products/product-outriders.webp'
 import imgProductCyberpunk2077 from '../../../../../assets/img/products/product-cyberpunk2077.webp'
 import imgProductDonkeyKongCountryTropicalFreeze from '../../../../../assets/img/products/product-donkey-kong-country-tropical-freeze.webp'
+import iconArrowLeft from '../../../../../assets/svgs/angle-left-solid-black.svg'
+import iconArrowRight from '../../../../../assets/svgs/angle-right-solid-black.svg'
 
 export const Carousel = () => {
 
@@ -23,11 +25,17 @@ export const Carousel = () => {
   return (
     <>
       <div className="control">
-          <img onClick={handleLeftClick} src="assets/svgs/angle-left-solid-black.svg" alt="" />
+          <img 
+            onClick={handleLeftClick} 
+            src={iconArrowLeft} 
+          />
       </div>
 
       <ContainerCarousel>
-        <div ref={carousel} className="cards">
+        <div 
+          ref={carousel} 
+          className="cards"
+        >
           <Card
             img={imgProductOutriders}
             name='Outriders'            
@@ -51,7 +59,10 @@ export const Carousel = () => {
       </ContainerCarousel>
       
       <div className="control">
-          <img onClick={handleRightClick} src="assets/svgs/angle-right-solid-black.svg" alt="" />
+          <img 
+            onClick={handleRightClick} 
+            src={iconArrowRight} 
+          />
       </div>
     </>
   )

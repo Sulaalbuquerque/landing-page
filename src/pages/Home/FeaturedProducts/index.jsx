@@ -2,6 +2,8 @@ import { Carousel } from "./Carousel"
 import { ContainerFeaturesProducts, 
         ContainerFeaturesProductsCards } from "./style"
 
+import iconTitle from '../../../../assets/svgs/group6.svg'
+
 export const FeaturesProducts = () => {
 
   return (
@@ -9,7 +11,11 @@ export const FeaturesProducts = () => {
       <ContainerFeaturesProducts>
 
         <div className="title">
-          <img className="icon-title" src="assets/svgs/group6.svg" alt="Ícone de título" />
+          <img 
+            className="icon-title" 
+            src={iconTitle}
+            alt="Ícone de título" 
+          />
           <h3>Produtos em destaque</h3>
         </div>
 

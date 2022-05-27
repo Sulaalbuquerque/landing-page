@@ -1,5 +1,9 @@
 import { ContainerMenu } from './style'
 
+import iconContact from '../../../../../assets/svgs/paper-plane.svg'
+import iconSearch from '../../../../../assets/svgs/search-solid.svg'
+import iconBag from '../../../../../assets/svgs/shopping-bag-solid.svg'
+
 export const Menu = () => {
   return (
     <>
@@ -7,21 +11,21 @@ export const Menu = () => {
         <div className="list">
           <li>
             <a href="#">
-              <img src="assets/svgs/paper-plane.svg" alt="Ícone de contato" />
+              <img src={iconContact} alt="Ícone de contato" />
               <span>CONTATO</span>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img src="assets/svgs/search-solid.svg" alt="Ícone de contato" />
+              <img src={iconSearch} alt="Ícone de contato" />
               <span>BUSCAR</span>
             </a>
           </li>
 
           <li>
             <a className="bag" href="#">
-              <img src="assets/svgs/shopping-bag-solid.svg" alt="Ícone de contato" />
+              <img src={iconBag} alt="Ícone de contato" />
               <div className="item-counter">2</div>
             </a>
           </li>

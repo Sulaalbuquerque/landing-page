@@ -1,6 +1,9 @@
 //import { useRef, useState } from "react"
 import { ContainerSliderNav } from "./style"
 
+import iconArrowLeft from '../../../../../assets/svgs/angle-left-solid.svg'
+import iconArrowRight from '../../../../../assets/svgs/angle-right-solid.svg'
+
 export const SliderNav = () => {
 
   return (
@@ -19,11 +22,11 @@ export const SliderNav = () => {
           <div className="controllers">
               <img 
                 className="controller controller-left" 
-                src="assets/svgs/angle-left-solid.svg" 
+                src={iconArrowLeft} 
               />
               <img 
                 className="controller controller-right" 
-                src="assets/svgs/angle-right-solid.svg" 
+                src={iconArrowRight}
               />
           </div>
         </div>

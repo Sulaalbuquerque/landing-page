@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import imgBannerMaster from '../../../../assets/img/principal_banner_desktop.webp'
 
 export const ContainerBannerMaster = styled.section`
-    background-image: url('../../../../assets/img/principal_banner_desktop.webp');
+    background-image: url(${imgBannerMaster});
     background-size: cover;
     background-repeat: no-repeat;
     height: 40rem;

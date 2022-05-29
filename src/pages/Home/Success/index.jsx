@@ -1,4 +1,5 @@
 import { ContainerSuccess } from "./style"
+import { useEffect } from "react"
 
 import imgGameCharacter from '../../../../assets/svgs/image6.svg'
 import iconClose from '../../../../assets/svgs/close_btn.svg'

@@ -5,23 +5,22 @@ import { Footer } from "./Footer"
 import { Header } from "./Header"
 import { ContainerHome } from "./style"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export const Home = () => {
 
   const [navIsVisible, setNavIsVisible] = useState(false)
 
-  function closeNav () {
-
+  function closeNavDesktop () {
     if(navIsVisible === true){
-      setNavIsVisible(false)
+      setNavIsVisible(false)  
     }
   }  
 
   return (
     <>
       <ContainerHome 
-        onClick={closeNav}
+        onClick={closeNavDesktop}
       >
           <Header
             navIsVisible={navIsVisible}

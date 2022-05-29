@@ -1,6 +1,11 @@
+import { useEffect } from "react"
 import { ContainerNav } from "./style"
 
 export const Nav = ({ navIsVisible }) => {
+  
+  /* useEffect(() => {
+    document.body.style.overflowY = navIsVisible ? 'hidden' : 'auto';
+  }, [navIsVisible]); */
 
   return (
     <>

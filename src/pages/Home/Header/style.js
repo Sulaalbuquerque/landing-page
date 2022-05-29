@@ -17,6 +17,7 @@ export const ContainerHeader = styled.header`
 
     ${({ navIsVisible }) => navIsVisible && css`
         background-color: ${({theme}) => theme.darkBlue};
+        //overflow: hidden;
     `}
 ` 
 
@@ -43,7 +44,7 @@ export const ContainerLogo = styled.div`
     .primary{
         position: absolute;
         top: .1rem;
-        right: -.2rem;
+        right: -.25rem;
     }
 
     .logo{

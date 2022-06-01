@@ -1,7 +1,6 @@
 import { ContainerHeader, ContainerLogo } from "./style"
 import { Menu } from './Menu'
 import { Nav } from "./Nav"
-import { useEffect } from "react"
 
 import iconHamburguerClose from '../../../../assets/svgs/icon_hamburguer-close.svg'
 import iconHamburguerClose2 from '../../../../assets/svgs/icon_hamburguer-close-2.svg'

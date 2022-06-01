@@ -3,7 +3,6 @@ import { css } from 'styled-components'
 
 export const ContainerNav = styled.div`
     color: ${({theme}) => theme.text};
-    //display: none; //none //flex
     opacity: 0;
     position: absolute;
     top: 5rem;
@@ -14,12 +13,10 @@ export const ContainerNav = styled.div`
     border-radius: .3rem;
     background-color: ${({theme}) => theme.darkBlue};
     padding: 1rem 0 6rem 1rem;
-    //height: 700%;
 
-    transition: .5s;
+    transition: 1s;
     pointer-events: none;
     transform: translateY(0rem);
-    //overflow-y: hidden;
 
     .lists{
         z-index: 1;
@@ -124,11 +121,9 @@ export const ContainerNav = styled.div`
 
 
     ${({ navIsVisible }) => navIsVisible && css`
-        //display: flex;
         opacity: 1;
         pointer-events: auto;
         transform: translateY(.5rem);
-        //overflow-y: hidden;
 
         .list{
             transform: scale(1);

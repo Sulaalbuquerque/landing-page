@@ -17,7 +17,6 @@ export const ContainerHeader = styled.header`
 
     ${({ navIsVisible }) => navIsVisible && css`
         background-color: ${({theme}) => theme.darkBlue};
-        //overflow: hidden;
     `}
 ` 
 

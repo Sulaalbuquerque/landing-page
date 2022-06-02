@@ -1,10 +1,15 @@
 import styled from 'styled-components'
 
 export const ContainerBannerSecondaryComponent = styled.div`
-    margin: 1rem;
+    //margin: 1rem;
+    //width: 100vw;
+
 
     a{
         text-decoration: none;
+    }
+
+    img{
         width: 100%;
     }
 
@@ -19,10 +24,6 @@ export const ContainerBannerSecondaryComponent = styled.div`
         top: -.5rem;
         padding-left: .6rem;
     }
-
-    img{
-        width: 100%;
-    }
    
     span{
        font-weight: 700;
@@ -32,7 +33,7 @@ export const ContainerBannerSecondaryComponent = styled.div`
 
     hr{
        height: .06rem;
-       width: 25%;
+       width: 8rem;
        border: none;
        background-color: ${({ theme }) => theme.darkBlue};
     }

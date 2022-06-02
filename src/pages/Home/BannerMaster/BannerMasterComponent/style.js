@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
 export const ContainerBannerMasterComponent = styled.div`
-    background-color: ${({ theme }) => theme.backgroundBannerMasterContent};
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    position: absolute;
-    bottom: 0;
     padding: 1rem 2rem;
+    width: 80%;
 
     h1{
         font-size: 2.9rem;
@@ -59,10 +57,6 @@ export const ContainerBannerMasterComponent = styled.div`
     }
 
     @media (min-width: 771px) {
-        background: none;
-        bottom: 20%;
-        top: 25%;
-        right: 15%;
 
         h2{
             margin-bottom: 1.3rem;

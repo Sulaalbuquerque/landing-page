@@ -3,7 +3,9 @@
 export const ContainerSliderNav = styled.div`
     display: flex;
     color: ${({ theme }) => theme.text};
-    min-width: 375px;
+    position: absolute;
+    right: -10.49rem;
+    top: 40%;
 
     .title{
         background-color: ${({ theme }) => theme.blue};
@@ -38,13 +40,14 @@ export const ContainerSliderNav = styled.div`
     }
 
     @media (max-width: 770px) {
+        position: sticky;
+
         .divider{
             display: none;
         }
     }
 
     @media (min-width: 771px) {
-        display: flex;
         transform: rotate(90deg);
         width: 24rem;
         

@@ -21,7 +21,7 @@ export const ContainerHeader = styled.header`
 ` 
 
 export const ContainerLogo = styled.div`
-    
+
     .content-logo{
         display: flex;
     }

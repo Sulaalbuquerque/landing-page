@@ -7,14 +7,16 @@ export const BannerSecondaryComponent = ({ img, altImg, description }) => {
       <ContainerBannerSecondaryComponent>
 
         <a href="#">
+
           <div className="banner">
               <img src={img} alt={altImg} /* width='800rem' height='300rem' *//>
           </div>
-
+         
           <div className="description-banner">
             <span>{description}</span>
             <hr />
-          </div>
+        </div>
+
         </a>
         
       </ContainerBannerSecondaryComponent> 

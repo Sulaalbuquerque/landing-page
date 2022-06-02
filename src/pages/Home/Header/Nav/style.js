@@ -3,7 +3,8 @@ import { css } from 'styled-components'
 
 export const ContainerNav = styled.div`
     color: ${({theme}) => theme.text};
-    opacity: 0;
+    //opacity: 0;
+    display: none;
     position: absolute;
     top: 5rem;
     left: 0;
@@ -13,10 +14,9 @@ export const ContainerNav = styled.div`
     border-radius: .3rem;
     background-color: ${({theme}) => theme.darkBlue};
     padding: 1rem 0 6rem 1rem;
-
-    transition: 1s;
+    //transition: 1s;
     pointer-events: none;
-    transform: translateY(0rem);
+    //transform: translateY(0rem);
 
     .lists{
         z-index: 1;
@@ -88,7 +88,7 @@ export const ContainerNav = styled.div`
         .list{
             width: 10rem;
             padding: 1rem;
-            transform: scale(.7);
+            //transform: scale(.7);
             transition: .7s;
         }
 
@@ -121,12 +121,13 @@ export const ContainerNav = styled.div`
 
 
     ${({ navIsVisible }) => navIsVisible && css`
-        opacity: 1;
+        //opacity: 1;
+        display: flex;
         pointer-events: auto;
-        transform: translateY(.5rem);
+        //transform: translateY(.5rem);
 
         .list{
-            transform: scale(1);
+            //transform: scale(1);
         }
     `}
 ` 

@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerBannerSecondaryComponent = styled.div`
-    //margin: 1rem;
-    //width: 100vw;
-
+    margin: 1rem;
 
     a{
         text-decoration: none;
@@ -33,7 +31,7 @@ export const ContainerBannerSecondaryComponent = styled.div`
 
     hr{
        height: .06rem;
-       width: 8rem;
+       width: 4rem;
        border: none;
        background-color: ${({ theme }) => theme.darkBlue};
     }

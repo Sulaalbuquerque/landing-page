@@ -4,7 +4,9 @@ import { ContainerNav } from "./style"
 export const Nav = ({ navIsVisible }) => {
   
   useEffect(() => {
-    document.body.style.overflow = navIsVisible ? 'hidden' : 'auto';
+    if(window.innerWidth <= 770){
+      document.body.style.overflow = navIsVisible ? 'hidden' : 'auto';
+    }
   }, [navIsVisible]); 
   
 

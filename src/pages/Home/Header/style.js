@@ -6,7 +6,7 @@ export const ContainerHeader = styled.header`
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     padding: 1.7rem 0;
     min-width: 375px;
     z-index: 2;

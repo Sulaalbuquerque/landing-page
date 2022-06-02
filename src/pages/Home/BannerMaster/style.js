@@ -9,7 +9,6 @@ export const ContainerBannerMaster = styled.section`
     height: 40rem;
     color: ${({ theme }) => theme.text};
     position: relative;
-    width: 100vw;
     border-radius: 0 0 0 .6rem;
 
     @media (min-width: 771px) {

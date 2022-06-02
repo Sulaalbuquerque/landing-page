@@ -28,8 +28,8 @@ export const Home = () => {
           />
           <BannerMaster/> 
           <BannersSecondary/>
-          {/* <FeaturesProducts/> sim*/}
-          {/* <Footer/> */}
+          <FeaturesProducts/> 
+          <Footer/>
       </ContainerHome>
     </>
   )

@@ -8,6 +8,7 @@ export const BannersSecondary = () => {
   return (
     <>
       <ContainerBannersSecondary>
+        
         <BannerSecondaryComponent
           img={imgBannerZelda}
           altImg={'Banner The Legend of Zelda - Breath of th wild'}

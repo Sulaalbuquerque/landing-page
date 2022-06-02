@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const ContainerBannersSecondary = styled.section`
     margin: 2rem 0;
-    //background-color: green;
 
     @media (min-width: 771px) {
         display: flex;

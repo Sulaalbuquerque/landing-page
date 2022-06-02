@@ -8,7 +8,6 @@ export const ContainerNav = styled.div`
     top: 5rem;
     left: 0;
     right: 0;
-    width: 100%;
     z-index: 1;
     border-radius: .3rem;
     background-color: ${({theme}) => theme.darkBlue};

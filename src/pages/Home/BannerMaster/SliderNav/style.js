@@ -1,11 +1,10 @@
- import styled from 'styled-components'
+import styled from 'styled-components'
 
 export const ContainerSliderNav = styled.div`
     display: flex;
     color: ${({ theme }) => theme.text};
     position: absolute;
-    right: -10.49rem;
-    top: 40%;
+    width: 100%;
 
     .title{
         background-color: ${({ theme }) => theme.blue};
@@ -39,10 +38,8 @@ export const ContainerSliderNav = styled.div`
         cursor: pointer;
     }
 
-    @media (max-width: 770px) {
-        position: sticky;
-
-        .divider{
+    @media (max-width: 1000px) {
+        .title .divider{
             display: none;
         }
     }
@@ -50,6 +47,9 @@ export const ContainerSliderNav = styled.div`
     @media (min-width: 771px) {
         transform: rotate(90deg);
         width: 24rem;
+        height: 3rem;
+        right: -10.5rem;
+        top: 5rem;
         
         .title{
             background-color: ${({ theme }) => theme.blue};
@@ -88,6 +88,12 @@ export const ContainerSliderNav = styled.div`
             transform: rotate(270deg);
             gap: 1rem;
         }
+    }
+
+    @media (min-width: 771px) and (max-width: 1000px) {
+        width: 17.5rem;
+        right: -7.25rem;
+        top: 4rem;
     }
 ` 
 

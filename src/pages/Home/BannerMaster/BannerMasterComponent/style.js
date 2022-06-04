@@ -39,6 +39,8 @@ export const ContainerBannerMasterComponent = styled.div`
         font-size: 1rem;
     }
 
+    
+
     @media (max-width: 770px) {
 
         h1{
@@ -50,9 +52,36 @@ export const ContainerBannerMasterComponent = styled.div`
             margin-top: .6rem;
         }
 
-        .cents{
+        .penny{
             font-size: 1.75rem;
             top: .4rem;
+        }
+    }
+
+    @media (min-width: 771px) and (max-width: 1150px) {
+        padding-top: 0;
+
+        h1{
+            font-size: 1.2rem;
+        }
+
+        h2{
+            //background-color: green;
+            font-size: 2rem;
+            //margin-bottom: 0;
+            padding-right: 1.5rem;
+
+        }
+
+        .penny{
+            font-size: 1rem;
+            top: .4rem;
+        }
+
+        p{
+            font-size: .9rem;
+            line-height: 1.2rem;
+
         }
     }
 

@@ -1,23 +1,18 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ContainerCarouselBanner = styled.section`
-    //background-color: green;
 
-    .owl-theme{
-        //width: 100vw;
-    }
-
-    .banner{
-        max-width: 100vw;
-        //height: 100%;
-    }
-    
     .item .banner-desktop{
         display: none;
     }
 
-    @media (min-width: 550px) and (max-width: 770px) {
-        //display: none;
+    .item2{
+        display: none;
+    }
+
+    .banner{
+        width: 100%;
     }
 
     @media (min-width: 771px) {
@@ -28,7 +23,19 @@ export const ContainerCarouselBanner = styled.section`
         .item .banner-desktop{
             display: block;
         }
-    }
+    } 
+
+    ${({ isVisibleBanner1 }) => !isVisibleBanner1 && css`
+    
+        .item1{
+            display: none;
+        }
+
+        .item2{
+            display: block;
+        }
+        
+    `}
 ` 
 
 

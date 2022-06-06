@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ContainerBannerMaster = styled.section`
     color: ${({ theme }) => theme.text};
@@ -17,11 +18,26 @@ export const ContainerBannerMasterContent = styled.div`
     z-index: 1;
     background-color: ${({ theme }) => theme.backgroundBannerMasterContent};
 
+    .banner2{
+        display: none;
+    }
+
     @media (min-width: 771px) {
         bottom: auto;
         top: 30%;
         display: flex;
         background: none;
     }
+
+    ${({ isVisibleBanner1 }) => !isVisibleBanner1 && css`
+
+        .banner1{
+            display: none;
+        }
+
+        .banner2{
+            display: flex;
+        }
+    `}
 ` 
 

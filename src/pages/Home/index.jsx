@@ -5,7 +5,6 @@ import { Footer } from "./Footer"
 import { Header } from "./Header"
 import { ContainerHome } from "./style"
 
-
 import { useState, createContext} from "react";
 export const CounterContext = createContext(); 
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ContainerSliderNav = styled.div`
     display: flex;
@@ -95,5 +96,19 @@ export const ContainerSliderNav = styled.div`
         right: -7.25rem;
         top: 4rem;
     }
+
+    ${({ isVisibleBanner1 }) => isVisibleBanner1 && css`
+        .controller-left{
+            opacity: .4;
+            cursor: default;
+        }
+    `}
+
+    ${({ isVisibleBanner1 }) => !isVisibleBanner1 && css`
+        .controller-right{
+            opacity: .4;
+            cursor: default;
+        }
+    `}
 ` 
 

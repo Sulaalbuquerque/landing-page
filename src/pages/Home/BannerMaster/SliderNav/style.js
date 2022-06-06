@@ -6,6 +6,7 @@ export const ContainerSliderNav = styled.div`
     color: ${({ theme }) => theme.text};
     position: absolute;
     width: 100%;
+    bottom: -4.9rem;
 
     .title{
         background-color: ${({ theme }) => theme.blue};

@@ -13,9 +13,14 @@ export const ContainerCarouselBanner = styled.section`
 
     .banner{
         width: 100%;
+        border-radius: 0 0 0 .6rem;
     }
 
     @media (min-width: 771px) {
+        .banner{
+            border-radius: 0%;
+        }
+
         .item .banner-mobile{
             display: none;
         }

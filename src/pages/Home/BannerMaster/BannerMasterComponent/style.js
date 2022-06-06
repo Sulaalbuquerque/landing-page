@@ -39,8 +39,6 @@ export const ContainerBannerMasterComponent = styled.div`
         font-size: 1rem;
     }
 
-    
-
     @media (max-width: 770px) {
 
         h1{
@@ -66,11 +64,8 @@ export const ContainerBannerMasterComponent = styled.div`
         }
 
         h2{
-            //background-color: green;
             font-size: 2rem;
-            //margin-bottom: 0;
             padding-right: 1.5rem;
-
         }
 
         .penny{
@@ -81,7 +76,6 @@ export const ContainerBannerMasterComponent = styled.div`
         p{
             font-size: .9rem;
             line-height: 1.2rem;
-
         }
     }
 

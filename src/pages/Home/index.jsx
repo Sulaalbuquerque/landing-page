@@ -5,11 +5,15 @@ import { Footer } from "./Footer"
 import { Header } from "./Header"
 import { ContainerHome } from "./style"
 
-import { useState, useEffect } from "react"
+
+import { useState, createContext} from "react";
+export const CounterContext = createContext(); 
 
 export const Home = () => {
 
   const [navIsVisible, setNavIsVisible] = useState(false)
+
+  const [counterBag, setCounterBag] = useState(0)
 
   function closeNavDesktop () {
     if(navIsVisible === true){
@@ -19,18 +23,20 @@ export const Home = () => {
 
   return (
     <>
-      <ContainerHome 
-        onClick={closeNavDesktop}
-      >
-          <Header
-            navIsVisible={navIsVisible}
-            setNavIsVisible={setNavIsVisible}
-          />
-          <BannerMaster/> 
-          <BannersSecondary/>
-          <FeaturesProducts/> 
-          <Footer/>
-      </ContainerHome>
+      <CounterContext.Provider value={ {counterBag, setCounterBag} }>
+        <ContainerHome 
+          onClick={closeNavDesktop}
+        >
+            <Header
+              navIsVisible={navIsVisible}
+              setNavIsVisible={setNavIsVisible}
+            />
+            <BannerMaster/> 
+            <BannersSecondary/>
+            <FeaturesProducts/> 
+            <Footer/>
+        </ContainerHome>
+      </CounterContext.Provider>
     </>
   )
 }

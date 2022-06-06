@@ -1,11 +1,15 @@
-import { useState } from "react"
 import { ContainerCard } from "./style"
 import { Success } from "../../../Success/index"
 
 import imgGameCharacter from '../../../../../../assets/svgs/image_6-removebg-preview-1.svg'
 
+import { useState, useContext } from "react";
+import { CounterContext } from "../../../../Home"
+
 export const Card = ({ img, altImg, name, value }) => {
   
+  const {counterBag, setCounterBag} = useContext(CounterContext);
+
   const [clickedButton, setClickedButton] = useState(false)
 
   const [successIsVisible, setSuccessIsVisible] = useState(false)
@@ -13,6 +17,7 @@ export const Card = ({ img, altImg, name, value }) => {
   const changeStyleButton = () => {
     setClickedButton(true)
     setSuccessIsVisible(true)
+    setCounterBag(counterBag + 1)
   }
 
   return (

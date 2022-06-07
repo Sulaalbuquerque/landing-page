@@ -57,8 +57,7 @@ export const ContainerSliderNav = styled.div`
             background-color: ${({ theme }) => theme.blue};
             display: flex;
             align-items: center;
-            padding: 0 1.5rem;
-            width: 70%;
+            //width: 70%;
             border-radius: 0;
         }
 
@@ -77,7 +76,7 @@ export const ContainerSliderNav = styled.div`
             background-color: ${({ theme }) => theme.darkBlue};
             padding: .1rem 1rem;
             display: flex;
-            width: 30%;
+            //width: 30%;
             gap: 0;
             border-radius: 0 0 1rem 0;
         }
@@ -90,12 +89,30 @@ export const ContainerSliderNav = styled.div`
             transform: rotate(270deg);
             gap: 1rem;
         }
+
+        .controller{
+            cursor: pointer;
+            
+        }
     }
 
     @media (min-width: 771px) and (max-width: 1000px) {
-        width: 17.5rem;
-        right: -7.25rem;
+        width: 16.5rem;
+        right: -6.72rem;
         top: 4rem;
+
+        .title{
+            
+        }
+
+        .controllers{
+            gap: .2rem;
+        }
+
+        .controller{
+            cursor: pointer;
+            padding: .2rem;
+        }
     }
 
     ${({ isVisibleBanner1 }) => isVisibleBanner1 && css`

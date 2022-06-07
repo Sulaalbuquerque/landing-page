@@ -12,6 +12,10 @@ export const ContainerMenu = styled.div`
        list-style-type: none;
     }
 
+    .search{
+        position: relative;
+    }
+
     a{
         text-decoration: none;
         color: ${({ theme }) => theme.text};

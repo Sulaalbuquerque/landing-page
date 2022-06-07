@@ -23,18 +23,18 @@ export const Home = () => {
   return (
     <>
       <CounterContext.Provider value={ {counterBag, setCounterBag} }>
-        <ContainerHome 
-          onClick={closeNavDesktop}
-        >
-            <Header
-              navIsVisible={navIsVisible}
-              setNavIsVisible={setNavIsVisible}
-            />
-            <BannerMaster/> 
-            <BannersSecondary/>
-            <FeaturesProducts/> 
-            <Footer/>
-        </ContainerHome>
+          <ContainerHome 
+            onClick={closeNavDesktop}
+          >
+              <Header
+                navIsVisible={navIsVisible}
+                setNavIsVisible={setNavIsVisible}
+              />
+              <BannerMaster/> 
+              <BannersSecondary/>
+              <FeaturesProducts/> 
+              <Footer/>
+          </ContainerHome>
       </CounterContext.Provider>
     </>
   )

@@ -4,17 +4,20 @@ import { SliderNav } from "./SliderNav"
 import { ContainerBannerMaster, 
         ContainerBannerMasterContent } from "./style"
 
-import { useState, createContext } from "react";
+import { useState, createContext, useContext } from "react";
 export const Banner1IsVisibleContext = createContext()
+import { SearchIsVisibleContext } from "../../../contexts/SearchIsVisibleContext"; 
 
 export const BannerMaster = () => {
 
   const [banner1IsVisible, setBanner1IsVisible] = useState(true)
 
+  const { setSearchIsVisible } = useContext(SearchIsVisibleContext);
+
   return (
     <>
       <Banner1IsVisibleContext.Provider value={{ banner1IsVisible, setBanner1IsVisible }}>
-        <ContainerBannerMaster>
+        <ContainerBannerMaster onClick={() => setSearchIsVisible(false)}>
           
           <CarouselBanner/>
 

@@ -22,7 +22,7 @@ export const Home = () => {
 
   return (
     <>
-      <CounterContext.Provider value={ {counterBag, setCounterBag} }>
+      <CounterContext.Provider value={{counterBag, setCounterBag}}>
           <ContainerHome 
             onClick={closeNavDesktop}
           >

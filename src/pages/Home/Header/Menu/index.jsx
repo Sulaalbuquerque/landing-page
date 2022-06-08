@@ -1,4 +1,5 @@
 import { ContainerMenu } from './style'
+import { Search } from './Search';
 
 import iconContact from '../../../../../assets/svgs/paper-plane.svg'
 import iconSearch from '../../../../../assets/svgs/search-solid.svg'
@@ -6,14 +7,13 @@ import iconBag from '../../../../../assets/svgs/shopping-bag-solid.svg'
 
 import { useContext } from "react";
 import { CounterContext } from "../../../Home"
-import { Search } from './Search';
-import { useState } from 'react';
+import { SearchIsVisibleContext } from '../../../../contexts/SearchIsVisibleContext';
 
 export const Menu = () => {
 
   const { counterBag } = useContext(CounterContext);
 
-  const [searchIsVisible, setSearchIsVisible] = useState(false)
+  const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext);
 
   return (
     <>
@@ -27,20 +27,17 @@ export const Menu = () => {
             </a>
           </li>
           <li className='search'>
-            <Search  
-              searchIsVisible={searchIsVisible} 
-              setSearchIsVsible={setSearchIsVisible}
-            />
+            <Search/>
             <a href="#"
               onClick={() => setSearchIsVisible(true)}
             >
-              <img src={iconSearch} alt="Ícone de contato" />
+              <img src={iconSearch} alt="Ícone de busca" />
               <span>BUSCAR</span>
             </a>
           </li>
           <li>
             <a className="bag" href="#">
-              <img src={iconBag} alt="Ícone de contato" />
+              <img src={iconBag} alt="Ícone de compra" />
               <div className="item-counter">{counterBag}</div>
             </a>
           </li>

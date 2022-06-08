@@ -1,7 +1,12 @@
 import { ContainerSearch } from './style'
 import imgSearch from '../../../../../../assets/svgs/search-solid.svg'
 
-export const Search = ({ searchIsVisible, setSearchIsVisible }) => {
+import { useContext } from "react";
+import { SearchIsVisibleContext } from '../../../../../contexts/SearchIsVisibleContext'; 
+
+export const Search = () => {
+
+  const { searchIsVisible } = useContext(SearchIsVisibleContext);
 
   return (
     <>
@@ -9,9 +14,7 @@ export const Search = ({ searchIsVisible, setSearchIsVisible }) => {
         <div className="arrow"></div>
         <label htmlFor="search"></label>
         <input type="text" placeholder='Digite sua busca' />
-        <button
-          onClick={() => setSearchIsVisible(false)}
-        >
+        <button>
           <img src={imgSearch} alt="" />
         </button>
       </ContainerSearch>

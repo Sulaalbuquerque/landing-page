@@ -5,15 +5,24 @@ import { GlobalStyle } from "./styles/global"
 import { ContainerApp } from "./styles/app"
 import { Home } from './pages/Home'
 
+import { SearchIsVisibleContext } from "./contexts/SearchIsVisibleContext"
+
+import { useState } from "react"
+
 function App() {
+
+  const [searchIsVisible, setSearchIsVisible] = useState(false)
+
   return (
     <>
       <ThemeProvider theme={light}>
         <GlobalStyle/>
 
-        <ContainerApp>
-          <Home/>
-        </ContainerApp>
+        <SearchIsVisibleContext.Provider value={{searchIsVisible, setSearchIsVisible}}>
+          <ContainerApp>
+            <Home/>
+          </ContainerApp>
+        </SearchIsVisibleContext.Provider>
         
       </ThemeProvider>
     </>

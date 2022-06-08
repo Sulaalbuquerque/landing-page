@@ -1,4 +1,7 @@
-import { useState } from "react"
+import { useContext } from "react"
+
+// Contexts 
+import { NavIsVisibleContext } from "../../contexts/NavIsVisibleContext"
 
 // Components 
 import { BannerMaster } from "./BannerMaster"
@@ -13,19 +16,11 @@ import { ContainerHome } from "./style"
 
 export const Home = () => {
 
-  const [navIsVisible, setNavIsVisible] = useState(false)
-
-  function closeNavDesktop () {
-    if(navIsVisible === true){
-      setNavIsVisible(false)  
-    }
-  }  
+  const { navIsVisible, setNavIsVisible } = useContext(NavIsVisibleContext)
 
   return (
     <>
-      <ContainerHome 
-        onClick={closeNavDesktop}
-      >
+      <ContainerHome >
           <Header
           navIsVisible={navIsVisible}
           setNavIsVisible={setNavIsVisible}

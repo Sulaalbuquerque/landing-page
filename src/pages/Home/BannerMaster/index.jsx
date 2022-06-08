@@ -1,7 +1,6 @@
 import { useContext } from "react"
 
 // Contexts 
-import { SearchIsVisibleContext } from "../../../contexts/SearchIsVisibleContext"
 import { Banner1IsVisibleContext } from "../../../contexts/Banner1IsVisibleContext"
 
 //Components 
@@ -16,11 +15,10 @@ import { ContainerBannerMaster, ContainerBannerMasterContent } from "./style"
 export const BannerMaster = () => {
 
   const { banner1IsVisible } = useContext(Banner1IsVisibleContext)
-  const { setSearchIsVisible } = useContext(SearchIsVisibleContext)
 
   return (
     <>
-      <ContainerBannerMaster onClick={() => setSearchIsVisible(false)}>
+      <ContainerBannerMaster >
         
         <CarouselBanner/>
 

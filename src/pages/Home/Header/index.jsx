@@ -1,3 +1,9 @@
+import { useContext } from "react"
+
+// Contexts 
+import { SearchIsVisibleContext } from "../../../contexts/SearchIsVisibleContext"
+import { NavIsVisibleContext } from "../../../contexts/NavIsVisibleContext"
+
 //Components 
 import { Menu } from './Menu'
 import { Nav } from "./Nav"
@@ -12,11 +18,34 @@ import logo from '../../../../assets/svgs/Logo_N1_Rush_fundo_escuro_bg_tranparen
 import { ContainerHeader, ContainerLogo } from "./style"
 
 
-export const Header = ({ navIsVisible, setNavIsVisible }) => {
+export const Header = () => {
   
+  const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext)
+  const { navIsVisible, setNavIsVisible } = useContext(NavIsVisibleContext)
+ 
+  const closeSearch = () => {
+    if (searchIsVisible === true){
+      setSearchIsVisible(false)
+    }
+  }
+
+  const closeNavDesktop = () => {
+    if(navIsVisible === true){
+      setNavIsVisible(false)  
+    }
+  }  
+
+  const close = () => {
+    closeSearch()
+    closeNavDesktop()
+  }
+
   return (
     <>
-      <ContainerHeader navIsVisible={navIsVisible}>
+      <ContainerHeader 
+        navIsVisible={navIsVisible}
+        onClick={close}
+      >
         
         <ContainerLogo navIsVisible={navIsVisible}>
           <Nav

@@ -1,11 +1,17 @@
-import { ContainerCard } from "./style"
+import { useState, useContext } from "react"
+
+// Contexts 
+import { CounterBagContext }  from '../../../../../contexts/CounterBagContext'
+
+//Components 
 import { Success } from "../../../Success/index"
 
+//Imgs 
 import imgGameCharacter from '../../../../../../assets/svgs/image_6-removebg-preview-1.svg'
 
-import { useState, useContext } from "react";
+//Styles 
+import { ContainerCard } from "./style"
 
-import { CounterBagContext }  from '../../../../../contexts/CounterBagContext'
 
 export const Card = ({ img, altImg, name, value }) => {
   

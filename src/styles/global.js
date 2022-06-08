@@ -9,7 +9,3 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 ` 
-
-/* @media (max-width: 480px) {}
-@media (min-width: 481px) and (max-width: 770px) {}
-@media (min-width: 771px) {} */

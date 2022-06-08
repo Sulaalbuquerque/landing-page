@@ -1,11 +1,15 @@
+import { useState } from "react"
+
+// Components 
 import { BannerMaster } from "./BannerMaster"
 import { BannersSecondary } from "./BannersSecondary"
 import { FeaturesProducts } from "./FeaturedProducts"
 import { Footer } from "./Footer"
 import { Header } from "./Header"
+
+// Styles 
 import { ContainerHome } from "./style"
 
-import { useState } from "react";
 
 export const Home = () => {
 

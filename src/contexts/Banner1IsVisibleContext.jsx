@@ -9,7 +9,7 @@ export const Banner1IsVisibleContextProvider = ({ children }) => {
   return (
     <>
       <Banner1IsVisibleContext.Provider value={{ banner1IsVisible, setBanner1IsVisible }}>
-          {children}
+        {children}
       </Banner1IsVisibleContext.Provider>
     </>
   )

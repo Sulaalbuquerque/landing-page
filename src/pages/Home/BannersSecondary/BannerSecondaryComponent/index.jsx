@@ -1,4 +1,6 @@
+//Styles 
 import { ContainerBannerSecondaryComponent } from "./style"
+
 
 export const BannerSecondaryComponent = ({ img, altImg, description }) => {
     

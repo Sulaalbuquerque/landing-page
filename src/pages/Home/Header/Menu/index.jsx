@@ -1,17 +1,24 @@
-import { ContainerMenu } from './style'
-import { Search } from './Search';
+import { useContext } from "react"
 
+// Contexts 
+import { SearchIsVisibleContext } from '../../../../contexts/SearchIsVisibleContext'
+import { CounterBagContext }  from '../../../../contexts/CounterBagContext'
+
+//Components 
+import { Search } from './Search'
+
+//Imgs 
 import iconContact from '../../../../../assets/svgs/paper-plane.svg'
 import iconSearch from '../../../../../assets/svgs/search-solid.svg'
 import iconBag from '../../../../../assets/svgs/shopping-bag-solid.svg'
 
-import { useContext } from "react";
-import { SearchIsVisibleContext } from '../../../../contexts/SearchIsVisibleContext';
-import { CounterBagContext }  from '../../../../contexts/CounterBagContext'
+//Styles 
+import { ContainerMenu } from './style'
+
 
 export const Menu = () => {
 
-  const { counterBag, setCounterBag} = useContext(CounterBagContext);
+  const { counterBag } = useContext(CounterBagContext);
   const { setSearchIsVisible } = useContext(SearchIsVisibleContext);
 
   return (

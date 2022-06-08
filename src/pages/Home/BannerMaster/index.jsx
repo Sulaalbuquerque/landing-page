@@ -1,17 +1,22 @@
+import { useContext } from "react"
+
+// Contexts 
+import { SearchIsVisibleContext } from "../../../contexts/SearchIsVisibleContext"
+import { Banner1IsVisibleContext } from "../../../contexts/Banner1IsVisibleContext"
+
+//Components 
 import { BannerMasterComponent } from "./BannerMasterComponent"
 import { CarouselBanner } from "./CarouselBanner"
 import { SliderNav } from "./SliderNav"
-import { ContainerBannerMaster, 
-        ContainerBannerMasterContent } from "./style"
 
-import { useContext } from "react";
-import { SearchIsVisibleContext } from "../../../contexts/SearchIsVisibleContext"; 
-import { Banner1IsVisibleContext } from "../../../contexts/Banner1IsVisibleContext";
+//Styles 
+import { ContainerBannerMaster, ContainerBannerMasterContent } from "./style"
+
 
 export const BannerMaster = () => {
 
-  const { banner1IsVisible, setBanner1IsVisible} = useContext(Banner1IsVisibleContext);
-  const { setSearchIsVisible } = useContext(SearchIsVisibleContext);
+  const { banner1IsVisible } = useContext(Banner1IsVisibleContext)
+  const { setSearchIsVisible } = useContext(SearchIsVisibleContext)
 
   return (
     <>

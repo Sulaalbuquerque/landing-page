@@ -1,12 +1,18 @@
-import { ContainerCarousel } from "./style"
-import { Card } from "./Card"
 import { useRef } from "react"
 
+//Components 
+import { Card } from "./Card"
+
+//Imgs 
 import imgProductOutriders from '../../../../../assets/img/products/product-outriders.webp'
 import imgProductCyberpunk2077 from '../../../../../assets/img/products/product-cyberpunk2077.webp'
 import imgProductDonkeyKongCountryTropicalFreeze from '../../../../../assets/img/products/product-donkey-kong-country-tropical-freeze.webp'
 import iconArrowLeft from '../../../../../assets/svgs/angle-left-solid-black.svg'
 import iconArrowRight from '../../../../../assets/svgs/angle-right-solid-black.svg'
+
+//Styles 
+import { ContainerCarousel } from "./style"
+
 
 export const Carousel = () => {
 

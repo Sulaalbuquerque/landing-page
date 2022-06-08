@@ -9,7 +9,7 @@ export const CounterBagContextProvider = ({ children }) => {
   return (
     <>
       <CounterBagContext.Provider value={{ counterBag, setCounterBag }}>
-          {children}
+        {children}
       </CounterBagContext.Provider>
     </>
   )

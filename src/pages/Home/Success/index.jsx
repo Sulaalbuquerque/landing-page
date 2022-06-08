@@ -1,8 +1,12 @@
-import { ContainerSuccess } from "./style"
 import { useEffect } from "react"
 
+//Imgs 
 import imgGameCharacter from '../../../../assets/svgs/image6.svg'
 import iconClose from '../../../../assets/svgs/close_btn.svg'
+
+//Styles 
+import { ContainerSuccess } from "./style"
+
 
 export const Success = ({ successIsVisible, setSuccessIsVisible }) => {
 

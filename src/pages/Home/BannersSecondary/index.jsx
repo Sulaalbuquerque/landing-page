@@ -1,8 +1,13 @@
+//Components 
 import { BannerSecondaryComponent } from "./BannerSecondaryComponent"
-import { ContainerBannersSecondary } from "./style"
 
+//Imgs 
 import imgBannerZelda from '../../../../assets/img/secondary-banners/zelda_banner.webp'
 import imgBannerSekiro from '../../../../assets/img/secondary-banners/sekiro_banner.webp'
+
+//Styles 
+import { ContainerBannersSecondary } from "./style"
+
 
 export const BannersSecondary = () => {
   return (

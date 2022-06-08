@@ -4,14 +4,14 @@ import { Success } from "../../../Success/index"
 import imgGameCharacter from '../../../../../../assets/svgs/image_6-removebg-preview-1.svg'
 
 import { useState, useContext } from "react";
-import { CounterContext } from "../../../../Home"
+
+import { CounterBagContext }  from '../../../../../contexts/CounterBagContext'
 
 export const Card = ({ img, altImg, name, value }) => {
   
-  const {counterBag, setCounterBag} = useContext(CounterContext);
+  const { counterBag, setCounterBag} = useContext(CounterBagContext);
 
   const [clickedButton, setClickedButton] = useState(false)
-
   const [successIsVisible, setSuccessIsVisible] = useState(false)
 
   const changeStyleButton = () => {

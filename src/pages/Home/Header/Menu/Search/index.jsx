@@ -15,7 +15,7 @@ export const Search = () => {
         <label htmlFor="search"></label>
         <input type="text" placeholder='Digite sua busca' />
         <button>
-          <img src={imgSearch} alt="" />
+          <img src={imgSearch} />
         </button>
       </ContainerSearch>
     </>

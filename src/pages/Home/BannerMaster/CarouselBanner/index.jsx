@@ -8,11 +8,11 @@ import imgBanner2Desktop from '../../../../../assets/img/principal_banner_deskto
 import imgBanner2Mobile from '../../../../../assets/img/principal_banner_mobile_02.webp'
 
 import { useContext } from "react";
-import { Banner1IsVisibleContext } from "..";
+import { Banner1IsVisibleContext } from "../../../../contexts/Banner1IsVisibleContext";
 
 export const CarouselBanner = () => {
 
-  const { banner1IsVisible } = useContext(Banner1IsVisibleContext);  
+  const { banner1IsVisible, setBanner1IsVisible} = useContext(Banner1IsVisibleContext);
 
   return (
     <>

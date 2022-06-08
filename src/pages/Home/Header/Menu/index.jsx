@@ -6,14 +6,13 @@ import iconSearch from '../../../../../assets/svgs/search-solid.svg'
 import iconBag from '../../../../../assets/svgs/shopping-bag-solid.svg'
 
 import { useContext } from "react";
-import { CounterContext } from "../../../Home"
 import { SearchIsVisibleContext } from '../../../../contexts/SearchIsVisibleContext';
+import { CounterBagContext }  from '../../../../contexts/CounterBagContext'
 
 export const Menu = () => {
 
-  const { counterBag } = useContext(CounterContext);
-
-  const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext);
+  const { counterBag, setCounterBag} = useContext(CounterBagContext);
+  const { setSearchIsVisible } = useContext(SearchIsVisibleContext);
 
   return (
     <>

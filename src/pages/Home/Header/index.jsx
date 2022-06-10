@@ -57,7 +57,10 @@ export const Header = () => {
         onClick={close}
       >
         
-        <ContainerLogo navIsVisible={navIsVisible}>
+        <ContainerLogo 
+          navIsVisible={navIsVisible}
+          contactIsVisible={contactIsVisible}
+        >
           <Nav
             navIsVisible={navIsVisible}
             setNavIsVisible={setNavIsVisible}

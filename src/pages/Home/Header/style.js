@@ -15,11 +15,11 @@ export const ContainerHeader = styled.header`
         background: none;
     } 
 
-    ${({ navIsVisible }) => navIsVisible && css`
+    ${({ contactIsVisible }) => contactIsVisible && css`
         background-color: ${({theme}) => theme.darkBlue};
     `}
 
-    ${({ contactIsVisible }) => contactIsVisible && css`
+    ${({ navIsVisible }) => navIsVisible && css`
         background-color: ${({theme}) => theme.darkBlue};
     `}
 ` 
@@ -53,6 +53,26 @@ export const ContainerLogo = styled.div`
     .logo{
         height: 1.7rem;
     }
+
+    ${({ contactIsVisible }) => contactIsVisible && css`
+        .icon-close-hamburguer{
+            display: block;
+        }
+
+        .icon-hamburguer{
+            display: none;
+        }
+
+        @media (min-width: 771px) {
+            .icon-close-hamburguer{
+                display: none;
+            }
+
+            .icon-hamburguer{
+                display: block;
+            }
+        }
+    `}
 
     ${({ navIsVisible }) => navIsVisible && css`
         .icon-close-hamburguer{

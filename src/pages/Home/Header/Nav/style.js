@@ -50,7 +50,7 @@ export const ContainerNav = styled.div`
 
     @media (min-width: 771px) {
         padding: 0 1rem 1rem 1rem;
-        top: 7rem;
+        top: 6rem;
         left: auto;
         right: auto;
         bottom: auto;
@@ -113,7 +113,6 @@ export const ContainerNav = styled.div`
             }
         }
     } 
-
 
     ${({ navIsVisible }) => navIsVisible && css`
         display: flex;

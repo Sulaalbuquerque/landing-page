@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 
 // Contexts 
 import { ContactIsVisibleContext } from '../../../../../contexts/ContactIsVisibleContext'
@@ -8,7 +8,13 @@ import { ContainerContact } from "./style"
 
 export const Contact = () => {
 
-  const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext);
+  const { contactIsVisible } = useContext(ContactIsVisibleContext);
+
+  useEffect(() => {
+    if(window.innerWidth <= 770){
+      document.body.style.overflow = contactIsVisible ? 'hidden' : 'auto';
+    }
+  }, [contactIsVisible]); 
 
   return (
     <>
@@ -35,6 +41,8 @@ export const Contact = () => {
               <textarea placeholder="Sua mensagem" rows={7}/>
             </div>
           </div>
+
+          <p>* Campos necessários</p>
 
           <button type="submit">Enviar mensagem</button>
         </form>

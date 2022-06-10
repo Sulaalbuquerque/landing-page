@@ -1,10 +1,15 @@
-import { useEffect } from "react"
+import { useEffect, useContext } from "react"
+
+// Contexts 
+import { NavIsVisibleContext } from "../../../../contexts/NavIsVisibleContext"
 
 //Styles 
 import { ContainerNav } from "./style"
 
 
-export const Nav = ({ navIsVisible }) => {
+export const Nav = () => {
+
+  const { navIsVisible } = useContext(NavIsVisibleContext)
   
   useEffect(() => {
     if(window.innerWidth <= 770){
@@ -12,7 +17,6 @@ export const Nav = ({ navIsVisible }) => {
     }
   }, [navIsVisible]); 
   
-
   return (
     <>
       <ContainerNav navIsVisible={navIsVisible}>

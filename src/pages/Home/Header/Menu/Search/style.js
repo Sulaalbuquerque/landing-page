@@ -56,7 +56,6 @@ export const ContainerSearch = styled.div`
         .arrow{
             right: 5rem;
         }
-        
     }
 
     ${({ isVisibleSearch }) => isVisibleSearch && css`

@@ -22,7 +22,7 @@ export const Menu = () => {
 
   const { counterBag } = useContext(CounterBagContext);
   const { setSearchIsVisible } = useContext(SearchIsVisibleContext);
-  const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext);
+  const { setContactIsVisible } = useContext(ContactIsVisibleContext);
 
   return (
     <>

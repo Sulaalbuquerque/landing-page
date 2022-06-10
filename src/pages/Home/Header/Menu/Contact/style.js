@@ -12,6 +12,12 @@ export const ContainerContact = styled.div`
     font-size: 1.2rem;
     display: none;
 
+    p{
+        color: ${({theme}) => theme.blue};
+        font-size: .8rem;
+        margin-bottom: 2rem;
+    }
+
     .arrow{
         display: none;
     }
@@ -26,7 +32,7 @@ export const ContainerContact = styled.div`
     
     .asterisk{
         display: inline;
-        color: red;
+        color: ${({theme}) => theme.blue};
         margin-left: .5rem;
     }
 
@@ -45,7 +51,6 @@ export const ContainerContact = styled.div`
         color: ${({theme}) => theme.text};
         font-size: 1rem;
         padding: .5rem;
-        
     }
 
     button{
@@ -56,6 +61,10 @@ export const ContainerContact = styled.div`
         background-color: ${({theme}) => theme.background};
         cursor: pointer;
         font-size: 1rem;
+
+        :hover{
+            background-color: ${({theme}) => theme.blue};
+        }
     }
     
     @media (min-width: 771px) {
@@ -69,6 +78,7 @@ export const ContainerContact = styled.div`
         border: solid .13rem ${({theme}) => theme.blue};
         border-radius: .3rem;
         box-shadow: .6rem .6rem ${({theme}) => theme.blue};
+        font-size: .9rem;
 
         .arrow{
             display: block;

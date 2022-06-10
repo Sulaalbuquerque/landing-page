@@ -6,7 +6,7 @@ export const ContainerSearch = styled.div`
     position: absolute;
     padding: .5rem 1rem .5rem 0;
     top: 4rem;
-    right: -1rem; 
+    right: -4rem; 
     display: none;
     gap: 1rem;
     border-radius: .3rem;
@@ -18,7 +18,7 @@ export const ContainerSearch = styled.div`
         z-index: -1;
         position: absolute;
         top: -.6rem;
-        right: 1.5rem;
+        right: 4.4rem;
         height: 1.12rem;
         width: 1.12rem;
         background-color: ${({theme}) => theme.blue};
@@ -54,7 +54,7 @@ export const ContainerSearch = styled.div`
         }
 
         .arrow{
-            right: 5rem;
+            right: 8rem;
         }
     }
 

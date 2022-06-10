@@ -10,24 +10,27 @@ import iconArrowRight from '../../../../../assets/svgs/angle-right-solid.svg'
 //Styles 
 import { ContainerSliderNav } from "./style"
 
+//Datas
+import { gamesBanners } from "../CarouselBanner"
+
 
 export const SliderNav = () => {
 
   const { banner1IsVisible, setBanner1IsVisible} = useContext(Banner1IsVisibleContext);
 
-  const [titleSlider, setTitleSlider] = useState('MORTAL KOMBAT')
-  const [counterSlider, setCounterSlider] = useState('1')
+  const [titleSlider, setTitleSlider] = useState(gamesBanners[0].title)
+  const [counterSlider, setCounterSlider] = useState(gamesBanners[0].slide)
 
   const showBanner1 = () => {
     setBanner1IsVisible(true)
-    setTitleSlider('MORTAL KOMBAT')
-    setCounterSlider('1')
+    setTitleSlider(gamesBanners[0].title)
+    setCounterSlider(gamesBanners[0].slide)
   }
 
   const showBanner2 = () => {
     setBanner1IsVisible(false)
-    setTitleSlider('RED DEAD II')
-    setCounterSlider('2')
+    setTitleSlider(gamesBanners[1].title)
+    setCounterSlider(gamesBanners[1].slide)
   }
 
   return (

@@ -11,6 +11,8 @@ import { SliderNav } from "./SliderNav"
 //Styles 
 import { ContainerBannerMaster, ContainerBannerMasterContent } from "./style"
 
+//Datas
+import { gamesBanners } from "./CarouselBanner"
 
 export const BannerMaster = () => {
 
@@ -25,18 +27,18 @@ export const BannerMaster = () => {
         <ContainerBannerMasterContent isVisibleBanner1={banner1IsVisible}>
           <BannerMasterComponent
             className={'banner1'}
-            title={'MORTAL KOMBAT'}
-            value={'299'}
-            penny={'99'}
-            description={'Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.'}
+            title={gamesBanners[0].title}
+            value={gamesBanners[0].value}
+            penny={gamesBanners[0].penny}
+            description={gamesBanners[0].description}
           />
 
           <BannerMasterComponent
             className={'banner2'}
-            title={'RED DEAD II'}
-            value={'289'}
-            penny={'99'}
-            description={"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."}
+            title={gamesBanners[1].title}
+            value={gamesBanners[1].value}
+            penny={gamesBanners[1].penny}
+            description={gamesBanners[1].description}
           />
           
           <SliderNav />

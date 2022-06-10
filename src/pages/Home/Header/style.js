@@ -18,6 +18,10 @@ export const ContainerHeader = styled.header`
     ${({ navIsVisible }) => navIsVisible && css`
         background-color: ${({theme}) => theme.darkBlue};
     `}
+
+    ${({ contactIsVisible }) => contactIsVisible && css`
+        background-color: ${({theme}) => theme.darkBlue};
+    `}
 ` 
 
 export const ContainerLogo = styled.div`

@@ -57,5 +57,9 @@ export const ContainerMenu = styled.div`
         .item-counter{
             right: .4rem;
         }
+
+        .contact{
+            position: relative;
+        }
     }
 ` 

@@ -8,6 +8,7 @@ import { CounterBagContextProvider } from "./contexts/CounterBagContext"
 import { Banner1IsVisibleContextProvider } from './contexts/Banner1IsVisibleContext'
 import { NavIsVisibleContextProvider } from "./contexts/NavIsVisibleContext"
 import { ContactIsVisibleContextProvider } from "./contexts/ContactIsVisibleContext"
+import { BagIsVisibleContextProvider } from "./contexts/BagIsVisibleContext"
 
 // Components
 import { Home } from './pages/Home'
@@ -25,15 +26,18 @@ function App() {
         <NavIsVisibleContextProvider>
           <ContactIsVisibleContextProvider>
             <SearchIsVisibleContextProvider>
-              <CounterBagContextProvider>
-                <Banner1IsVisibleContextProvider>
+              <BagIsVisibleContextProvider>
+                <CounterBagContextProvider>
+                  <Banner1IsVisibleContextProvider>
 
-                  <ContainerApp>
-                    <Home/>
-                  </ContainerApp>
+                    <ContainerApp>
+                      <Home/>
+                    </ContainerApp>
 
-                </Banner1IsVisibleContextProvider>
-              </CounterBagContextProvider>
+                  </Banner1IsVisibleContextProvider>
+                </CounterBagContextProvider>
+              </BagIsVisibleContextProvider>
+              
             </SearchIsVisibleContextProvider>
           </ContactIsVisibleContextProvider>
         </NavIsVisibleContextProvider>

@@ -61,5 +61,9 @@ export const ContainerMenu = styled.div`
         .contact{
             position: relative;
         }
+
+        .bag-li{
+            position: relative;
+        }
     }
 ` 

@@ -4,7 +4,7 @@ import { useContext } from "react"
 import { SearchIsVisibleContext } from '../../../../contexts/SearchIsVisibleContext'
 import { CounterBagContext }  from '../../../../contexts/CounterBagContext'
 import { ContactIsVisibleContext } from '../../../../contexts/ContactIsVisibleContext'
-
+import { BagIsVisibleContext } from "../../../../contexts/BagIsVisibleContext"
 //Components 
 import { Search } from './Search'
 import { Contact } from "./Contact"
@@ -16,6 +16,7 @@ import iconBag from '../../../../../assets/svgs/shopping-bag-solid.svg'
 
 //Styles 
 import { ContainerMenu } from './style'
+import { Bag } from "./Bag"
 
 
 export const Menu = () => {
@@ -23,12 +24,14 @@ export const Menu = () => {
   const { counterBag } = useContext(CounterBagContext);
   const { setSearchIsVisible } = useContext(SearchIsVisibleContext);
   const { setContactIsVisible } = useContext(ContactIsVisibleContext);
+  const { setBagIsVisible } = useContext(BagIsVisibleContext);
 
   return (
     <>
       <ContainerMenu>
         
         <div className="list">
+
           <li className='contact'>
             <Contact/>
             <a href="#"
@@ -38,6 +41,7 @@ export const Menu = () => {
               <span>CONTATO</span>
             </a>
           </li>
+
           <li className='search'>
             <Search/>
             <a href="#"
@@ -47,12 +51,19 @@ export const Menu = () => {
               <span>BUSCAR</span>
             </a>
           </li>
-          <li>
-            <a className="bag" href="#">
+
+          <li className="bag-li">
+            <Bag/>
+            <a 
+              className="bag" 
+              href="#" 
+              onClick={() => setBagIsVisible(true)}
+            >
               <img src={iconBag} alt="Ícone de compra" />
               <div className="item-counter">{counterBag}</div>
             </a>
           </li>
+
         </div>
       </ContainerMenu>
     </>

@@ -4,7 +4,7 @@ import { useContext } from "react"
 import { SearchIsVisibleContext } from "../../../contexts/SearchIsVisibleContext"
 import { NavIsVisibleContext } from "../../../contexts/NavIsVisibleContext"
 import { ContactIsVisibleContext } from '../../../contexts/ContactIsVisibleContext'
-
+import { BagIsVisibleContext } from "../../../contexts/BagIsVisibleContext"
 //Components 
 import { Menu } from './Menu'
 import { Nav } from "./Nav"
@@ -24,6 +24,7 @@ export const Header = () => {
   const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext)
   const { navIsVisible, setNavIsVisible } = useContext(NavIsVisibleContext)
   const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext);
+  const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext);
  
   const closeSearch = () => {
     if (searchIsVisible === true){
@@ -43,10 +44,17 @@ export const Header = () => {
     }
   }  
 
+  const closeBag = () => {
+    if (bagIsVisible === true){
+      setBagIsVisible(false)
+    }
+  }
+
   const close = () => {
     closeSearch()
     closeNavDesktop()
     closeContact()
+    closeBag()
   }
 
   return (
@@ -54,12 +62,14 @@ export const Header = () => {
       <ContainerHeader 
         navIsVisible={navIsVisible}
         contactIsVisible={contactIsVisible}
+        bagIsVisible={bagIsVisible}
         onClick={close}
       >
         
         <ContainerLogo 
           navIsVisible={navIsVisible}
           contactIsVisible={contactIsVisible}
+          bagIsVisible={bagIsVisible}
         >
           <Nav
             navIsVisible={navIsVisible}

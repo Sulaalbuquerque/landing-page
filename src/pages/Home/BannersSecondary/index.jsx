@@ -1,10 +1,7 @@
-//Components 
 import { BannerSecondaryComponent } from "./BannerSecondaryComponent"
 
-//Styles 
 import { ContainerBannersSecondary } from "./style"
 
-//Datas
 const gamesSecondarybanners = [
   {
     img: '../../../../assets/img/secondary-banners/zelda_banner.webp',
@@ -19,6 +16,7 @@ const gamesSecondarybanners = [
 ]
 
 export const BannersSecondary = () => {
+
   return (
     <>
       <ContainerBannersSecondary>
@@ -34,6 +32,7 @@ export const BannersSecondary = () => {
           altImg={gamesSecondarybanners[1].altImg}
           description={gamesSecondarybanners[1].description}
         />
+        
       </ContainerBannersSecondary>
     </>
   )

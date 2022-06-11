@@ -1,6 +1,10 @@
 import { ContainerBannerMasterComponent } from "./style"
 
-export const BannerMasterComponent = ({ title, value, penny, description, className }) => {
+export const BannerMasterComponent = ({ title, 
+                                        value, 
+                                        penny, 
+                                        description, 
+                                        className }) => {
   return (
     <>
       <ContainerBannerMasterComponent

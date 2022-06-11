@@ -1,17 +1,13 @@
 import { useContext } from "react"
 
-// Contexts 
 import { Banner1IsVisibleContext } from "../../../contexts/Banner1IsVisibleContext"
 
-//Components 
 import { BannerMasterComponent } from "./BannerMasterComponent"
 import { CarouselBanner } from "./CarouselBanner"
 import { SliderNav } from "./SliderNav"
 
-//Styles 
 import { ContainerBannerMaster, ContainerBannerMasterContent } from "./style"
 
-//Datas
 import { gamesBanners } from "./CarouselBanner"
 
 export const BannerMaster = () => {

@@ -1,23 +1,19 @@
 import { useContext } from "react"
 
-// Contexts 
 import { SearchIsVisibleContext } from "../../../contexts/SearchIsVisibleContext"
 import { NavIsVisibleContext } from "../../../contexts/NavIsVisibleContext"
 import { ContactIsVisibleContext } from '../../../contexts/ContactIsVisibleContext'
 import { BagIsVisibleContext } from "../../../contexts/BagIsVisibleContext"
-//Components 
+
 import { Menu } from './Menu'
 import { Nav } from "./Nav"
 
-//Imgs 
 import iconHamburguerClose from '../../../../assets/svgs/icon_hamburguer-close.svg'
 import iconHamburguerClose2 from '../../../../assets/svgs/icon_hamburguer-close-2.svg'
 import iconHamburguer from '../../../../assets/svgs/icon_hamburguer.svg'
 import logo from '../../../../assets/svgs/Logo_N1_Rush_fundo_escuro_bg_tranparente-1.svg'
 
-//Styles 
 import { ContainerHeader, ContainerLogo } from "./style"
-
 
 export const Header = () => {
   

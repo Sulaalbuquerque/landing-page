@@ -1,9 +1,7 @@
 import { useContext, useEffect } from "react"
 
-// Contexts 
 import { ContactIsVisibleContext } from '../../../../../contexts/ContactIsVisibleContext'
 
-//Styles 
 import { ContainerContact } from "./style"
 
 export const Contact = () => {

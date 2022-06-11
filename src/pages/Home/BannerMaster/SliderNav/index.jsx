@@ -1,18 +1,13 @@
 import { useState, useContext } from "react"
 
-// Contexts 
 import { Banner1IsVisibleContext } from "../../../../contexts/Banner1IsVisibleContext"
 
-//Imgs 
 import iconArrowLeft from '../../../../../assets/svgs/angle-left-solid.svg'
 import iconArrowRight from '../../../../../assets/svgs/angle-right-solid.svg'
 
-//Styles 
 import { ContainerSliderNav } from "./style"
 
-//Datas
 import { gamesBanners } from "../CarouselBanner"
-
 
 export const SliderNav = () => {
 

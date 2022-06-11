@@ -1,12 +1,9 @@
 import { useContext } from "react"
 
-// Contexts 
 import { Banner1IsVisibleContext } from "../../../../contexts/Banner1IsVisibleContext"
 
-//Styles 
 import { ContainerCarouselBanner} from "./style"
 
-//Datas
 export const gamesBanners = [
   {
     slide: '1',

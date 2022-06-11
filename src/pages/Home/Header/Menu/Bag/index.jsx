@@ -1,13 +1,10 @@
 import { useContext, useEffect } from "react"
 
-// Contexts 
 import { BagIsVisibleContext } from '../../../../../contexts/BagIsVisibleContext'
 import { CounterBagContext } from '../../../../../contexts/CounterBagContext'
 
-//imgs
 import imgArrowLeft from '../../../../../../assets/svgs/angle-left-solid.svg'
 
-//Styles 
 import { ContainerBag } from "./style"
 
 export const Bag = () => {

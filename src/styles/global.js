@@ -7,5 +7,14 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      background-color: ${({ theme }) => theme.silver};
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: ${({ theme }) => theme.darkBlue};
+    }
   }
 ` 

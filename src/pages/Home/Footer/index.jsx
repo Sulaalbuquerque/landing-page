@@ -1,9 +1,6 @@
-//Imgs 
 import logoFooter from '../../../../assets/svgs/logo_header-1.svg'
 
-//Styles 
 import { ContainerFooter } from "./style"
-
 
 export const Footer = () => {
   return (

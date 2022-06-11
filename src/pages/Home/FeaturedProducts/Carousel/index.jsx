@@ -1,13 +1,10 @@
 import { useRef } from "react"
 
-//Components 
 import { Card } from "./Card"
 
-//Imgs 
 import iconArrowLeft from '../../../../../assets/svgs/angle-left-solid-black.svg'
 import iconArrowRight from '../../../../../assets/svgs/angle-right-solid-black.svg'
 
-//Styles 
 import { ContainerCarousel } from "./style"
 
 const games = [

@@ -1,12 +1,9 @@
-//Components 
 import { Carousel } from "./Carousel"
 
-//Imgs 
 import iconTitle from '../../../../assets/svgs/group6.svg'
 
-//Styles 
-import { ContainerFeaturesProducts, ContainerFeaturesProductsCards } from "./style"
-
+import { ContainerFeaturesProducts, 
+         ContainerFeaturesProductsCards } from "./style"
 
 export const FeaturesProducts = () => {
 

@@ -1,14 +1,10 @@
 import { useContext } from "react"
 
-// Contexts 
 import { SearchIsVisibleContext } from '../../../../../contexts/SearchIsVisibleContext'
 
-//Imgs 
 import imgSearch from '../../../../../../assets/svgs/search-solid.svg'
 
-//Styles 
 import { ContainerSearch } from './style'
-
 
 export const Search = () => {
 

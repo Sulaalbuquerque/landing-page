@@ -1,11 +1,8 @@
 import { useEffect, useContext } from "react"
 
-// Contexts 
 import { NavIsVisibleContext } from "../../../../contexts/NavIsVisibleContext"
 
-//Styles 
 import { ContainerNav } from "./style"
-
 
 export const Nav = () => {
 

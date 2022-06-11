@@ -2,14 +2,19 @@ import { useContext } from "react"
 
 import { Banner1IsVisibleContext } from "../../../../contexts/Banner1IsVisibleContext"
 
+import imgMobileSlide1 from '../../../../../assets/img/principal_banner_mobile.webp'
+import imgMobileSlide2 from '../../../../../assets/img/principal_banner_mobile_02.webp'
+import imgDesktopSlide1 from '../../../../../assets/img/principal_banner_desktop.webp'
+import imgDesktopSlide2 from '../../../../../assets/img/principal_banner_desktop_02.webp'
+
 import { ContainerCarouselBanner} from "./style"
 
 export const gamesBanners = [
   {
     slide: '1',
     title: 'MORTAL KOMBAT',
-    imgMobile: '../../../../../assets/img/principal_banner_mobile.webp',
-    imgDesktop: '../../../../../assets/img/principal_banner_desktop.webp',
+    imgMobile: imgMobileSlide1,
+    imgDesktop: imgDesktopSlide1,
     value: '299',
     penny: '99',
     description: 'Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.'
@@ -17,8 +22,8 @@ export const gamesBanners = [
   {
     slide:'2',
     title: 'RED DEAD II',
-    imgMobile: '../../../../../assets/img/principal_banner_mobile_02.webp',
-    imgDesktop: '../../../../../assets/img/principal_banner_desktop_02.webp',
+    imgMobile: imgMobileSlide2,
+    imgDesktop: imgDesktopSlide2,
     value: '289',
     penny: '99',
     description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."

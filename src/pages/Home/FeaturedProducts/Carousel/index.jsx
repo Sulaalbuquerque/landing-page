@@ -2,6 +2,9 @@ import { useRef } from "react"
 
 import { Card } from "./Card"
 
+import imgGameOutriders from '../../../../../assets/img/products/product-outriders.webp'
+import imgGameCyberpunk2077 from '../../../../../assets/img/products/product-cyberpunk2077.webp'
+import imgGameDonkeyKongCountryTropicalFreeze from '../../../../../assets/img/products/product-donkey-kong-country-tropical-freeze.webp'
 import iconArrowLeft from '../../../../../assets/svgs/angle-left-solid-black.svg'
 import iconArrowRight from '../../../../../assets/svgs/angle-right-solid-black.svg'
 
@@ -9,19 +12,19 @@ import { ContainerCarousel } from "./style"
 
 const games = [
   {
-    img: '../../../../../assets/img/products/product-outriders.webp',
+    img: imgGameOutriders,
     name: 'Outriders', 
     altImg:'Imagem do produto Outriders',
     value: 'R$ 200,00'
   },
   {
-    img: '../../../../../assets/img/products/product-cyberpunk2077.webp',
+    img: imgGameCyberpunk2077,
     name: 'CYBERPUNK 2077', 
     altImg:'Imagem do produto CYBERPUNK 2077',
     value: 'R$ 200,00'
   },
   {
-    img: '../../../../../assets/img/products/product-donkey-kong-country-tropical-freeze.webp',
+    img: imgGameDonkeyKongCountryTropicalFreeze,
     name: 'Donkey Kong Country Tropical Freeze', 
     altImg:'Imagem do produto Donkey Kong Country Tropical Freeze',
     value: 'R$ 200,00'

@@ -1,15 +1,18 @@
 import { BannerSecondaryComponent } from "./BannerSecondaryComponent"
 
+import imgBannerZelda from '../../../../assets/img/secondary-banners/zelda_banner.webp'
+import imgBannerSekiro from  '../../../../assets/img/secondary-banners/sekiro_banner.webp'
+
 import { ContainerBannersSecondary } from "./style"
 
 const gamesSecondarybanners = [
   {
-    img: '../../../../assets/img/secondary-banners/zelda_banner.webp',
+    img: imgBannerZelda,
     altImg: 'Banner The Legend of Zelda - Breath of th wild',
     description: 'The Legend of Zelda - Breath of th wild'
   },
   {
-    img: '../../../../assets/img/secondary-banners/sekiro_banner.webp',
+    img: imgBannerSekiro,
     altImg: 'Banner SEKIRO - Shadows die twice',
     description: 'SEKIRO - Shadows die twice'
   }

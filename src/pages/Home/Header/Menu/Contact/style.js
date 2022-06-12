@@ -42,13 +42,14 @@ export const ContainerContact = styled.div`
         background-color: ${({theme}) => theme.darkBlue};
         font-size: 1rem;
         color: ${({theme}) => theme.text};
-
+        border: solid .13rem ${({theme}) => theme.silver};
     }
 
     textarea{
         border-radius: .3rem;
         background-color: ${({theme}) => theme.darkBlue};
         color: ${({theme}) => theme.text};
+        border: solid .13rem ${({theme}) => theme.silver};
         font-size: 1rem;
         padding: .5rem;
     }
@@ -64,6 +65,7 @@ export const ContainerContact = styled.div`
 
         :hover{
             background-color: ${({theme}) => theme.blue};
+            color: ${({theme}) => theme.text};
         }
     }
     

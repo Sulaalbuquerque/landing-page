@@ -38,7 +38,6 @@ export const ContainerBannerMasterComponent = styled.div`
         font-weight: 400;
         font-size: 1rem;
         min-height: 8rem;
-        //padding-top: 1rem;
     }
 
     @media (max-width: 770px) {

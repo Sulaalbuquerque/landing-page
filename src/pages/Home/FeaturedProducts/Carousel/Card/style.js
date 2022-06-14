@@ -20,7 +20,7 @@ export const ContainerCard = styled.div`
     .description{
         border-radius: 0 0 .6rem .6rem;
         height: 9rem;
-        padding: 1.6rem;
+        padding: 1.6rem 1.6rem 3rem 1.6rem;
         background-color: ${({ theme }) => theme.silver};
     }
 
@@ -30,6 +30,7 @@ export const ContainerCard = styled.div`
     }
 
     .name{
+        min-height: 2.5rem;
         font-size: .9rem;
         font-weight: 400;
         color: ${({ theme }) => theme.darkBlue};
@@ -43,8 +44,7 @@ export const ContainerCard = styled.div`
 
     button{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 1rem auto;
         background-color: ${({ theme }) => theme.blue};
         border: none;
         padding: 1rem;
@@ -52,7 +52,6 @@ export const ContainerCard = styled.div`
         font-size: .9rem;
         font-weight: 900;
         color: ${({ theme }) => theme.text};
-        margin-top: 1rem;
         cursor: pointer;
         position: relative;
         width: 13rem;

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ContainerFeaturesProducts = styled.section`
-    //margin-bottom: 4rem;
     position: relative;
     top: -6.5rem;
 

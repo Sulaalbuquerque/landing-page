@@ -4,7 +4,6 @@ export const ContainerBannersSecondary = styled.section`
     z-index: 1;
     position: relative;
     top: -9rem;
-    //gap: 2rem;
 
     @media (min-width: 771px) {
         display: flex;

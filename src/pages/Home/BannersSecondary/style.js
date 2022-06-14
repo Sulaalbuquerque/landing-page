@@ -1,18 +1,19 @@
 import styled from 'styled-components'
 
 export const ContainerBannersSecondary = styled.section`
-    margin: 2rem 0;
     z-index: 1;
-    
+    position: relative;
+    top: -9rem;
+    //gap: 2rem;
+
     @media (min-width: 771px) {
         display: flex;
         justify-content: center;
         position: relative;
-        top: -7.5rem;
-        gap: 1rem;
+        top: -15rem;
     }
-    
-    @media (min-width: 771px) and (max-width: 900px) {
-        top: -5rem;
+
+    @media (min-width: 1150px) {
+        top: -21rem;
     }
 ` 

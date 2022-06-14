@@ -5,7 +5,7 @@ export const ContainerBannerMasterComponent = styled.div`
     flex-direction: column;
     align-items: flex-end;
     padding: 1rem 2rem;
-    width: 80%;
+    width: 85%;
 
     h1{
         font-size: 2.9rem;
@@ -80,6 +80,7 @@ export const ContainerBannerMasterComponent = styled.div`
     }
 
     @media (min-width: 771px) {
+        width: 80%;
 
         h2{
             margin-bottom: 1.3rem;

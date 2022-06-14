@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const ContainerFeaturesProducts = styled.section`
-    margin-bottom: 4rem;
+    //margin-bottom: 4rem;
+    position: relative;
+    top: -5rem;
 
     .title{
         padding: 0 2rem;

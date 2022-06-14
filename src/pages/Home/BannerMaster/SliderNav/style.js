@@ -6,7 +6,7 @@ export const ContainerSliderNav = styled.div`
     color: ${({ theme }) => theme.text};
     position: absolute;
     width: 100%;
-    bottom: -4.9rem;
+    bottom: -4.5rem;
 
     .title{
         background-color: ${({ theme }) => theme.blue};
@@ -41,6 +41,7 @@ export const ContainerSliderNav = styled.div`
     }
 
     @media (max-width: 1000px) {
+
         .title .divider{
             display: none;
         }
@@ -50,14 +51,13 @@ export const ContainerSliderNav = styled.div`
         transform: rotate(90deg);
         width: 24rem;
         height: 3rem;
-        right: -10.5rem;
-        top: 5rem;
+        right: -6.75rem;
+        top: 7rem;
         
         .title{
             background-color: ${({ theme }) => theme.blue};
             display: flex;
             align-items: center;
-            //width: 70%;
             border-radius: 0;
         }
 
@@ -76,7 +76,6 @@ export const ContainerSliderNav = styled.div`
             background-color: ${({ theme }) => theme.darkBlue};
             padding: .1rem 1rem;
             display: flex;
-            //width: 30%;
             gap: 0;
             border-radius: 0 0 1rem 0;
         }
@@ -98,12 +97,7 @@ export const ContainerSliderNav = styled.div`
 
     @media (min-width: 771px) and (max-width: 1000px) {
         width: 16.5rem;
-        right: -6.72rem;
         top: 4rem;
-
-        .title{
-            
-        }
 
         .controllers{
             gap: .2rem;
@@ -113,6 +107,15 @@ export const ContainerSliderNav = styled.div`
             cursor: pointer;
             padding: .2rem;
         }
+    }
+
+    @media (min-width: 1000px) {
+        right: -10.5rem;
+        top: 2rem;
+    }
+
+    @media (min-width: 1150px) {
+        top: 5rem;
     }
 
     ${({ isVisibleBanner1 }) => isVisibleBanner1 && css`

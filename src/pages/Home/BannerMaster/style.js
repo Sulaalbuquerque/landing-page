@@ -13,9 +13,8 @@ export const ContainerBannerMaster = styled.section`
 
 export const ContainerBannerMasterContent = styled.div`
     border-radius: 0 0 0 .6rem;
-    position: absolute;
-    bottom: 5rem;
-    z-index: 1;
+    position: relative;
+    bottom: 17.5rem;
     background-color: ${({ theme }) => theme.backgroundBannerMasterContent};
 
     .banner2{
@@ -23,10 +22,13 @@ export const ContainerBannerMasterContent = styled.div`
     }
 
     @media (min-width: 771px) {
-        bottom: auto;
-        top: 30%;
+        top: -16rem;
         display: flex;
         background: none;
+    }
+
+    @media (min-width: 1151px) {
+        top: -23rem;
     }
 
     ${({ isVisibleBanner1 }) => !isVisibleBanner1 && css`

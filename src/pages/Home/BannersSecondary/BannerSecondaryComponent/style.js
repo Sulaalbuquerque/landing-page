@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerBannerSecondaryComponent = styled.div`
-    margin: 1rem;
+    margin: 0 1rem 2rem 1rem;
 
     a{
         text-decoration: none;

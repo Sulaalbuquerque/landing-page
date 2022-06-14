@@ -22,36 +22,20 @@ export const Header = () => {
   const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext);
   const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext);
  
-  const closeSearch = () => {
-    if (searchIsVisible === true){
+  const openOrCloseNav = () => {
+    if (!navIsVisible){
+      setNavIsVisible(true) 
+      setContactIsVisible(false)
       setSearchIsVisible(false)
-    }
-  }
-
-  const closeNavDesktop = () => {
-    if(navIsVisible === true){
-      setNavIsVisible(false)  
-    }
-  }  
-
-  const closeContact = () => {
-    if(contactIsVisible === true){
-      setContactIsVisible(false)  
-    }
-  }  
-
-  const closeBag = () => {
-    if (bagIsVisible === true){
       setBagIsVisible(false)
+    } else {
+      setNavIsVisible(false)
     }
   }
-
-  const close = () => {
-    closeSearch()
-    closeNavDesktop()
-    closeContact()
-    closeBag()
-  }
+  
+  const closeNavMobile = () => !navIsVisible 
+                               ? setNavIsVisible(true) 
+                               : setNavIsVisible(false)
 
   return (
     <>
@@ -59,7 +43,6 @@ export const Header = () => {
         navIsVisible={navIsVisible}
         contactIsVisible={contactIsVisible}
         bagIsVisible={bagIsVisible}
-        onClick={close}
       >
         
         <ContainerLogo 
@@ -72,16 +55,22 @@ export const Header = () => {
             setNavIsVisible={setNavIsVisible}
           />
           <div className="content-logo">
-            <div className="icon-close-hamburguer">
+
+            <div 
+              className="icon-close-hamburguer"
+              onClick={closeNavMobile}
+            >
               <img className="primary" src={iconHamburguerClose2}/>
               <img className="secondary" src={iconHamburguerClose}/>
             </div>
+
             <img 
-              onClick={() => setNavIsVisible(true)}
+              onClick={openOrCloseNav}
               className="icon-hamburguer" 
               src={iconHamburguer} 
               alt="Ícone de menu"
             />
+
             <img className="logo" src={logo} alt="Logomarca N1" />
           </div>
         </ContainerLogo>

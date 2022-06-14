@@ -1,5 +1,6 @@
 import { useContext } from "react"
 
+import { NavIsVisibleContext } from "../../../../contexts/NavIsVisibleContext"
 import { SearchIsVisibleContext } from '../../../../contexts/SearchIsVisibleContext'
 import { CounterBagContext }  from '../../../../contexts/CounterBagContext'
 import { ContactIsVisibleContext } from '../../../../contexts/ContactIsVisibleContext'
@@ -18,9 +19,43 @@ import { Bag } from "./Bag"
 export const Menu = () => {
 
   const { counterBag } = useContext(CounterBagContext);
-  const { setSearchIsVisible } = useContext(SearchIsVisibleContext);
-  const { setContactIsVisible } = useContext(ContactIsVisibleContext);
-  const { setBagIsVisible } = useContext(BagIsVisibleContext);
+  const { navIsVisible, setNavIsVisible } = useContext(NavIsVisibleContext)
+  const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext);
+  const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext);
+  const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext);
+
+  const openOrCloseContact = () => {
+    if (!contactIsVisible){
+      setNavIsVisible(false)
+      setContactIsVisible(true) 
+      setSearchIsVisible(false)
+      setBagIsVisible(false)
+    } else {
+      setContactIsVisible(false)
+    }
+  }  
+
+  const openOrCloseSearch = () => {
+    if (!searchIsVisible){
+      setNavIsVisible(false)
+      setContactIsVisible(false) 
+      setSearchIsVisible(true)
+      setBagIsVisible(false)
+    } else {
+      setSearchIsVisible(false)
+    }
+  }  
+
+  const openOrCloseBag = () => {
+    if (!bagIsVisible){
+      setNavIsVisible(false)
+      setContactIsVisible(false) 
+      setSearchIsVisible(false)
+      setBagIsVisible(true)
+    } else {
+      setBagIsVisible(false)
+    }
+  }  
 
   return (
     <>
@@ -31,7 +66,7 @@ export const Menu = () => {
           <li className='contact'>
             <Contact/>
             <a href="#"
-              onClick={() => setContactIsVisible(true)}
+              onClick={openOrCloseContact}
             >
               <img src={iconContact} alt="Ícone de contato" />
               <span>CONTATO</span>
@@ -41,7 +76,7 @@ export const Menu = () => {
           <li className='search'>
             <Search/>
             <a href="#"
-              onClick={() => setSearchIsVisible(true)}
+              onClick={openOrCloseSearch}
             >
               <img src={iconSearch} alt="Ícone de busca" />
               <span>BUSCAR</span>
@@ -53,7 +88,7 @@ export const Menu = () => {
             <a 
               className="bag" 
               href="#" 
-              onClick={() => setBagIsVisible(true)}
+              onClick={openOrCloseBag}
             >
               <img src={iconBag} alt="Ícone de compra" />
               <div className="item-counter">{counterBag}</div>

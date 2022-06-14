@@ -58,46 +58,6 @@ export const ContainerLogo = styled.div`
         height: 1.7rem;
     }
 
-    ${({ bagIsVisible }) => bagIsVisible && css`
-        .icon-close-hamburguer{
-            display: block;
-        }
-
-        .icon-hamburguer{
-            display: none;
-        }
-
-        @media (min-width: 771px) {
-            .icon-close-hamburguer{
-                display: none;
-            }
-
-            .icon-hamburguer{
-                display: block;
-            }
-        }
-    `}
-
-    ${({ contactIsVisible }) => contactIsVisible && css`
-        .icon-close-hamburguer{
-            display: block;
-        }
-
-        .icon-hamburguer{
-            display: none;
-        }
-
-        @media (min-width: 771px) {
-            .icon-close-hamburguer{
-                display: none;
-            }
-
-            .icon-hamburguer{
-                display: block;
-            }
-        }
-    `}
-
     ${({ navIsVisible }) => navIsVisible && css`
         .icon-close-hamburguer{
             display: block;

@@ -4,7 +4,7 @@ export const ContainerBannerMasterComponent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem 0 2rem;
     width: 85%;
 
     h1{
@@ -37,6 +37,8 @@ export const ContainerBannerMasterComponent = styled.div`
         line-height: 1.55rem;
         font-weight: 400;
         font-size: 1rem;
+        min-height: 8rem;
+        //padding-top: 1rem;
     }
 
     @media (max-width: 770px) {

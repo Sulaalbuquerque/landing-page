@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContainerFeaturesProducts = styled.section`
     //margin-bottom: 4rem;
     position: relative;
-    top: -5rem;
+    top: -6.5rem;
 
     .title{
         padding: 0 2rem;
@@ -19,7 +19,7 @@ export const ContainerFeaturesProducts = styled.section`
     }
 
     h3{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         font-weight: 300;
         color:  ${({theme}) => theme.darkBlue};
     }

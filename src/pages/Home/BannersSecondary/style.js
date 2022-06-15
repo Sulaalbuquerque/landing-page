@@ -3,16 +3,20 @@ import styled from 'styled-components'
 export const ContainerBannersSecondary = styled.section`
     z-index: 1;
     position: relative;
-    top: -9rem;
+    top: -10rem;
 
     @media (min-width: 771px) {
         display: flex;
         justify-content: center;
         position: relative;
-        top: -15rem;
+        top: -17rem;
     }
 
     @media (min-width: 1150px) {
-        top: -21rem;
+        top: -25rem;
+    }
+
+    @media (min-width: 1600px) {
+        top: -29rem;
     }
 ` 

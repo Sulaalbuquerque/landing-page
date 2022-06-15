@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 
 import { BagIsVisibleContext } from '../../../../../contexts/BagIsVisibleContext'
 import { CounterBagContext } from '../../../../../contexts/CounterBagContext'
@@ -9,14 +9,8 @@ import { ContainerBag } from "./style"
 
 export const Bag = () => {
 
-  const { bagIsVisible } = useContext(BagIsVisibleContext);
-  const { counterBag } = useContext(CounterBagContext);
-
-  useEffect(() => {
-    if(window.innerWidth <= 770){
-      document.body.style.overflow = bagIsVisible ? 'hidden' : 'auto';
-    }
-  }, [bagIsVisible]); 
+  const { bagIsVisible } = useContext(BagIsVisibleContext)
+  const { counterBag } = useContext(CounterBagContext)
 
   return (
     <>

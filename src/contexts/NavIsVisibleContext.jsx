@@ -4,7 +4,7 @@ export const NavIsVisibleContext = createContext();
 
 export const NavIsVisibleContextProvider = ({ children }) => {
 
-  const [navIsVisible, setNavIsVisible] = useState(0)
+  const [navIsVisible, setNavIsVisible] = useState(false)
   
   return (
     <>

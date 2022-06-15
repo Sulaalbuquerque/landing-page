@@ -15,27 +15,35 @@ import logo from '../../../../assets/svgs/Logo_N1_Rush_fundo_escuro_bg_tranparen
 
 import { ContainerHeader, ContainerLogo } from "./style"
 
+export const hideScroll = (state) => {
+  if (window.innerWidth <= 770) document.body.style.overflow = !state ? 'hidden' : 'auto'
+}
+
+export const showScroll = () => document.body.style.overflow = 'auto'
+
 export const Header = () => {
   
-  const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext)
   const { navIsVisible, setNavIsVisible } = useContext(NavIsVisibleContext)
-  const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext);
-  const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext);
- 
+  const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext)
+  const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext)
+  const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext)
+
   const openOrCloseNav = () => {
     if (!navIsVisible){
       setNavIsVisible(true) 
       setContactIsVisible(false)
       setSearchIsVisible(false)
       setBagIsVisible(false)
+      hideScroll(navIsVisible)
     } else {
       setNavIsVisible(false)
     }
   }
   
-  const closeNavMobile = () => !navIsVisible 
-                               ? setNavIsVisible(true) 
-                               : setNavIsVisible(false)
+  const closeNavMobile = () => {
+    !navIsVisible ? setNavIsVisible(true) : setNavIsVisible(false)
+    showScroll()
+  }
 
   return (
     <>

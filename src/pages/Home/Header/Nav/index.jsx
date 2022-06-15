@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react"
+import { useContext } from "react"
 
 import { NavIsVisibleContext } from "../../../../contexts/NavIsVisibleContext"
 
@@ -6,13 +6,7 @@ import { ContainerNav } from "./style"
 
 export const Nav = () => {
 
-  const { navIsVisible } = useContext(NavIsVisibleContext)
-  
-  useEffect(() => {
-    if(window.innerWidth <= 770){
-      document.body.style.overflow = navIsVisible ? 'hidden' : 'auto';
-    }
-  }, [navIsVisible]); 
+  const { navIsVisible } = useContext(NavIsVisibleContext) 
   
   return (
     <>

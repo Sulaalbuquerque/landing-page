@@ -8,7 +8,7 @@ import { ContainerSearch } from './style'
 
 export const Search = () => {
 
-  const { searchIsVisible } = useContext(SearchIsVisibleContext);
+  const { searchIsVisible } = useContext(SearchIsVisibleContext)
 
   return (
     <>

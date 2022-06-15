@@ -8,21 +8,24 @@ import { BagIsVisibleContext } from "../../../../contexts/BagIsVisibleContext"
 
 import { Search } from './Search'
 import { Contact } from "./Contact"
+import { Bag } from "./Bag"
 
 import iconContact from '../../../../../assets/svgs/paper-plane.svg'
 import iconSearch from '../../../../../assets/svgs/search-solid.svg'
 import iconBag from '../../../../../assets/svgs/shopping-bag-solid.svg'
 
 import { ContainerMenu } from './style'
-import { Bag } from "./Bag"
+
+import { hideScroll } from ".."
+import { showScroll } from ".."
 
 export const Menu = () => {
 
-  const { counterBag } = useContext(CounterBagContext);
+  const { counterBag } = useContext(CounterBagContext)
   const { navIsVisible, setNavIsVisible } = useContext(NavIsVisibleContext)
-  const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext);
-  const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext);
-  const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext);
+  const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext)
+  const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext)
+  const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext)
 
   const openOrCloseContact = () => {
     if (!contactIsVisible){
@@ -30,8 +33,10 @@ export const Menu = () => {
       setContactIsVisible(true) 
       setSearchIsVisible(false)
       setBagIsVisible(false)
+      hideScroll(contactIsVisible)
     } else {
       setContactIsVisible(false)
+      showScroll()
     }
   }  
 
@@ -41,6 +46,7 @@ export const Menu = () => {
       setContactIsVisible(false) 
       setSearchIsVisible(true)
       setBagIsVisible(false)
+      showScroll()
     } else {
       setSearchIsVisible(false)
     }
@@ -52,8 +58,10 @@ export const Menu = () => {
       setContactIsVisible(false) 
       setSearchIsVisible(false)
       setBagIsVisible(true)
+      hideScroll(bagIsVisible)
     } else {
       setBagIsVisible(false)
+      showScroll()
     }
   }  
 

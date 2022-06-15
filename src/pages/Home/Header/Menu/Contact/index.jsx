@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 
 import { ContactIsVisibleContext } from '../../../../../contexts/ContactIsVisibleContext'
 
@@ -6,13 +6,7 @@ import { ContainerContact } from "./style"
 
 export const Contact = () => {
 
-  const { contactIsVisible } = useContext(ContactIsVisibleContext);
-
-  useEffect(() => {
-    if(window.innerWidth <= 770){
-      document.body.style.overflow = contactIsVisible ? 'hidden' : 'auto';
-    }
-  }, [contactIsVisible]); 
+  const { contactIsVisible } = useContext(ContactIsVisibleContext)
 
   return (
     <>

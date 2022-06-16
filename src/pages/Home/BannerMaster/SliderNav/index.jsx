@@ -33,13 +33,13 @@ export const SliderNav = () => {
       <ContainerSliderNav isVisibleBanner1={banner1IsVisible}>
         
         <div className="title">
-          <h3 className="mortal-kombat">{titleSlider}</h3>
+          <h3>{titleSlider}</h3>
           <hr className="divider" />
         </div>
 
         <div className="marker">
           <div className="title-marker">
-            <p className="mortal-kombat counter">{counterSlider} / 2</p>
+            <p className="counter">{counterSlider} / 2</p>
           </div>
           <div className="controllers">
               <img 

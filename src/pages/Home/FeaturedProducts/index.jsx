@@ -1,4 +1,9 @@
+import { useContext } from "react"
+
+import { SuccessIsVisibleContext } from '../../../contexts/SuccessIsVisibleContext.jsx'
+
 import { Carousel } from "./Carousel"
+import { Success } from "../Success/index"
 
 import iconTitle from '../../../../assets/svgs/group6.svg'
 
@@ -7,8 +12,15 @@ import { ContainerFeaturesProducts,
 
 export const FeaturesProducts = () => {
 
+  const { successIsVisible, setSuccessIsVisible } = useContext(SuccessIsVisibleContext)
+
   return (
     <>
+      <Success
+        successIsVisible={successIsVisible}
+        setSuccessIsVisible={setSuccessIsVisible}
+      />
+
       <ContainerFeaturesProducts>
 
         <div className="title">

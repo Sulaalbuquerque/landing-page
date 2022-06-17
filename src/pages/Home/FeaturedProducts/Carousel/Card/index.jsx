@@ -1,8 +1,7 @@
 import { useState, useContext } from "react"
 
 import { CounterBagContext }  from '../../../../../contexts/CounterBagContext'
-
-import { Success } from "../../../Success/index"
+import { SuccessIsVisibleContext } from "../../../../../contexts/SuccessIsVisibleContext"
 
 import imgGameCharacter from '../../../../../../assets/svgs/image_6-removebg-preview-1.svg'
 
@@ -14,23 +13,23 @@ export const Card = ({ img,
                        value }) => {
   
   const { counterBag, setCounterBag} = useContext(CounterBagContext);
-
+  const { setSuccessIsVisible } = useContext(SuccessIsVisibleContext)
+  
   const [clickedButton, setClickedButton] = useState(false)
-  const [successIsVisible, setSuccessIsVisible] = useState(false)
+
+  const hideScrollSuccess = () => {
+    document.body.style.overflow = 'hidden'
+  }
 
   const changeStyleButton = () => {
     setClickedButton(true)
     setSuccessIsVisible(true)
     setCounterBag(counterBag + 1)
+    hideScrollSuccess()
   }
 
   return (
     <>
-      <Success
-        successIsVisible={successIsVisible}
-        setSuccessIsVisible={setSuccessIsVisible}
-      />
-
       <ContainerCard isClickedButton={clickedButton}>
         <div className="container-image">
           <img 

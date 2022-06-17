@@ -86,7 +86,7 @@ export const ContainerCard = styled.div`
 
         .success{
             display: flex;
-        }
+        } 
 
         .text{
             display: flex;

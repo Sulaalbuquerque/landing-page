@@ -8,6 +8,7 @@ import { Banner1IsVisibleContextProvider } from './contexts/Banner1IsVisibleCont
 import { NavIsVisibleContextProvider } from "./contexts/NavIsVisibleContext"
 import { ContactIsVisibleContextProvider } from "./contexts/ContactIsVisibleContext"
 import { BagIsVisibleContextProvider } from "./contexts/BagIsVisibleContext"
+import { SuccessIsVisibleContextProvider } from "./contexts/SuccessIsVisibleContext"
 
 import { Home } from './pages/Home'
 
@@ -19,24 +20,25 @@ function App() {
       <ThemeProvider theme={light}>
         <GlobalStyle/>
 
-        <NavIsVisibleContextProvider>
-          <ContactIsVisibleContextProvider>
-            <SearchIsVisibleContextProvider>
-              <BagIsVisibleContextProvider>
-                <CounterBagContextProvider>
-                  <Banner1IsVisibleContextProvider>
+        <SuccessIsVisibleContextProvider>
+          <NavIsVisibleContextProvider>
+            <ContactIsVisibleContextProvider>
+              <SearchIsVisibleContextProvider>
+                <BagIsVisibleContextProvider>
+                  <CounterBagContextProvider>
+                    <Banner1IsVisibleContextProvider>
 
-                    <ContainerApp>
-                      <Home/>
-                    </ContainerApp>
+                      <ContainerApp>
+                        <Home/>
+                      </ContainerApp>
 
-                  </Banner1IsVisibleContextProvider>
-                </CounterBagContextProvider>
-              </BagIsVisibleContextProvider>
-              
-            </SearchIsVisibleContextProvider>
-          </ContactIsVisibleContextProvider>
-        </NavIsVisibleContextProvider>
+                    </Banner1IsVisibleContextProvider>
+                  </CounterBagContextProvider>
+                </BagIsVisibleContextProvider>
+              </SearchIsVisibleContextProvider>
+            </ContactIsVisibleContextProvider>
+          </NavIsVisibleContextProvider>
+        </SuccessIsVisibleContextProvider>
 
       </ThemeProvider>
     </>

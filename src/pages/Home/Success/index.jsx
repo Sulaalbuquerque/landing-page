@@ -1,10 +1,24 @@
+import { useContext } from "react"
+
+import { SuccessIsVisibleContext } from '../../../contexts/SuccessIsVisibleContext'
+
 import imgGameCharacter from '../../../../assets/svgs/image6.svg'
 import iconClose from '../../../../assets/svgs/close_btn.svg'
 
 import { ContainerSuccess } from "./style"
 
-export const Success = ({ successIsVisible, 
-                          setSuccessIsVisible }) => {
+export const Success = () => {
+
+  const { successIsVisible, setSuccessIsVisible } = useContext(SuccessIsVisibleContext)
+
+  const showScrollSuccess = () => {
+    document.body.style.overflow = 'auto'
+  }
+
+  const closeSuccess = () => {
+    setSuccessIsVisible(false)
+    showScrollSuccess()
+  }
 
   return (
     <>
@@ -14,7 +28,7 @@ export const Success = ({ successIsVisible,
 
           <div className="close">
             <img 
-              onClick={() => setSuccessIsVisible(false)}
+              onClick={closeSuccess}
               src={iconClose} 
             />
           </div>

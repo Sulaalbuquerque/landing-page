@@ -1,12 +1,11 @@
-import { useRef } from "react"
+import { SwiperSlide } from 'swiper/react'
 
+import { Slider } from "../../../../components/Slider/Slider"
 import { Card } from "./Card"
 
 import imgGameOutriders from '../../../../../assets/img/products/product-outriders.webp'
 import imgGameCyberpunk2077 from '../../../../../assets/img/products/product-cyberpunk2077.webp'
 import imgGameDonkeyKongCountryTropicalFreeze from '../../../../../assets/img/products/product-donkey-kong-country-tropical-freeze.webp'
-import iconArrowLeft from '../../../../../assets/svgs/angle-left-solid-black.svg'
-import iconArrowRight from '../../../../../assets/svgs/angle-right-solid-black.svg'
 
 import { ContainerCarousel } from "./style"
 
@@ -33,60 +32,50 @@ const games = [
 
 export const Carousel = () => {
 
-  const carousel = useRef(null)
-
-  const handleLeftClick = (e) => {
-    e.preventDefault()
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
-  }
-
-  const handleRightClick = (e) => {
-    e.preventDefault()
-    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  const settings = {
+    navigation: true,
+    breakpoints: {
+      770: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1100: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      }
+    },
   }
 
   return (
     <>
-      <div className="control">
-          <img 
-            onClick={handleLeftClick} 
-            src={iconArrowLeft} 
-          />
-      </div>
-
       <ContainerCarousel>
-        <div 
-          ref={carousel} 
-          className="cards"
-        >
-          <Card
-            img={games[0].img}
-            name={games[0].name}           
-            altImg={games[0].altImg}
-            value={games[0].value}
-          />
-          <Card
-            img={games[1].img}
-            name={games[1].name}           
-            altImg={games[1].altImg}
-            value={games[1].value}
-          />
-          <Card
-            img={games[2].img}
-            name={games[2].name}           
-            altImg={games[2].altImg}
-            value={games[2].value}
-          />
-        </div>
-
+        <Slider settings={settings}>
+          <SwiperSlide>
+            <Card
+              img={games[0].img}
+              name={games[0].name}           
+              altImg={games[0].altImg}
+              value={games[0].value}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              img={games[1].img}
+              name={games[1].name}           
+              altImg={games[1].altImg}
+              value={games[1].value}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              img={games[2].img}
+              name={games[2].name}           
+              altImg={games[2].altImg}
+              value={games[2].value}
+            />
+          </SwiperSlide>
+        </Slider>
       </ContainerCarousel>
-      
-      <div className="control">
-          <img 
-            onClick={handleRightClick} 
-            src={iconArrowRight} 
-          />
-      </div>
     </>
   )
 }

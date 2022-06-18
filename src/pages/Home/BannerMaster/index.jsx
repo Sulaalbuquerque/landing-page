@@ -8,7 +8,7 @@ import { SliderNav } from "./SliderNav"
 
 import { ContainerBannerMaster, ContainerBannerMasterContent } from "./style"
 
-import { gamesBanners } from "./CarouselBanner"
+import { gamesBannersMaster } from '../../../datas/banners.json'
 
 export const BannerMaster = () => {
 
@@ -23,18 +23,18 @@ export const BannerMaster = () => {
         <ContainerBannerMasterContent isVisibleBanner1={banner1IsVisible}>
           <BannerMasterComponent
             className={'banner1'}
-            title={gamesBanners[0].title}
-            value={gamesBanners[0].value}
-            penny={gamesBanners[0].penny}
-            description={gamesBanners[0].description}
+            title={gamesBannersMaster[0].title}
+            price={gamesBannersMaster[0].price}
+            penny={gamesBannersMaster[0].penny}
+            description={gamesBannersMaster[0].description}
           />
 
           <BannerMasterComponent
             className={'banner2'}
-            title={gamesBanners[1].title}
-            value={gamesBanners[1].value}
-            penny={gamesBanners[1].penny}
-            description={gamesBanners[1].description}
+            title={gamesBannersMaster[1].title}
+            price={gamesBannersMaster[1].price}
+            penny={gamesBannersMaster[1].penny}
+            description={gamesBannersMaster[1].description}
           />
           
           <SliderNav />

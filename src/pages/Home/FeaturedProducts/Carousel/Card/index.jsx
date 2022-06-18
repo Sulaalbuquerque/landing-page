@@ -10,7 +10,7 @@ import { ContainerCard } from "./style"
 export const Card = ({ img, 
                        altImg, 
                        name, 
-                       value }) => {
+                       price }) => {
   
   const { counterBag, setCounterBag} = useContext(CounterBagContext);
   const { setSuccessIsVisible } = useContext(SuccessIsVisibleContext)
@@ -42,7 +42,7 @@ export const Card = ({ img,
         <div className="description">
           <div className="details">
             <span className="name">{name}</span>
-            <span className="value">{value}</span>
+            <span className="value">{price}</span>
           </div>    
 
           <button onClick={changeStyleButton}>

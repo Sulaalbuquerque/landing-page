@@ -1,0 +1,30 @@
+{
+    "games" : [
+        {
+            "name": "Outriders", 
+            "price": "R$ 200,00",
+            "image": {
+                "img": "../../assets/img/products/product-outriders.webp", 
+                "altImg": "Imagem do produto Outriders"
+            }
+        },
+        {
+            "name": "CYBERPUNK 2077", 
+            "price": "R$ 200,00",
+            "image": {
+                "img": "../../assets/img/products/product-cyberpunk2077.webp",
+                "altImg": "Imagem do produto CYBERPUNK 2077"
+            }
+        },
+        {
+            "name": "Donkey Kong Country Tropical Freeze", 
+            "price": "R$ 200,00",
+            "image": {
+                "img": "../../assets/img/products/product-donkey-kong-country-tropical-freeze.webp",
+                "altImg": "Imagem do produto Donkey Kong Country Tropical Freeze"
+            }
+        }
+    ]
+}
+
+

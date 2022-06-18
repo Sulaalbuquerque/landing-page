@@ -7,25 +7,25 @@ import iconArrowRight from '../../../../../assets/svgs/angle-right-solid.svg'
 
 import { ContainerSliderNav } from "./style"
 
-import { gamesBanners } from "../CarouselBanner"
+import { gamesBannersMaster } from '../../../../datas/banners.json'
 
 export const SliderNav = () => {
 
   const { banner1IsVisible, setBanner1IsVisible} = useContext(Banner1IsVisibleContext);
 
-  const [titleSlider, setTitleSlider] = useState(gamesBanners[0].title)
-  const [counterSlider, setCounterSlider] = useState(gamesBanners[0].slide)
+  const [titleSlider, setTitleSlider] = useState(gamesBannersMaster[0].title)
+  const [counterSlider, setCounterSlider] = useState(gamesBannersMaster[0].slide)
 
   const showBanner1 = () => {
     setBanner1IsVisible(true)
-    setTitleSlider(gamesBanners[0].title)
-    setCounterSlider(gamesBanners[0].slide)
+    setTitleSlider(gamesBannersMaster[0].title)
+    setCounterSlider(gamesBannersMaster[0].slide)
   }
 
   const showBanner2 = () => {
     setBanner1IsVisible(false)
-    setTitleSlider(gamesBanners[1].title)
-    setCounterSlider(gamesBanners[1].slide)
+    setTitleSlider(gamesBannersMaster[1].title)
+    setCounterSlider(gamesBannersMaster[1].slide)
   }
 
   return (

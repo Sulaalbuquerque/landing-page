@@ -1,7 +1,7 @@
 import { ContainerBannerMasterComponent } from "./style"
 
 export const BannerMasterComponent = ({ title, 
-                                        value, 
+                                        price, 
                                         penny, 
                                         description, 
                                         className }) => {
@@ -12,7 +12,7 @@ export const BannerMasterComponent = ({ title,
       >
         <h1>{title}</h1>
         <h2>
-          R$ {value}
+          R$ {price}
           <span className="penny">,{penny}</span>
         </h2>
         <p>{description}</p>

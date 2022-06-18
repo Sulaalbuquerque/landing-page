@@ -3,9 +3,9 @@ import { SwiperSlide } from 'swiper/react'
 import { Slider } from "../../../../components/Slider/Slider"
 import { Card } from "./Card"
 
-//import imgGameOutriders from '../../../../../assets/img/products/product-outriders.webp'
-//import imgGameCyberpunk2077 from '../../../../../assets/img/products/product-cyberpunk2077.webp'
-//import imgGameDonkeyKongCountryTropicalFreeze from '../../../../../assets/img/products/product-donkey-kong-country-tropical-freeze.webp'
+import imgGameOutriders from '../../../../../assets/img/products/product-outriders.webp'
+import imgGameCyberpunk2077 from '../../../../../assets/img/products/product-cyberpunk2077.webp'
+import imgGameDonkeyKongCountryTropicalFreeze from '../../../../../assets/img/products/product-donkey-kong-country-tropical-freeze.webp'
 
 import { ContainerCarousel } from "./style"
 
@@ -33,7 +33,7 @@ export const Carousel = () => {
         <Slider settings={settings}>
           <SwiperSlide>
             <Card
-              img={games[0].image.img}
+              img={imgGameOutriders}
               name={games[0].name}       
               altImg={games[0].image.altImg}
               price={games[0].price}
@@ -41,7 +41,7 @@ export const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              img={games[1].image.img}
+              img={imgGameCyberpunk2077}
               name={games[1].name}       
               altImg={games[1].image.altImg}
               price={games[1].price}
@@ -49,7 +49,7 @@ export const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              img={games[2].image.img}
+              img={imgGameDonkeyKongCountryTropicalFreeze}
               name={games[2].name}       
               altImg={games[2].image.altImg}
               price={games[2].price}

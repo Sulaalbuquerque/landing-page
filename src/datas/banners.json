@@ -7,8 +7,8 @@
             "price": "299",
             "penny": "99",
             "image": {
-                "imgMobile": "../../assets/img/principal_banner_mobile.webp",
-                "imgDesktop": "../../assets/img/principal_banner_desktop.webp"
+                "imgMobile": "imgMobileSlide1",
+                "imgDesktop": "imgDesktopSlide1"
             }
         },
         {
@@ -18,18 +18,18 @@
             "price": "289",
             "penny": "99",
             "image": {
-                "imgMobile": "../../assets/img/principal_banner_mobile_02.webp",
-                "imgDesktop": "../../assets/img/principal_banner_desktop_02.webp"
+                "imgMobile": "imgMobileSlide2",
+                "imgDesktop": "imgDesktopSlide2"
             }
         }
     ],
-    
+
     "gamesBannersSecondary" : [
         {
             "name": "banner Zelda",
             "description": "The Legend of Zelda - Breath of th wild",
             "image": {
-                "img": "../../assets/img/secondary-banners/zelda_banner.webp",
+                "img": "imgBannerZelda",
                 "altImg": "Banner The Legend of Zelda - Breath of th wild"
             }
         },
@@ -37,7 +37,7 @@
             "name": "banner Sekiro",
             "description": "SEKIRO - Shadows die twice",
             "image": {
-                "img": "../../assets/img/secondary-banners/sekiro_banner.webp",
+                "img": "imgBannerSekiro",
                 "altImg": "Banner SEKIRO - Shadows die twice"
             }
         }

@@ -115,7 +115,6 @@ export const ContainerBag = styled.div`
         a{
             font-size: 1rem;
             width: 9rem;
-            border: none;
         }
 
         .change button{

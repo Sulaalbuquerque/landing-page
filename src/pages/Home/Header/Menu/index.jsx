@@ -73,7 +73,9 @@ export const Menu = () => {
 
           <li className='contact'>
             <Contact/>
-            <a href="#"
+            <a 
+              href="#"
+              className="icon"
               onClick={openOrCloseContact}
             >
               <img src={iconContact} alt="Ícone de contato" />
@@ -83,7 +85,9 @@ export const Menu = () => {
 
           <li className='search'>
             <Search/>
-            <a href="#"
+            <a 
+              href="#"
+              className="icon"
               onClick={openOrCloseSearch}
             >
               <img src={iconSearch} alt="Ícone de busca" />

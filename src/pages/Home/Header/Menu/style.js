@@ -51,6 +51,10 @@ export const ContainerMenu = styled.div`
         a{
             gap: .5rem;
             padding-right: 2rem;
+        }
+
+        .icon{
+            height: 2rem;
             border-right: solid 2px ${({ theme }) => theme.text};
         }
 

@@ -3,7 +3,7 @@ import { useState, useContext } from "react"
 import { CounterBagContext }  from '../../../../../contexts/CounterBagContext'
 import { SuccessIsVisibleContext } from "../../../../../contexts/SuccessIsVisibleContext"
 
-import imgGameCharacter from '../../../../../../assets/svgs/image_6-removebg-preview-1.svg'
+import imgGameCharacter from '../../../../../../public/assets/svgs/image_6-removebg-preview-1.svg'
 
 import { ContainerCard } from "./style"
 

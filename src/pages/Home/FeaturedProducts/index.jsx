@@ -5,7 +5,7 @@ import { SuccessIsVisibleContext } from '../../../contexts/SuccessIsVisibleConte
 import { Carousel } from "./Carousel"
 import { Success } from "../Success/index"
 
-import iconTitle from '../../../../assets/svgs/group6.svg'
+import iconTitle from '../../../../public/assets/svgs/group6.svg'
 
 import { ContainerFeaturesProducts, 
          ContainerFeaturesProductsCards } from "./style"

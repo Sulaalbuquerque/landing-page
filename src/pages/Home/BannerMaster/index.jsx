@@ -8,7 +8,7 @@ import { SliderNav } from "./SliderNav"
 
 import { ContainerBannerMaster, ContainerBannerMasterContent } from "./style"
 
-import { gamesBannersMaster } from '../../../datas/banners.json'
+import { gamesBannersMaster } from '../../../../public/datas/banners.json'
 
 export const BannerMaster = () => {
 

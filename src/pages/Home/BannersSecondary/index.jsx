@@ -1,11 +1,11 @@
 import { BannerSecondaryComponent } from "./BannerSecondaryComponent"
 
-import imgBannerZelda from '../../../../assets/img/secondary-banners/zelda_banner.webp'
-import imgBannerSekiro from  '../../../../assets/img/secondary-banners/sekiro_banner.webp'
+//import imgBannerZelda from '../../../../public/assets/img/secondary-banners/zelda_banner.webp'
+//import imgBannerSekiro from '../../../../public/assets/img/secondary-banners/sekiro_banner.webp'
 
 import { ContainerBannersSecondary } from "./style"
 
-import { gamesBannersSecondary } from '../../../datas/banners.json'
+import { gamesBannersSecondary } from '../../../../public/datas/banners.json'
 
 export const BannersSecondary = () => {
 
@@ -14,13 +14,13 @@ export const BannersSecondary = () => {
       <ContainerBannersSecondary>
         
         <BannerSecondaryComponent
-          img={imgBannerZelda}
+          img={gamesBannersSecondary[0].image.img}
           altImg={gamesBannersSecondary[0].image.altImg}
           description={gamesBannersSecondary[0].description}
         />
 
         <BannerSecondaryComponent
-          img={imgBannerSekiro}
+          img={gamesBannersSecondary[1].image.img}
           altImg={gamesBannersSecondary[1].image.altImg}
           description={gamesBannersSecondary[1].description}
         />

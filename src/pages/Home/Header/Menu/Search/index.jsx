@@ -2,7 +2,7 @@ import { useContext } from "react"
 
 import { SearchIsVisibleContext } from '../../../../../contexts/SearchIsVisibleContext'
 
-import imgSearch from '../../../../../../assets/svgs/search-solid.svg'
+import imgSearch from '../../../../../../public/assets/svgs/search-solid.svg'
 
 import { ContainerSearch } from './style'
 

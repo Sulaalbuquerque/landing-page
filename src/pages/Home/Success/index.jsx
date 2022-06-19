@@ -2,8 +2,8 @@ import { useContext } from "react"
 
 import { SuccessIsVisibleContext } from '../../../contexts/SuccessIsVisibleContext'
 
-import imgGameCharacter from '../../../../assets/svgs/image6.svg'
-import iconClose from '../../../../assets/svgs/close_btn.svg'
+import imgGameCharacter from '../../../../public/assets/svgs/image6.svg'
+import iconClose from '../../../../public/assets/svgs/close_btn.svg'
 
 import { ContainerSuccess } from "./style"
 

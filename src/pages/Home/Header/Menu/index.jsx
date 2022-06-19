@@ -10,9 +10,9 @@ import { Search } from './Search'
 import { Contact } from "./Contact"
 import { Bag } from "./Bag"
 
-import iconContact from '../../../../../assets/svgs/paper-plane.svg'
-import iconSearch from '../../../../../assets/svgs/search-solid.svg'
-import iconBag from '../../../../../assets/svgs/shopping-bag-solid.svg'
+import iconContact from '../../../../../public/assets/svgs/paper-plane.svg'
+import iconSearch from '../../../../../public/assets/svgs/search-solid.svg'
+import iconBag from '../../../../../public/assets/svgs/shopping-bag-solid.svg'
 
 import { ContainerMenu } from './style'
 

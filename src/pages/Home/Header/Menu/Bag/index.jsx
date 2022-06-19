@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { BagIsVisibleContext } from '../../../../../contexts/BagIsVisibleContext'
 import { CounterBagContext } from '../../../../../contexts/CounterBagContext'
 
-import imgArrowLeft from '../../../../../../assets/svgs/angle-left-solid.svg'
+import imgArrowLeft from '../../../../../../public/assets/svgs/angle-left-solid.svg'
 
 import { ContainerBag } from "./style"
 

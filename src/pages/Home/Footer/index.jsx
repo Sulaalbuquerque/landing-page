@@ -1,4 +1,4 @@
-import logoFooter from '../../../../assets/svgs/logo_header-1.svg'
+import logoFooter from '../../../../public/assets/svgs/logo_header-1.svg'
 
 import { ContainerFooter } from "./style"
 

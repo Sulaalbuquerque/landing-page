@@ -29,7 +29,7 @@
             "name": "banner Zelda",
             "description": "The Legend of Zelda - Breath of th wild",
             "image": {
-                "img": "../../assets/img/secondary-banners/zelda_banner.webp",
+                "img": "imgBannerZelda",
                 "altImg": "Banner The Legend of Zelda - Breath of th wild"
             }
         },
@@ -37,7 +37,7 @@
             "name": "banner Sekiro",
             "description": "SEKIRO - Shadows die twice",
             "image": {
-                "img": "../../assets/img/secondary-banners/sekiro_banner.webp",
+                "img": "imgBannerSekiro",
                 "altImg": "Banner SEKIRO - Shadows die twice"
             }
         }

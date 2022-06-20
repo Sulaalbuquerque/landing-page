@@ -21,7 +21,8 @@ import { showScroll } from ".."
 
 export const Menu = () => {
 
-  const { counterBag } = useContext(CounterBagContext)
+  const { totalRequests } = useContext(CounterBagContext)
+
   const { navIsVisible, setNavIsVisible } = useContext(NavIsVisibleContext)
   const { searchIsVisible, setSearchIsVisible } = useContext(SearchIsVisibleContext)
   const { contactIsVisible, setContactIsVisible } = useContext(ContactIsVisibleContext)
@@ -103,7 +104,7 @@ export const Menu = () => {
               onClick={openOrCloseBag}
             >
               <img src={iconBag} alt="Ícone de compra" />
-              <div className="item-counter">{counterBag}</div>
+              <div className="item-counter">{totalRequests}</div>
             </a>
           </li>
 

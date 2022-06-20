@@ -7,10 +7,25 @@ import imgArrowLeft from '../../../../../../public/assets/svgs/angle-left-solid.
 
 import { ContainerBag } from "./style"
 
+import { games } from '../../../../../../public/datas/products.json'
+
 export const Bag = () => {
 
   const { bagIsVisible } = useContext(BagIsVisibleContext)
-  const { counterBag } = useContext(CounterBagContext)
+  const { counterGameCard1, setCounterGameCard1,
+          counterGameCard2, setCounterGameCard2,
+          counterGameCard3, setCounterGameCard3,
+          totalRequests } = useContext(CounterBagContext)
+
+  const addTotalAmount = () => {
+    const amountCard1 = counterGameCard1 * games[0].price
+    const amountCard2 = counterGameCard2 * games[1].price
+    const amountCard3 = counterGameCard3 * games[2].price
+
+    const totalAmount = amountCard1 + amountCard2 + amountCard3
+
+    return totalAmount.toFixed(2)
+  }
 
   return (
     <>
@@ -19,7 +34,7 @@ export const Bag = () => {
         <div className="arrow"></div>
 
         <div className="main">
-          <p>Você tem {counterBag} pedido(s):</p>
+          <p>Você tem {totalRequests} pedido(s):</p>
           <a href="#">
             <img src={imgArrowLeft}/>
             Adicionar mais
@@ -27,20 +42,81 @@ export const Bag = () => {
 
           <div className="content">
             <div className="value">
-              <p>Donkey Kong Country Tropical Freeze </p>
-              <p>Valor: R$ 00,00 cada</p>
+              <p className="name">{games[0].name}</p>
+              <p>Valor: {(games[0].price).toFixed(2)} cada</p>
             </div>
             <div className="amount">
-              <p>Quantidade: 0</p>
+              <p>
+                Quantidade: 
+                <div>{counterGameCard1}</div>
+              </p>
               <div className="change">
-                <button className='add'>+</button>
-                <button className='remove'>-</button>
+                <button 
+                  className='add'
+                  onClick={() => setCounterGameCard1(counterGameCard1 + 1)}
+                >+</button>
+                <button 
+                  className='remove'
+                  onClick={() => setCounterGameCard1(
+                    counterGameCard1 > 0 ? counterGameCard1 - 1 : counterGameCard1
+                  )}
+                >-</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="content">
+            <div className="value">
+              <p className="name">{games[1].name}</p>
+              <p>Valor: {(games[0].price).toFixed(2)} cada</p>
+            </div>
+            <div className="amount">
+              <p>
+                Quantidade: 
+                <div>{counterGameCard2}</div>
+              </p>
+              <div className="change">
+                <button 
+                  className='add'
+                  onClick={() => setCounterGameCard2(counterGameCard2 + 1)}
+                >+</button>
+                <button 
+                  className='remove'
+                  onClick={() => setCounterGameCard2(
+                    counterGameCard2 > 0 ? counterGameCard2 - 1 : counterGameCard2
+                  )}
+                >-</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="content">
+            <div className="value">
+              <p className="name">{games[2].name} </p>
+              <p>Valor: {(games[0].price).toFixed(2)} cada</p>
+            </div>
+            <div className="amount">
+              <p>
+                Quantidade: 
+                <div>{counterGameCard3}</div>
+              </p>
+              <div className="change">
+                <button 
+                  className='add'
+                  onClick={() => setCounterGameCard3(counterGameCard3 + 1)}
+                >+</button>
+                <button 
+                  className='remove'
+                  onClick={() => setCounterGameCard3(
+                    counterGameCard3 > 0 ? counterGameCard3 - 1 : counterGameCard3
+                  )}
+                >-</button>
               </div>
             </div>
           </div>
 
           <div className="total">
-            <p>Valor total: R$ 00,00</p>
+            <p>Valor total: R$ {addTotalAmount()}</p>
           </div>
 
           <button className="finish">Fializar compra</button>

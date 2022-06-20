@@ -26,7 +26,13 @@ export const ContainerBag = styled.div`
         border-radius: .3rem;
 
         padding: 1rem;
-        border: .1rem solid ${({theme}) => theme.background};
+        border: .1rem solid ${({theme}) => theme.blue};
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name{
+        color: ${({theme}) => theme.blue};
     }
 
     .change button{
@@ -75,6 +81,27 @@ export const ContainerBag = styled.div`
         :hover{
             background-color: ${({theme}) => theme.blue};
             color: ${({theme}) => theme.text};
+        }
+    }
+
+    @media (max-width: 470px) {
+        .content{
+            flex-direction: column;
+        }
+
+        .amount{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .amount div{
+            display: inline;
+        }
+
+        .change{
+            margin-left: 1.5rem;
         }
     }
     

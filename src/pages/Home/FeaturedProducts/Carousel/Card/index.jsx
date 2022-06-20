@@ -12,8 +12,11 @@ export const Card = ({ img,
                        name, 
                        price }) => {
   
-  const { counterBag, setCounterBag} = useContext(CounterBagContext);
   const { setSuccessIsVisible } = useContext(SuccessIsVisibleContext)
+  const { counterGameCard1, setCounterGameCard1,
+          counterGameCard2, setCounterGameCard2,
+          counterGameCard3, setCounterGameCard3,
+          totalRequests } = useContext(CounterBagContext)
   
   const [clickedButton, setClickedButton] = useState(false)
 
@@ -24,7 +27,6 @@ export const Card = ({ img,
   const changeStyleButton = () => {
     setClickedButton(true)
     setSuccessIsVisible(true)
-    setCounterBag(counterBag + 1)
     hideScrollSuccess()
   }
 
@@ -42,7 +44,7 @@ export const Card = ({ img,
         <div className="description">
           <div className="details">
             <span className="name">{name}</span>
-            <span className="value">{price}</span>
+            <span className="value">R$ {price.toFixed(2)}</span>
           </div>    
 
           <button onClick={changeStyleButton}>

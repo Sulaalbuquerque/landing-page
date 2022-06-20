@@ -2,24 +2,38 @@
     "gamesBannersMaster" : [
         {
             "slide": "1",
+            "banner": "banner1",
             "title": "MORTAL KOMBAT",
             "description": "Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.",
             "price": "299",
             "penny": "99",
             "image": {
-                "imgMobile": "../assets/img/principal_banner_mobile.webp",
-                "imgDesktop": "../assets/img/principal_banner_desktop.webp"
+                "mobile": {
+                    "name": "banner-mobile",
+                    "img": "../assets/img/principal_banner_mobile.webp"
+                },
+                "desktop": {
+                    "name": "banner-desktop",
+                    "img": "../assets/img/principal_banner_desktop.webp"
+                }
             }
         },
-        {
+        { 
             "slide": "2",
+            "banner": "banner2",
             "title": "RED DEAD II",
             "description":  "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
             "price": "289",
             "penny": "99",
             "image": {
-                "imgMobile": "../assets/img/principal_banner_mobile_02.webp",
-                "imgDesktop": "../assets/img/principal_banner_desktop_02.webp"
+                "mobile": {
+                    "name": "banner-mobile",
+                    "img": "../assets/img/principal_banner_mobile_02.webp"
+                },
+                "desktop": {
+                    "name": "banner-desktop",
+                    "img": "../assets/img/principal_banner_desktop_02.webp"
+                }
             }
         }
     ],

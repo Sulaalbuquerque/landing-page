@@ -21,22 +21,20 @@ export const BannerMaster = () => {
         <CarouselBanner/>
 
         <ContainerBannerMasterContent isVisibleBanner1={banner1IsVisible}>
-          <BannerMasterComponent
-            className={'banner1'}
-            title={gamesBannersMaster[0].title}
-            price={gamesBannersMaster[0].price}
-            penny={gamesBannersMaster[0].penny}
-            description={gamesBannersMaster[0].description}
-          />
-
-          <BannerMasterComponent
-            className={'banner2'}
-            title={gamesBannersMaster[1].title}
-            price={gamesBannersMaster[1].price}
-            penny={gamesBannersMaster[1].penny}
-            description={gamesBannersMaster[1].description}
-          />
-          
+          {
+            gamesBannersMaster.map((game) => {
+              return (
+                <BannerMasterComponent
+                  className={game.banner}
+                  title={game.title}
+                  price={game.price}
+                  penny={game.penny}
+                  description={game.description}
+                />
+              )
+            })
+          }
+  
           <SliderNav />
 
         </ContainerBannerMasterContent>

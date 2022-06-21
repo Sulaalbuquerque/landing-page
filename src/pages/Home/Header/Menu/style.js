@@ -23,7 +23,7 @@ export const ContainerMenu = styled.div`
         align-items: center;
     }
 
-    span{
+    .title{
         display: none;
     }
 
@@ -44,7 +44,7 @@ export const ContainerMenu = styled.div`
 
     @media (min-width: 771px) {
 
-        span{
+        .title{
             display: block;
         }
 

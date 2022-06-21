@@ -35,6 +35,10 @@ export const ContainerBag = styled.div`
         color: ${({theme}) => theme.blue};
     }
 
+    .amount p span{
+            margin-left: .5rem;
+        }
+
     .change button{
         font-size: 1.2rem;
         padding: .5rem 1.2rem;
@@ -94,10 +98,6 @@ export const ContainerBag = styled.div`
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-        }
-
-        .amount div{
-            display: inline;
         }
 
         .change{

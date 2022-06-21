@@ -26,6 +26,7 @@ export const BannerMaster = () => {
               return (
                 <BannerMasterComponent
                   className={game.banner}
+                  key={game.slide}
                   title={game.title}
                   price={game.price}
                   penny={game.penny}

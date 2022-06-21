@@ -13,7 +13,7 @@ export const CarouselBanner = () => {
   return (
     <>
       <ContainerCarouselBanner isVisibleBanner1={banner1IsVisible}>
-        <div className='item item1'>
+        <div className='item item1'  key={gamesBannersMaster[0].slide}>
           <img 
             className="banner banner-mobile" 
             src={gamesBannersMaster[0].image.mobile.img}
@@ -23,7 +23,7 @@ export const CarouselBanner = () => {
             src={gamesBannersMaster[0].image.desktop.img}
           />
         </div>
-        <div className='item item2'>
+        <div className='item item2'  key={gamesBannersMaster[1].slide}>
           <img 
             className="banner banner-mobile" 
             src={gamesBannersMaster[1].image.mobile.img}

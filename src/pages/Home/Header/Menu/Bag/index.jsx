@@ -48,7 +48,7 @@ export const Bag = () => {
             <div className="amount">
               <p>
                 Quantidade: 
-                <div>{counterGameCard1}</div>
+                <span>{counterGameCard1}</span>
               </p>
               <div className="change">
                 <button 
@@ -73,7 +73,7 @@ export const Bag = () => {
             <div className="amount">
               <p>
                 Quantidade: 
-                <div>{counterGameCard2}</div>
+                <span>{counterGameCard2}</span>
               </p>
               <div className="change">
                 <button 
@@ -98,7 +98,7 @@ export const Bag = () => {
             <div className="amount">
               <p>
                 Quantidade: 
-                <div>{counterGameCard3}</div>
+                <span>{counterGameCard3}</span>
               </p>
               <div className="change">
                 <button 

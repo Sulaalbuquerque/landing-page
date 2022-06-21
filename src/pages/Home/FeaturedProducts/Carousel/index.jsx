@@ -30,7 +30,7 @@ export const Carousel = () => {
           {
             games.map((game) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={game.id}>
                   <Card
                     name={game.name} 
                     img={game.image.img}      

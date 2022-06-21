@@ -80,7 +80,7 @@ export const Menu = () => {
               onClick={openOrCloseContact}
             >
               <img src={iconContact} alt="Ícone de contato" />
-              <span>CONTATO</span>
+              <span className="title">CONTATO</span>
             </a>
           </li>
 
@@ -92,7 +92,7 @@ export const Menu = () => {
               onClick={openOrCloseSearch}
             >
               <img src={iconSearch} alt="Ícone de busca" />
-              <span>BUSCAR</span>
+              <span className="title">BUSCAR</span>
             </a>
           </li>
 

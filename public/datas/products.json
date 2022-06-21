@@ -1,6 +1,7 @@
 {
     "games" : [
         {
+            "id": 1,
             "name": "Outriders", 
             "price": 200,
             "image": {
@@ -9,6 +10,7 @@
             }
         },
         {
+            "id": 2,
             "name": "CYBERPUNK 2077", 
             "price": 200,
             "image": {
@@ -17,6 +19,7 @@
             }
         },
         {
+            "id": 3,
             "name": "Donkey Kong Country Tropical Freeze", 
             "price": 200,
             "image": {

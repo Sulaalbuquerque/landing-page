@@ -13,6 +13,7 @@ export const BannersSecondary = () => {
           gamesBannersSecondary.map((banner) => {
               return (
                 <BannerSecondaryComponent
+                  key={banner.id}
                   img={banner.image.img}
                   altImg={banner.image.altImg}
                   description={banner.description}

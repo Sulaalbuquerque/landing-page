@@ -7,7 +7,8 @@ import imgGameCharacter from '../../../../../../public/assets/svgs/image_6-remov
 
 import { ContainerCard } from "./style"
 
-export const Card = ({ img, 
+export const Card = ({ key,
+                       img, 
                        altImg, 
                        name, 
                        price }) => {

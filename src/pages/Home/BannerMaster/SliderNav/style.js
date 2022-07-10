@@ -4,9 +4,7 @@ import { css } from 'styled-components'
 export const ContainerSliderNav = styled.div`
     display: flex;
     color: ${({ theme }) => theme.text};
-    position: absolute;
     width: 100%;
-    bottom: -4.5rem;
 
     .title{
         background-color: ${({ theme }) => theme.blue};
@@ -53,6 +51,7 @@ export const ContainerSliderNav = styled.div`
         height: 3rem;
         right: -6.75rem;
         top: 7rem;
+        position: absolute;//
         
         .title{
             background-color: ${({ theme }) => theme.blue};
@@ -91,7 +90,6 @@ export const ContainerSliderNav = styled.div`
 
         .controller{
             cursor: pointer;
-            
         }
     }
 
@@ -111,11 +109,11 @@ export const ContainerSliderNav = styled.div`
 
     @media (min-width: 1000px) {
         right: -10.5rem;
-        top: 2rem;
+        top: 4rem;
     }
 
     @media (min-width: 1150px) {
-        top: 5rem;
+        top: 9rem;
     }
 
     ${({ isVisibleBanner1 }) => isVisibleBanner1 && css`

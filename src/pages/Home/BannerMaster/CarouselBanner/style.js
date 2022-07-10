@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { css } from 'styled-components'
 
 export const ContainerCarouselBanner = styled.section`
-
     .item .banner-desktop{
         display: none;
     }

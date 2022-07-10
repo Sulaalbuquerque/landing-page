@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const ContainerFeaturesProducts = styled.section`
     position: relative;
-    top: -6.5rem;
 
     .title{
         padding: 0 2rem;
@@ -24,7 +23,7 @@ export const ContainerFeaturesProducts = styled.section`
     }
 
     @media (min-width: 771px) {
-        margin-top: -9rem;
+        margin-top: -5rem;
 
         .icon-title{
             width: 1.75rem;
@@ -36,6 +35,10 @@ export const ContainerFeaturesProducts = styled.section`
             font-size: 2.25rem;
         }
     } 
+
+    @media (min-width: 1000px) {
+        margin-top: -7rem;
+    }
 ` 
 
 export const ContainerFeaturesProductsCards = styled.div`

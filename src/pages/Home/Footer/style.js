@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const ContainerFooter = styled.footer`
-     background-color: green;
      display: flex;
      justify-content: space-between;
+     margin-top: 5rem;
+     width: 100%;
 
      .logo{
          display: flex;

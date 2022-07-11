@@ -7,6 +7,8 @@ import imgArrowLeft from '../../../../../../public/assets/svgs/angle-left-solid.
 
 import { ContainerBag } from "./style"
 
+import { ProductBag } from "./ProductBag.jsx"
+
 import { games } from '../../../../../../public/datas/products.json'
 
 export const Bag = () => {
@@ -29,7 +31,9 @@ export const Bag = () => {
 
   return (
     <>
-      <ContainerBag isVisibleBag={bagIsVisible}>
+      <ContainerBag 
+        isVisibleBag={bagIsVisible} 
+      >
 
         <div className="arrow"></div>
 
@@ -40,80 +44,38 @@ export const Bag = () => {
             Adicionar mais
           </a>
 
-          <div className="content">
-            <div className="value">
-              <p className="name">{games[0].name}</p>
-              <p>Valor: {(games[0].price).toFixed(2)} cada</p>
-            </div>
-            <div className="amount">
-              <p>
-                Quantidade: 
-                <span>{counterGameCard1}</span>
-              </p>
-              <div className="change">
-                <button 
-                  className='add'
-                  onClick={() => setCounterGameCard1(counterGameCard1 + 1)}
-                >+</button>
-                <button 
-                  className='remove'
-                  onClick={() => setCounterGameCard1(
-                    counterGameCard1 > 0 ? counterGameCard1 - 1 : counterGameCard1
-                  )}
-                >-</button>
-              </div>
-            </div>
-          </div>
+          <ProductBag
+            className='product-bag1'
+            name={games[0].name}
+            price={(games[0].price).toFixed(2)}
+            amount={counterGameCard1}
+            setStateAdd={() => setCounterGameCard1(counterGameCard1 + 1)}
+            setStateSubtract={() => setCounterGameCard1(
+              counterGameCard1 > 0 ? counterGameCard1 - 1 : counterGameCard1
+            )}
+          />
 
-          <div className="content">
-            <div className="value">
-              <p className="name">{games[1].name}</p>
-              <p>Valor: {(games[0].price).toFixed(2)} cada</p>
-            </div>
-            <div className="amount">
-              <p>
-                Quantidade: 
-                <span>{counterGameCard2}</span>
-              </p>
-              <div className="change">
-                <button 
-                  className='add'
-                  onClick={() => setCounterGameCard2(counterGameCard2 + 1)}
-                >+</button>
-                <button 
-                  className='remove'
-                  onClick={() => setCounterGameCard2(
-                    counterGameCard2 > 0 ? counterGameCard2 - 1 : counterGameCard2
-                  )}
-                >-</button>
-              </div>
-            </div>
-          </div>
+          <ProductBag
+            className='product-bag2'
+            name={games[1].name}
+            price={(games[1].price).toFixed(2)}
+            amount={counterGameCard2}
+            setStateAdd={() => setCounterGameCard2(counterGameCard2 + 1)}
+            setStateSubtract={() => setCounterGameCard2(
+              counterGameCard2 > 0 ? counterGameCard2 - 1 : counterGameCard2
+            )}
+          />
 
-          <div className="content">
-            <div className="value">
-              <p className="name">{games[2].name} </p>
-              <p>Valor: {(games[0].price).toFixed(2)} cada</p>
-            </div>
-            <div className="amount">
-              <p>
-                Quantidade: 
-                <span>{counterGameCard3}</span>
-              </p>
-              <div className="change">
-                <button 
-                  className='add'
-                  onClick={() => setCounterGameCard3(counterGameCard3 + 1)}
-                >+</button>
-                <button 
-                  className='remove'
-                  onClick={() => setCounterGameCard3(
-                    counterGameCard3 > 0 ? counterGameCard3 - 1 : counterGameCard3
-                  )}
-                >-</button>
-              </div>
-            </div>
-          </div>
+          <ProductBag
+            className='product-bag3'
+            name={games[2].name}
+            price={(games[2].price).toFixed(2)}
+            amount={counterGameCard3}
+            setStateAdd={() => setCounterGameCard3(counterGameCard3 + 1)}
+            setStateSubtract={() => setCounterGameCard3(
+              counterGameCard3 > 0 ? counterGameCard3 - 1 : counterGameCard3
+            )}
+          />
 
           <div className="total">
             <p>Valor total: R$ {addTotalAmount()}</p>

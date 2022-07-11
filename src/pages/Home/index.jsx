@@ -7,6 +7,7 @@ import { BannersSecondary } from "./BannersSecondary"
 import { FeaturesProducts } from "./FeaturedProducts"
 import { Footer } from "./Footer"
 import { Header } from "./Header"
+import { ProductBag } from "./Header/Menu/Bag/ProductBag.jsx"
 
 import { ContainerHome } from "./style"
 

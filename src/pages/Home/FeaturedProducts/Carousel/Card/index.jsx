@@ -31,8 +31,13 @@ export const Card = ({ key,
     hideScrollSuccess()
   }
 
+  /* const addProductBag = () => {
+    console.log(key)
+  } */
+
   const toClickButton = () => {
     changeStyleButton()
+    /* addProductBag() */
   }
 
   return (
@@ -52,15 +57,22 @@ export const Card = ({ key,
             <span className="value">R$ {price.toFixed(2)}</span>
           </div>    
 
-          <button onClick={toClickButton}>
+          <button 
+            className={key}
+            onClick={toClickButton}
+          >
+
             <div className="content">COMPRAR</div>
+
             <div className="success">
               <div className="text">COMPRADO!</div>
               <div className="img">
                 <img src={imgGameCharacter} />
               </div>
             </div>
+
           </button>
+
         </div>
       </ContainerCard>
     </>

@@ -32,7 +32,7 @@ export const Bag = () => {
   return (
     <>
       <ContainerBag 
-        isVisibleBag={bagIsVisible} 
+        isVisibleBag={bagIsVisible}
       >
 
         <div className="arrow"></div>
@@ -45,7 +45,6 @@ export const Bag = () => {
           </a>
 
           <ProductBag
-            className='product-bag1'
             name={games[0].name}
             price={(games[0].price).toFixed(2)}
             amount={counterGameCard1}
@@ -56,7 +55,6 @@ export const Bag = () => {
           />
 
           <ProductBag
-            className='product-bag2'
             name={games[1].name}
             price={(games[1].price).toFixed(2)}
             amount={counterGameCard2}
@@ -67,7 +65,6 @@ export const Bag = () => {
           />
 
           <ProductBag
-            className='product-bag3'
             name={games[2].name}
             price={(games[2].price).toFixed(2)}
             amount={counterGameCard3}

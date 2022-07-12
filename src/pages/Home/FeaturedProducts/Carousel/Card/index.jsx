@@ -31,6 +31,10 @@ export const Card = ({ key,
     hideScrollSuccess()
   }
 
+  const toClickButton = () => {
+    changeStyleButton()
+  }
+
   return (
     <>
       <ContainerCard isClickedButton={clickedButton}>
@@ -48,7 +52,7 @@ export const Card = ({ key,
             <span className="value">R$ {price.toFixed(2)}</span>
           </div>    
 
-          <button onClick={changeStyleButton}>
+          <button onClick={toClickButton}>
             <div className="content">COMPRAR</div>
             <div className="success">
               <div className="text">COMPRADO!</div>

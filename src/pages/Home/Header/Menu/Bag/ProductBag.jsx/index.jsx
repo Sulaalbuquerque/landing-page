@@ -1,14 +1,26 @@
+import { useContext } from "react"
+
+import { CounterBagContext } from "../../../../../../contexts/CounterBagContext"
+
 import { ContainerProductBag } from './style'
 
-export const ProductBag = ({ name,
+export const ProductBag = ({ id,
+                             name,
                              price,
                              amount,
                              setStateAdd,
                              setStateSubtract }) => {
 
+  const { counterGameCard1, setCounterGameCard1,
+          counterGameCard2, setCounterGameCard2,
+          counterGameCard3, setCounterGameCard3,
+          totalRequests } = useContext(CounterBagContext)
+
   return (
     <>
-      <ContainerProductBag >
+      <ContainerProductBag 
+        
+      >
 
         <div className="value">
           <p className="name">{name}</p>

@@ -7,7 +7,7 @@ export const ContainerBag = styled.div`
     top: 5rem;
     left: 0;
     right: 0;
-    height: 100vh;
+    //height: 100vh;
     padding: 2rem;
     display: none;
     color: ${({theme}) => theme.text};
@@ -42,9 +42,6 @@ export const ContainerBag = styled.div`
     }
 
     @media (max-width: 470px) {
-        .content{
-            flex-direction: column;
-        }
 
         .amount{
             display: flex;

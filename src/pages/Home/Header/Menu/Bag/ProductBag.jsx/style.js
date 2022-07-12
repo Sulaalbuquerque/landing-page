@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ContainerProductBag = styled.div`
     border-radius: .3rem;
@@ -41,6 +42,10 @@ export const ContainerProductBag = styled.div`
         :hover{
             color: ${({theme}) => theme.blue};
         }
+    }
+
+    @media (max-width: 470px) {
+        flex-direction: column;
     }
 
     @media (min-width: 771px) {

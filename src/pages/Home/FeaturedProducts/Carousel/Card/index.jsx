@@ -7,7 +7,7 @@ import imgGameCharacter from '../../../../../../public/assets/svgs/image_6-remov
 
 import { ContainerCard } from "./style"
 
-export const Card = ({ key,
+export const Card = ({ id,
                        img, 
                        altImg, 
                        name, 
@@ -31,18 +31,29 @@ export const Card = ({ key,
     hideScrollSuccess()
   }
 
-  /* const addProductBag = () => {
-    console.log(key)
-  } */
+  const addProductBag = () => {
+    if(id === 1){
+      setCounterGameCard1(counterGameCard1 + 1)
+    } if(id === 2){
+      setCounterGameCard2(counterGameCard2 + 1)
+    } if(id === 3){
+      setCounterGameCard3(counterGameCard3 + 1)
+    }
+  }
 
   const toClickButton = () => {
     changeStyleButton()
-    /* addProductBag() */
+    addProductBag()
   }
 
   return (
     <>
-      <ContainerCard isClickedButton={clickedButton}>
+      <ContainerCard 
+        isClickedButton={clickedButton}
+        gameCard1Counter={[id, counterGameCard1]}
+        gameCard2Counter={[id, counterGameCard2]}
+        gameCard3Counter={[id, counterGameCard3]}
+      >
         <div className="container-image">
           <img 
             className="image-card"
@@ -58,14 +69,14 @@ export const Card = ({ key,
           </div>    
 
           <button 
-            className={key}
+            className={id}
             onClick={toClickButton}
           >
 
             <div className="content">COMPRAR</div>
 
             <div className="success">
-              <div className="text">COMPRADO!</div>
+              <div className="text">ADICIONADO!</div>
               <div className="img">
                 <img src={imgGameCharacter} />
               </div>

@@ -99,4 +99,52 @@ export const ContainerCard = styled.div`
             right: 1rem;
         }
     `}
+
+    ${({ gameCard1Counter }) => ( gameCard1Counter[0] === 1 
+                                  && gameCard1Counter[1] === 0
+                                ) && css`
+        button{
+            background-color: ${({ theme }) => theme.blue};
+        }
+    
+        .content{
+            display: block;
+        }
+    
+        .success{
+            display: none;
+        } 
+    `}
+
+    ${({ gameCard2Counter }) => ( gameCard2Counter[0] === 2 
+                                  && gameCard2Counter[1] === 0
+                                ) && css`
+        button{
+            background-color: ${({ theme }) => theme.blue};
+        }
+    
+        .content{
+            display: block;
+        }
+    
+        .success{
+            display: none;
+        } 
+    `}
+
+    ${({ gameCard3Counter }) => ( gameCard3Counter[0] === 3 
+                                  && gameCard3Counter[1] === 0
+                                ) && css`
+        button{
+            background-color: ${({ theme }) => theme.blue};
+        }
+    
+        .content{
+            display: block;
+        }
+    
+        .success{
+            display: none;
+        } 
+    `}
 ` 

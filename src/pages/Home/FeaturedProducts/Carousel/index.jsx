@@ -32,7 +32,7 @@ export const Carousel = () => {
               return (
                 <SwiperSlide key={game.id}>
                   <Card
-                    key={game.id}
+                    id={game.id}
                     name={game.name} 
                     img={game.image.img}      
                     altImg={game.image.altImg}

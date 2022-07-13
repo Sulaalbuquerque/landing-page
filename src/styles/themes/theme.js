@@ -6,5 +6,6 @@ export const light = {
 
     darkBlue: 'rgba(8, 65, 84, 1)', 
     blue: 'rgba(62, 198, 224, 1)', 
-    silver: 'rgba(235, 235, 235, 1)' 
+    silver: 'rgba(235, 235, 235, 1)',
+    black: 'rgba(0, 0, 0, 1)' 
 }

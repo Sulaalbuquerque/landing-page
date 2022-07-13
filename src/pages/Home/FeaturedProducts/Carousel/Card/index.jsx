@@ -21,14 +21,14 @@ export const Card = ({ id,
   
   const [clickedButton, setClickedButton] = useState(false)
 
-  const hideScrollSuccess = () => {
+  /* const hideScrollSuccess = () => {
     document.body.style.overflow = 'hidden'
-  }
+  } */
 
   const changeStyleButton = () => {
     setClickedButton(true)
     setSuccessIsVisible(true)
-    hideScrollSuccess()
+    //hideScrollSuccess()
   }
 
   const addProductBag = () => {

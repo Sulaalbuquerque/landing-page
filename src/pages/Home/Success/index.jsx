@@ -11,13 +11,13 @@ export const Success = () => {
 
   const { successIsVisible, setSuccessIsVisible } = useContext(SuccessIsVisibleContext)
 
-  const showScrollSuccess = () => {
+  /* const showScrollSuccess = () => {
     document.body.style.overflow = 'auto'
-  }
+  } */
 
   const closeSuccess = () => {
     setSuccessIsVisible(false)
-    showScrollSuccess()
+    //showScrollSuccess()
   }
 
   return (

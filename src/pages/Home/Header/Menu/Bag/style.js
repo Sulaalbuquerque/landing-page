@@ -22,6 +22,15 @@ export const ContainerBag = styled.div`
         gap: 1rem;
     }
 
+   /*  .main a{
+        //display: flex;
+        
+    } */
+
+    .main a:hover{
+        color: ${({theme}) => theme.blue};
+    }
+
     a img{
         margin-right: 1rem;  
     }
@@ -45,9 +54,10 @@ export const ContainerBag = styled.div`
         display: none;
     }
 
-    .visible{
-        display: block;
-    }
+    /* .visible{
+        //display: flex;
+        //display: block;
+    } */
 
     @media (max-width: 470px) {
 
@@ -64,7 +74,7 @@ export const ContainerBag = styled.div`
     }
     
     @media (min-width: 771px) {
-        padding: 3rem;
+        //padding: 3rem;
         top: 4rem;
         left: -25rem;
         right: auto;
@@ -75,6 +85,10 @@ export const ContainerBag = styled.div`
         border-radius: .3rem;
         box-shadow: .6rem .6rem ${({theme}) => theme.blue};
         font-size: .9rem;
+
+        .reset-padding{
+            padding: 1rem;
+        }
 
         .arrow{
             display: block;

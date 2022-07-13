@@ -37,10 +37,16 @@ export const Bag = () => {
 
         <div className="arrow"></div>
 
-        <div className="main">
+        <div className={(totalRequests === 0) ? 'main' : 'main reset-padding'}>
           <p>Você tem {totalRequests} pedido(s)</p>
           <a 
-            className={(totalRequests === 0) ? 'invisible' : 'visible'}
+            className={(totalRequests === 0) ? 'visible' : 'invisible'}
+            href="#">
+            <img src={imgArrowLeft}/>
+            Adicionar
+          </a>
+          <a 
+            className={(totalRequests === 0) ? 'invisible' : ''}
             href="#">
             <img src={imgArrowLeft}/>
             Adicionar mais

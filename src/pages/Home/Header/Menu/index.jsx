@@ -59,10 +59,10 @@ export const Menu = () => {
       setContactIsVisible(false) 
       setSearchIsVisible(false)
       setBagIsVisible(true)
-      hideScroll(bagIsVisible)
+      //hideScroll(bagIsVisible)
     } else {
       setBagIsVisible(false)
-      showScroll()
+      //showScroll()
     }
   }  
 

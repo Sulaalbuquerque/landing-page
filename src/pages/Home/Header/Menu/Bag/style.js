@@ -7,7 +7,9 @@ export const ContainerBag = styled.div`
     top: 5rem;
     left: 0;
     right: 0;
+    //bottom: 0;
     height: 100vh;
+    //height: 100%;
     padding: 2rem;
     display: none;
     color: ${({theme}) => theme.text};
@@ -21,11 +23,6 @@ export const ContainerBag = styled.div`
         flex-direction: column;
         gap: 1rem;
     }
-
-   /*  .main a{
-        //display: flex;
-        
-    } */
 
     .main a:hover{
         color: ${({theme}) => theme.blue};
@@ -54,11 +51,6 @@ export const ContainerBag = styled.div`
         display: none;
     }
 
-    /* .visible{
-        //display: flex;
-        //display: block;
-    } */
-
     @media (max-width: 470px) {
 
         .amount{
@@ -74,9 +66,8 @@ export const ContainerBag = styled.div`
     }
     
     @media (min-width: 771px) {
-        //padding: 3rem;
         top: 4rem;
-        left: -25rem;
+        left: -23rem;
         right: auto;
         bottom: auto;
         width: 23rem;
@@ -96,7 +87,7 @@ export const ContainerBag = styled.div`
             z-index: -1;
             position: absolute;
             top: -.6rem;
-            left: 25.5rem;
+            left: 23.5rem;
             height: 1.12rem;
             width: 1.12rem;
             background-color: ${({theme}) => theme.blue};
@@ -113,7 +104,7 @@ export const ContainerBag = styled.div`
 
         a{
             font-size: 1rem;
-            width: 9rem;
+            //width: 13rem;
         }
 
         .change button{

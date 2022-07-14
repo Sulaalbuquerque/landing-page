@@ -11,9 +11,12 @@ import { ProductBag } from "./ProductBag.jsx"
 
 import { games } from '../../../../../../public/datas/products.json'
 
+import { hideScroll } from "../.."
+import { showScroll } from "../.."
+
 export const Bag = () => {
 
-  const { bagIsVisible } = useContext(BagIsVisibleContext)
+  const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext)
   const { counterGameCard1, setCounterGameCard1,
           counterGameCard2, setCounterGameCard2,
           counterGameCard3, setCounterGameCard3,
@@ -29,6 +32,11 @@ export const Bag = () => {
     return totalAmount.toFixed(2)
   }
 
+  /* const closeBag = () => {
+    setBagIsVisible(false)
+    showScroll()
+  } */
+
   return (
     <>
       <ContainerBag 
@@ -40,16 +48,18 @@ export const Bag = () => {
         <div className={(totalRequests === 0) ? 'main' : 'main reset-padding'}>
           <p>Você tem {totalRequests} pedido(s)</p>
           <a 
+            onClick={() => setBagIsVisible(false)}
             className={(totalRequests === 0) ? 'visible' : 'invisible'}
             href="#">
             <img src={imgArrowLeft}/>
-            Adicionar
+            Adicionar pedidos
           </a>
           <a 
+            onClick={() => setBagIsVisible(false)}
             className={(totalRequests === 0) ? 'invisible' : ''}
             href="#">
             <img src={imgArrowLeft}/>
-            Adicionar mais
+            Adicionar mais pedidos
           </a>
 
           <div className={(counterGameCard1 === 0) ? 'invisible' : 'visible'}>

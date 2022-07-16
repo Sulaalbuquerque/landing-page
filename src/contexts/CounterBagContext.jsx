@@ -4,9 +4,9 @@ export const CounterBagContext = createContext()
 
 export const CounterBagContextProvider = ({ children }) => {
   
-  const [counterGameCard1, setCounterGameCard1] = useState(1)
-  const [counterGameCard2, setCounterGameCard2] = useState(1)
-  const [counterGameCard3, setCounterGameCard3] = useState(1)
+  const [counterGameCard1, setCounterGameCard1] = useState(0)
+  const [counterGameCard2, setCounterGameCard2] = useState(0)
+  const [counterGameCard3, setCounterGameCard3] = useState(0)
 
   const totalRequests = counterGameCard1 + counterGameCard2 + counterGameCard3
 

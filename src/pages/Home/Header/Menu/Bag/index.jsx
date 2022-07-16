@@ -11,9 +11,6 @@ import { ProductBag } from "./ProductBag.jsx"
 
 import { games } from '../../../../../../public/datas/products.json'
 
-import { hideScroll } from "../.."
-import { showScroll } from "../.."
-
 export const Bag = () => {
 
   const { bagIsVisible, setBagIsVisible } = useContext(BagIsVisibleContext)

@@ -24,6 +24,10 @@ export const ContainerBag = styled.div`
         gap: 1rem;
     }
 
+    .main a{
+        margin-bottom: 1.5rem;
+    }
+
     .main a:hover{
         color: ${({theme}) => theme.blue};
     }
@@ -45,6 +49,10 @@ export const ContainerBag = styled.div`
             background-color: ${({theme}) => theme.blue};
             color: ${({theme}) => theme.text};
         }
+    }
+
+    .detail{
+        color: ${({theme}) => theme.blue};
     }
 
     .invisible{

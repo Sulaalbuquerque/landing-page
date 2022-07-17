@@ -61,6 +61,7 @@ export const Bag = () => {
 
           <div className={(counterGameCard1 === 0) ? 'invisible' : 'visible'}>
             <ProductBag
+              img={games[0].image.img}
               name={games[0].name}
               price={(games[0].price).toFixed(2)}
               amount={counterGameCard1}
@@ -73,6 +74,7 @@ export const Bag = () => {
 
           <div className={(counterGameCard2 === 0) ? 'invisible' : 'visible'}>
             <ProductBag
+              img={games[1].image.img}
               name={games[1].name}
               price={(games[1].price).toFixed(2)}
               amount={counterGameCard2}
@@ -85,6 +87,7 @@ export const Bag = () => {
 
           <div className={(counterGameCard3 === 0) ? 'invisible' : 'visible'}>
             <ProductBag
+              img={games[2].image.img}
               name={games[2].name}
               price={(games[2].price).toFixed(2)}
               amount={counterGameCard3}
@@ -97,7 +100,10 @@ export const Bag = () => {
 
             
           <div className={(totalRequests === 0) ? 'invisible total' : 'visible total'}>
-            <p>Valor total: R$ {addTotalAmount()}</p>
+            <p>
+              <strong className="detail">Valor total: </strong> 
+              R$ {addTotalAmount()}
+            </p>
           </div>
 
             

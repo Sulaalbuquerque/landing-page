@@ -7,9 +7,24 @@ export const ContainerProductBag = styled.div`
     border: .1rem solid ${({theme}) => theme.blue};
     display: flex;
     justify-content: space-between;
+    color: ${({theme}) => theme.blue};
 
-    .name{
-        color: ${({theme}) => theme.blue};
+    .game{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .game img{
+        height: 3rem;
+        width: 3rem;
+        border-radius: .4rem;
+    }
+
+    .name, 
+    .price,
+    .detail-amount{
+        color: ${({theme}) => theme.text};
     }
 
     .amount p span{

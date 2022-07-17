@@ -5,6 +5,7 @@ import { CounterBagContext } from "../../../../../../contexts/CounterBagContext"
 import { ContainerProductBag } from './style'
 
 export const ProductBag = ({ id,
+                             img,
                              name,
                              price,
                              amount,
@@ -18,19 +19,23 @@ export const ProductBag = ({ id,
 
   return (
     <>
-      <ContainerProductBag 
-        
-      >
+      <ContainerProductBag>
 
         <div className="value">
-          <p className="name">{name}</p>
-          <p>Valor: R$ {price} cada</p>
+          <div className="game">
+            <img src={img}/>
+            <p className="name">{name}</p>
+          </div>
+          <p>
+            Valor: 
+            <span className="price"> R$ {price} cada</span>
+          </p>
         </div>
 
         <div className="amount">
           <p>
             Quantidade: 
-            <span>{amount}</span>
+            <span className="detail-amount">{amount}</span>
           </p>
 
           <div className="change">

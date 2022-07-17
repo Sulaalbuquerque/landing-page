@@ -7,8 +7,8 @@ export const ContainerContact = styled.div`
     top: 5rem;
     left: 0;
     right: 0;
-    height: 100vh;
-    padding: 2rem;
+    //height: 100%;
+    padding: 2rem 2rem 4rem;
     font-size: 1.2rem;
     display: none;
 

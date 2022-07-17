@@ -7,9 +7,9 @@ export const ContainerBag = styled.div`
     top: 5rem;
     left: 0;
     right: 0;
-    height: 100vh;
+    //height: 100vh;
     //height: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
     display: none;
     color: ${({theme}) => theme.text};
 
@@ -82,6 +82,7 @@ export const ContainerBag = styled.div`
         border-radius: .3rem;
         box-shadow: .6rem .6rem ${({theme}) => theme.blue};
         font-size: .9rem;
+        padding: 2rem;
 
         .reset-padding{
             padding: 1rem;

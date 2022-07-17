@@ -8,9 +8,11 @@ export const ContainerBag = styled.div`
     left: 0;
     right: 0;
     height: 100vh;
+    //height: 100%;
     padding: 2rem;
     display: none;
     color: ${({theme}) => theme.text};
+
 
     .arrow{
         display: none;

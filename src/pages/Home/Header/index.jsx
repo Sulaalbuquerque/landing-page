@@ -34,7 +34,7 @@ export const Header = () => {
       setContactIsVisible(false)
       setSearchIsVisible(false)
       setBagIsVisible(false)
-      hideScroll(navIsVisible)
+      //hideScroll(navIsVisible)
     } else {
       setNavIsVisible(false)
     }

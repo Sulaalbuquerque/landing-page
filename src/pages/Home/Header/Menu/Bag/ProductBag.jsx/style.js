@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { css } from 'styled-components'
 
 export const ContainerProductBag = styled.div`
     border-radius: .3rem;

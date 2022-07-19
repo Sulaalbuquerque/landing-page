@@ -11,7 +11,7 @@ import { gamesBannersMaster } from '../../../../../public/datas/banners.json'
 
 export const SliderNav = () => {
 
-  const { banner1IsVisible, setBanner1IsVisible} = useContext(Banner1IsVisibleContext);
+  const { banner1IsVisible, setBanner1IsVisible} = useContext(Banner1IsVisibleContext)
 
   const [titleSlider, setTitleSlider] = useState(gamesBannersMaster[0].title)
   const [counterSlider, setCounterSlider] = useState(gamesBannersMaster[0].slide)

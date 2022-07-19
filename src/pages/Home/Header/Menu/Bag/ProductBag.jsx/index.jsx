@@ -1,7 +1,3 @@
-import { useContext } from "react"
-
-import { CounterBagContext } from "../../../../../../contexts/CounterBagContext"
-
 import { ContainerProductBag } from './style'
 
 export const ProductBag = ({ id,
@@ -11,11 +7,6 @@ export const ProductBag = ({ id,
                              amount,
                              setStateAdd,
                              setStateSubtract }) => {
-
-  const { counterGameCard1, setCounterGameCard1,
-          counterGameCard2, setCounterGameCard2,
-          counterGameCard3, setCounterGameCard3,
-          totalRequests } = useContext(CounterBagContext)
 
   return (
     <>

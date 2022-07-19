@@ -53,11 +53,7 @@ export const Header = () => {
         bagIsVisible={bagIsVisible}
       >
         
-        <ContainerLogo 
-          navIsVisible={navIsVisible}
-          contactIsVisible={contactIsVisible}
-          bagIsVisible={bagIsVisible}
-        >
+        <ContainerLogo>
           <Nav
             navIsVisible={navIsVisible}
             setNavIsVisible={setNavIsVisible}

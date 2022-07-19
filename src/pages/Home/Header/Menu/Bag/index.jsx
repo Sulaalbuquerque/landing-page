@@ -3,11 +3,11 @@ import { useContext } from "react"
 import { BagIsVisibleContext } from '../../../../../contexts/BagIsVisibleContext'
 import { CounterBagContext } from '../../../../../contexts/CounterBagContext'
 
+import { ProductBag } from "./ProductBag.jsx"
+
 import imgArrowLeft from '../../../../../../public/assets/svgs/angle-left-solid.svg'
 
 import { ContainerBag } from "./style"
-
-import { ProductBag } from "./ProductBag.jsx"
 
 import { games } from '../../../../../../public/datas/products.json'
 
@@ -36,9 +36,7 @@ export const Bag = () => {
 
   return (
     <>
-      <ContainerBag 
-        isVisibleBag={bagIsVisible}
-      >
+      <ContainerBag isVisibleBag={bagIsVisible}>
 
         <div className="arrow"></div>
 
@@ -98,18 +96,18 @@ export const Bag = () => {
             />
           </div>
 
-            
-          <div className={(totalRequests === 0) ? 'invisible total' : 'visible total'}>
+          <div className={(totalRequests === 0) 
+                           ? 'invisible total' 
+                           : 'visible total'}>
             <p>
               <strong className="detail">Valor total: </strong> 
               R$ {addTotalAmount()}
             </p>
           </div>
 
-            
-          <button 
-            className={(totalRequests === 0) ? 'invisible finish' : 'visible finish'}
-          >
+          <button className={(totalRequests === 0) 
+                              ? 'invisible finish' 
+                              : 'visible finish'}>
             Fializar compra
           </button>
         </div>

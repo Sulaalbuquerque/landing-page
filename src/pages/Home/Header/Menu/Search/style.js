@@ -24,6 +24,12 @@ export const ContainerSearch = styled.div`
         background-color: ${({theme}) => theme.blue};
     }
 
+    .main{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
     input{
         padding: 1rem;
         font-size: 1rem;
@@ -31,7 +37,13 @@ export const ContainerSearch = styled.div`
         border: none;
         background-color: ${({theme}) => theme.darkBlue};
         color: ${({theme}) => theme.text};
-        
+    }
+
+    ul{
+        cursor: pointer;
+        border-left: solid 1px ${({theme}) => theme.text};
+        margin-left: 1rem;
+        color: ${({theme}) => theme.text};
     }
 
     button{

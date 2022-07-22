@@ -38,13 +38,13 @@ export const ContainerSearch = styled.div`
     }
 
     .data-result{
-        //background-color: #fff;
         border-radius: .3rem;
         color: ${({theme}) => theme.text};
         margin-left: 1rem;
         max-height: 200px;
         overflow: hidden;
         overflow-y: auto;
+        width: 100%;
     }
 
     .data-result::-webkit-scrollbar{

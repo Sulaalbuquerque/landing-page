@@ -27,19 +27,26 @@ export const Search = (/* { data } */) => {
   const { searchIsVisible } = useContext(SearchIsVisibleContext)
 
 
-  const [inputSearch, setInputSearch] = useState('')
-  const [filterSearch, setFilterSearch] = useState([])
+  const [inputSearch, setInputSearch] = useState('')//digitado no input
+  const [filterSearch, setFilterSearch] = useState([])//armazena os que passaram na filtragem
 
   const handleFilter = (event) => {
     setInputSearch(event.target.value)
-    console.log(inputSearch)
+    //console.log(inputSearch)
 
     const newFilter = data.filter(value => {
-      return value.name.includes(inputSearch)
+      if(inputSearch.length >= 1) {
+        return value.name.includes(inputSearch)
+      } else {
+        return setFilterSearch([])
+      }
     })
-    console.log(newFilter)
 
     setFilterSearch(newFilter)
+
+    console.log(inputSearch)
+    console.log(filterSearch)
+    console.log(newFilter)
   }
 
   return (

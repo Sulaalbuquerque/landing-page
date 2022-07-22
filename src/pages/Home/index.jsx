@@ -10,6 +10,7 @@ import { BannersSecondary } from "./BannersSecondary"
 import { FeaturesProducts } from "./FeaturedProducts"
 import { Footer } from "./Footer"
 import { Header } from "./Header"
+import { ScrollToTop } from "./ScrollToTop"
 
 import { ContainerHome } from "./style"
 
@@ -36,6 +37,7 @@ export const Home = () => {
           <BannerMaster/> 
           <BannersSecondary/>
           <FeaturesProducts/> 
+          <ScrollToTop/>
           <Footer/>
         </div>
       </ContainerHome>

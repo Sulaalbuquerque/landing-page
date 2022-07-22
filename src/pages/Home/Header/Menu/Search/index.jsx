@@ -5,62 +5,76 @@ import { SearchIsVisibleContext } from '../../../../../contexts/SearchIsVisibleC
 import imgSearch from '../../../../../../public/assets/svgs/search-solid.svg'
 
 import { ContainerSearch } from './style'
+import { useState } from "react"
+ 
+export const Search = (/* { data } */) => {
 
-import games from './../../../../../../public/datas/products.json'
-
-export const Search = () => {
+  const data = [
+    {
+      "id": 1,
+      "name": "Outriders"
+    },
+    {
+        "id": 2,
+        "name": "CYBERPUNK 2077"
+    },
+    {
+        "id": 3,
+        "name": "Donkey Kong Country Tropical Freeze"
+    }
+  ]
 
   const { searchIsVisible } = useContext(SearchIsVisibleContext)
 
-  const ulRef = useRef()
 
-  const autoComplete = (game) => {
+  const [inputSearch, setInputSearch] = useState('')
+  const [filterSearch, setFilterSearch] = useState([])
 
-    const games = ['Outriders', 'CYBERPUNK 2077', 'Donkey Kong Country Tropical Freeze'];
+  const handleFilter = (event) => {
+    setInputSearch(event.target.value)
+    console.log(inputSearch)
 
-    return games.filter((value) => {
-      const valueLowerCase = value.toLowerCase()
-      const gameLowerCase = game.toLowerCase()
-    
-      return valueLowerCase.includes(gameLowerCase)
+    const newFilter = data.filter(value => {
+      return value.name.includes(inputSearch)
     })
+    console.log(newFilter)
+
+    setFilterSearch(newFilter)
   }
 
   return (
     <>
       <ContainerSearch isVisibleSearch={searchIsVisible}>
         <div className="arrow"></div>
+
         <div className="content">
+
           <div className="main">
             <label htmlFor="search"></label>
             <input 
+              ref={input => input && input.focus()}
               type="text" 
               placeholder='Digite sua busca' 
-              onInput={(e) => {
-                const valueInput = e.target.value
-                if(valueInput.length) {
-                  const autoCompleteValues = autoComplete(valueInput)
-
-                  console.log(autoCompleteValues)
-                  console.log(ulRef)
-
-                  ulRef.innerHTML = `
-                    ${autoCompleteValues.map((value) => {
-                      return (
-                        `<li>${value}</li>`
-                        )
-                      }).join('')
-                    }
-                  `
-                }
-              }}
+              value={inputSearch}
+              onChange={handleFilter}
             />
             <button>
               <img src={imgSearch} />
             </button>
           </div>
-          <ul ref={ulRef}></ul>
+
+          {filterSearch !== 0 &&
+            <div className="data-result">
+              {filterSearch.map(value => (
+                <div key={value.id} className="data-item">
+                  <p>{value.name}</p>
+                </div> 
+              ))}
+            </div>
+          }
+
         </div>
+
       </ContainerSearch>
     </>
   )

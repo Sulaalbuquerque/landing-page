@@ -24,10 +24,41 @@ export const ContainerSearch = styled.div`
         background-color: ${({theme}) => theme.blue};
     }
 
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .main{
         display: flex;
         gap: 1rem;
         margin-top: 1rem;
+    }
+
+    .data-result{
+        //background-color: #fff;
+        border-radius: .3rem;
+        color: ${({theme}) => theme.text};
+        margin-left: 1rem;
+        max-height: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .data-result::-webkit-scrollbar{
+        display: none;
+    }
+
+    .data-item{
+        padding: .1rem 1rem;
+        cursor: pointer;
+        border-radius: .3rem;
+    }
+
+    .data-item:hover{
+        background-color: ${({theme}) => theme.blue};
     }
 
     input{
@@ -39,12 +70,12 @@ export const ContainerSearch = styled.div`
         color: ${({theme}) => theme.text};
     }
 
-    ul{
+    /* ul{
         cursor: pointer;
         border-left: solid 1px ${({theme}) => theme.text};
         margin-left: 1rem;
         color: ${({theme}) => theme.text};
-    }
+    } */
 
     button{
         background-color: ${({theme}) => theme.darkBlue};

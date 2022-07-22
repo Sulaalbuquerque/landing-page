@@ -16,6 +16,8 @@ import iconBag from '../../../../../public/assets/svgs/shopping-bag-solid.svg'
 
 import { ContainerMenu } from './style'
 
+import games from './../../../../../public/datas/products.json'
+
 import { hideScroll } from ".."
 import { showScroll } from ".."
 
@@ -85,7 +87,7 @@ export const Menu = () => {
           </li>
 
           <li className='search'>
-            <Search/>
+            <Search /* data={games} *//>
             <a 
               href="#"
               className="icon"

@@ -87,7 +87,7 @@ export const Menu = () => {
           </li>
 
           <li className='search'>
-            <Search /* data={games} *//>
+            <Search data={games}/>
             <a 
               href="#"
               className="icon"

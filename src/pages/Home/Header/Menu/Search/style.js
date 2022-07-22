@@ -55,6 +55,7 @@ export const ContainerSearch = styled.div`
         padding: .1rem 1rem;
         cursor: pointer;
         border-radius: .3rem;
+        color: ${({theme}) => theme.text};
     }
 
     .data-item:hover{
@@ -69,13 +70,6 @@ export const ContainerSearch = styled.div`
         background-color: ${({theme}) => theme.darkBlue};
         color: ${({theme}) => theme.text};
     }
-
-    /* ul{
-        cursor: pointer;
-        border-left: solid 1px ${({theme}) => theme.text};
-        margin-left: 1rem;
-        color: ${({theme}) => theme.text};
-    } */
 
     button{
         background-color: ${({theme}) => theme.darkBlue};

@@ -6,10 +6,10 @@
 <img width="800" src="public/assets/presentation/img3.png"/>
 </h1>
 
-<h3 align="center">
+<h4 align="center">
     Acesse a aplicação online pelo 
     <a href="https://landing-page-henna-two.vercel.app/">link</a>.
-<h3 >
+<h4>
 
 ##  Sobre
 

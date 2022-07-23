@@ -14,7 +14,7 @@
 ##  Sobre
 
 Tratando-se de uma landing-page de games, o sistema possui, entre outras, autocomplete na busca e a funcionalidade de inserção dos produtos selecionados à 'sacola de compras'. Para isso, o sistema soma ou subtrai a quantidade de produtos e calcula o valor total da compra.
-O projeto foi desenvolvido como um desafio pessoal de habilidades frontend.
+O projeto foi desenvolvido em React como um desafio pessoal de habilidades frontend.
 
 ---
 

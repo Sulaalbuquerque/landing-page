@@ -33,9 +33,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ---
 
 ## Acesso ao projeto
-    - Clone o repositório; 
-    - Acesse o diretório;
-    - Instale as dependências.
+    - git clone <link-repositório> - (clone do repositório)
+    - cd <diretório> - (acesso ao diretório)
+    - npm install - (instalação das dependências)
+    - npm start - (execução do projeto)
    
 ---
 

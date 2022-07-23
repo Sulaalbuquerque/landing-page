@@ -20,16 +20,15 @@ O projeto foi desenvolvido como um desafio pessoal de habilidades frontend.
 
 ## Tecnologias usadas
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- HTML5
-- CSS
-- JavaScript
-- React
-- Styled-component
-- Vite
-- Mobile-first
-- VS Code
+- HTML5;
+- CSS;
+- JavaScript;
+- React / Styled-component;
+- Vite;
+- Mobile-first;
+- VS Code.
 
 ---
 

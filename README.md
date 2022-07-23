@@ -11,16 +11,6 @@
     <a href="https://landing-page-henna-two.vercel.app/">link</a>.
 <h3 >
 
-# Índice
-
-[Sobre](#-sobre)
-
-[Tecnologias usadas](#-tecnologias-usadas)
-
-[Acesso ao projeto](#-acesso-ao-projeto)
-
-<br/>
-
 ##  Sobre
 
 Tratando-se de uma landing-page de games, o sistema possui, entre outras, a funcionalidade de inserção dos produtos selecionados à 'sacola de compras'. Para isso, o sistema soma ou subtrai a quantidade de produtos e calcula o valor total da compra.

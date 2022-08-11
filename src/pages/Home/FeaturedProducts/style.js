@@ -2,6 +2,13 @@ import styled from 'styled-components'
 
 export const ContainerFeaturesProducts = styled.section`
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container{
+        max-width: 90%;
+    }    
 
     .title{
         padding: 0 2rem;
@@ -42,12 +49,12 @@ export const ContainerFeaturesProducts = styled.section`
 ` 
 
 export const ContainerFeaturesProductsCards = styled.div`
-    width: 90vw;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
     
     .control{
         padding: .6rem;
@@ -61,4 +68,8 @@ export const ContainerFeaturesProductsCards = styled.div`
             display: none;
         }
     } 
+
+    @media (min-width: 1340px) {
+        width: 70rem;
+    }
 ` 

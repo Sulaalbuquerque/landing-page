@@ -23,18 +23,20 @@ export const FeaturesProducts = () => {
 
       <ContainerFeaturesProducts>
 
-        <div className="title">
-          <img 
-            className="icon-title" 
-            src={iconTitle}
-            alt="Ícone de título" 
-          />
-          <h3>Produtos em destaque</h3>
-        </div>
+        <div className="container">
+          <div className="title">
+            <img 
+              className="icon-title" 
+              src={iconTitle}
+              alt="Ícone de título" 
+            />
+            <h3>Produtos em destaque</h3>
+          </div>
 
-        <ContainerFeaturesProductsCards>
-          <Carousel/>
-        </ContainerFeaturesProductsCards>
+          <ContainerFeaturesProductsCards>
+            <Carousel/>
+          </ContainerFeaturesProductsCards>
+        </div>
 
       </ContainerFeaturesProducts>
     </>
